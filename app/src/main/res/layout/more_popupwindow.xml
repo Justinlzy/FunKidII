@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/babies_shape_shadow">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/add_new_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/add_new_device_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_new_device_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/add_new_device_icon"
+            android:gravity="center_horizontal"
+            android:text="@string/add_baby"
+            android:textColor="@color/text_color_two"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/add_new_device_icon"
+            app:layout_constraintStart_toEndOf="@id/add_new_device_icon"
+            app:layout_constraintTop_toTopOf="@id/add_new_device_icon" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="add_new_device,bind_unbind" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="@id/barrier"
+        app:layout_constraintStart_toStartOf="@id/add_new_device"
+        app:layout_constraintTop_toBottomOf="@id/add_new_device" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bind_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line">
+
+        <ImageView
+            android:id="@+id/bind_unbind_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/more_unbind"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/bind_unbind_icon"
+            android:gravity="center_horizontal"
+            android:text="@string/bind_and_unbind"
+            android:textColor="@color/text_color_two"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/bind_unbind_icon"
+            app:layout_constraintStart_toEndOf="@+id/bind_unbind_icon"
+            app:layout_constraintTop_toTopOf="@id/bind_unbind_icon" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

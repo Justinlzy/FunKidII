@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_address_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_address_card_background"
+    android:padding="18dp">
+
+    <ImageView
+        android:id="@+id/map_button_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/button_navigation"
+        app:layout_constraintBottom_toTopOf="@id/map_button_navigation_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/map_button_navigation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/map_navigation_to_here"
+        android:textColor="@color/normal_secondary_text"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/map_button_navigation"
+        app:layout_constraintStart_toStartOf="@id/map_button_navigation"
+        app:layout_constraintTop_toBottomOf="@id/map_button_navigation"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/map_addr_short"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/map_button_navigation"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="重庆金康特智能穿戴研究院" />
+
+    <TextView
+        android:id="@+id/map_addr_full"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/normal_secondary_text"
+        app:layout_constraintEnd_toStartOf="@id/map_button_navigation"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map_addr_short"
+        tools:text="重庆市九龙坡区金凤镇凤笙路金凤电子产业园2期6栋" />
+
+    <TextView
+        android:id="@+id/map_location_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/map_button_navigation"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map_addr_full"
+        tools:text="2018-12-12 10:36" />
+
+    <ImageView
+        android:id="@+id/location_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/location_satellite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map_location_time" />
+
+    <TextView
+        android:id="@+id/location_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/normal_secondary_text"
+        app:layout_constraintBottom_toBottomOf="@id/location_way"
+        app:layout_constraintStart_toEndOf="@id/location_way"
+        app:layout_constraintTop_toTopOf="@id/location_way"
+        tools:text="精度 600 米" />
+
+    <android.support.constraint.Group
+        android:id="@+id/kid_additional_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="map_button_navigation,map_button_navigation_text,map_location_time,location_way,location_accuracy" />
+
+</android.support.constraint.ConstraintLayout>

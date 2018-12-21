@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/main_background_color"
+    android:descendantFocusability="blocksDescendants"
+>
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/alarm_clock_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <!-- 闹钟 item -->
+    <RelativeLayout
+        android:id="@+id/ll_alarm_clock_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/alarm_clock_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_blue_background"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="7:00" />
+
+        <ProgressBar
+            android:id="@+id/alarm_clock_pb_syncing"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_toEndOf="@+id/alarm_clock_datetime"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/pb_synchronize"
+            android:indeterminateOnly="true" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/imageview_setting_datetime_sys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ll_alarm_clock_format"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/enter" />
+
+    <TextView
+        android:id="@+id/alarm_clock_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_alarm_clock_format"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/dimen_3"
+        android:text="@string/alarm_list_note"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/alarm_clock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ll_alarm_clock_format"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/alarm_clock_label"
+        android:padding="@dimen/dimen_3"
+        android:textColor="@color/text_color_four"
+        android:textSize="@dimen/dimen_10sp" />
+
+
+    <TextView
+        android:id="@+id/alarm_clock_notice_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_clock_label"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:padding="@dimen/dimen_3"
+        android:text="@string/notice_type"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/alarm_clock_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_clock_label"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/alarm_clock_notice_label"
+        android:padding="@dimen/dimen_3"
+        android:textColor="@color/text_color_four"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/text_weeks_repeat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_clock_notice_label"
+        android:layout_marginStart="5dp"
+        android:padding="@dimen/dimen_3"
+        android:text="@string/repeat_days"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/text_weeks_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_clock_notice"
+        android:layout_toEndOf="@+id/text_weeks_repeat_label"
+        android:padding="@dimen/dimen_3"
+        android:textColor="@color/text_color_four"
+        android:textSize="@dimen/dimen_10sp" />
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:background="@color/line_color" />
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/amap_fence_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/gmap_fence_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/google_inaccessible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/google_inaccessible_on_map_page"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_inaccessible"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:src="@drawable/location_range" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_search"
+            android:background="@null"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/fence_wheel_select_text"
+            tools:text="重庆市九龙坡区金凤产业园二期六栋" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ll_search"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="onClick"
+        android:src="@drawable/change_button" />
+
+    <ImageView
+        android:id="@+id/iv_search_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/map_type"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_google"
+        android:onClick="onDebouncedClick"
+        android:src="@drawable/oval_button_foreground_selector"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bg">
+
+        <com.cqkct.FunKidII.Ui.view.WheelView
+            android:id="@+id/wheel_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:HighlightColor="@color/fence_wheel_select_line"
+            app:IntervalFactor="0.5"
+            app:MarkRatio="0.1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:MarkTextColor="@color/fence_wheel_select_text" />
+    </LinearLayout>
+
+
+</RelativeLayout>

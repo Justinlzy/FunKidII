@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqkct.FunKidII.Ui.view.PullBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_back_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_70_percent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirm_dialog_background"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/slide_down_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.9">
+
+                <include
+                    android:id="@+id/title"
+                    layout="@layout/normal_dialog_arched_top_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/title">
+
+                    <RelativeLayout
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_47"
+                        android:background="@color/main_background_color">
+
+                        <ImageView
+                            android:id="@+id/icon_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/phone_icon" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon_phone"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/phone"
+                            android:textColor="@color/text_color_two"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/phone_next"
+                            android:text="+8613000000000" />
+
+                        <ImageView
+                            android:id="@+id/phone_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/wechat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_47"
+                        android:background="@color/main_background_color"
+                        android:foreground="@drawable/foreground_shadow"
+                        android:onClick="onDebouncedClick">
+
+                        <ImageView
+                            android:id="@+id/icon_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/wechat_icon" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon_wechat"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/third_plat_wechat"
+                            android:textColor="@color/text_color_two"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_wechat_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/wechat_next"
+                            android:text="@string/other_login_not_connected" />
+
+                        <ImageView
+                            android:id="@+id/wechat_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_47"
+                        android:background="@color/main_background_color"
+                        android:foreground="@drawable/foreground_shadow"
+                        android:onClick="onDebouncedClick">
+
+                        <ImageView
+                            android:id="@+id/icon_qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/qq_icon" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/icon_qq"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/third_plat_qq"
+                            android:textColor="@color/text_color_two"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_qq_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/next2"
+                            android:text="@string/other_login_not_connected" />
+
+                        <ImageView
+                            android:id="@+id/next2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@color/main_background_color"
+                        android:foreground="@drawable/foreground_shadow"
+                        android:onClick="onDebouncedClick">
+
+                        <ImageView
+                            android:id="@+id/icon_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/facebook_icon" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon_facebook"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/third_plat_facebook"
+                            android:textColor="@color/text_color_two"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_facebook_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/next1"
+                            android:text="@string/other_login_not_connected" />
+
+                        <ImageView
+                            android:id="@+id/next1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/google"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@color/main_background_color"
+                        android:foreground="@drawable/foreground_shadow"
+                        android:onClick="onDebouncedClick">
+
+                        <ImageView
+                            android:id="@+id/icon_google"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/google_icon" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon_google"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/third_plat_google"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_google_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/next5"
+                            android:text="@string/other_login_not_connected" />
+
+                        <ImageView
+                            android:id="@+id/next5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_55"
+                        android:background="@drawable/dialog_bottom_bg"
+                        android:foreground="@drawable/foreground_shadow"
+                        android:onClick="onDebouncedClick">
+
+                        <ImageView
+                            android:id="@+id/icon_twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/twitter_icon" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon_twitter"
+                            android:padding="@dimen/dimen_10"
+                            android:text="@string/third_plat_twitter"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_twitter_bind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="6dp"
+                            android:layout_toStartOf="@+id/next6"
+                            android:text="@string/other_login_not_connected" />
+
+                        <ImageView
+                            android:id="@+id/next6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/enter" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/action_btn" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/slide_down_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onDebouncedClick"
+                android:padding="8dp"
+                android:src="@drawable/down_double_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</com.cqkct.FunKidII.Ui.view.PullBackLayout>

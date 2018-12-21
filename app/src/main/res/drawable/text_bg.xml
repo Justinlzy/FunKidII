@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dimen_10"
+    android:shape="rectangle">
+
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="#CCCCCC" />
+            <corners android:bottomRightRadius="@dimen/dimen_5"
+                android:bottomLeftRadius="@dimen/dimen_5" android:topLeftRadius="@dimen/dimen_5"
+                android:topRightRadius="@dimen/dimen_5" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:right="1dp"
+        android:left="1dp"
+        android:bottom="1dp"
+        android:top="1.5dp">
+        <!-- 此处定义只有上下两边有边框 高度为1像素-->
+
+        <!--边框里面背景颜色 白色-->
+        <shape>
+            <solid android:color="#ffffff" />
+            <corners android:bottomRightRadius="@dimen/dimen_5"
+                android:bottomLeftRadius="@dimen/dimen_5" android:topLeftRadius="@dimen/dimen_5"
+                android:topRightRadius="@dimen/dimen_5" />
+        </shape>
+    </item>
+</layer-list>

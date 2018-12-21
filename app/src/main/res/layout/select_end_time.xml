@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.cqkct.FunKidII.Ui.view.NumberPickerRed
+        android:id="@+id/end_time_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_110">
+
+    </com.cqkct.FunKidII.Ui.view.NumberPickerRed>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape_bg_indicator_point_select"
+            android:background="@drawable/class_disable_semicolon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape_bg_indicator_point_select"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/class_disable_semicolon" />
+    </LinearLayout>
+
+    <com.cqkct.FunKidII.Ui.view.NumberPickerRed
+        android:id="@+id/end_time_min"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_110">
+
+    </com.cqkct.FunKidII.Ui.view.NumberPickerRed>
+
+</LinearLayout>

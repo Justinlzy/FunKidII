@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/oval_button_pressed_foreground" android:state_pressed="true"/>
+    <item android:drawable="@drawable/oval_button_enabled_foreground" android:state_enabled="true"/>
+    <item android:drawable="@drawable/oval_button_disabled_foreground" android:state_enabled="false"/>
+
+</selector>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        android:layout_marginBottom="8dp"
+        android:background="@color/common_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/status_bar_height">
+
+            <ImageView
+                android:id="@+id/title_bar_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onTitleBarClick"
+                android:paddingStart="14dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/back" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_title_text_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_title_text_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/title_bar_text"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_title_text_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_title_text_start" />
+
+                <LinearLayout
+                    android:id="@+id/ll_loading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/delete"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_title_text_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_title_text_start">
+
+                    <ProgressBar
+                        android:id="@+id/class_disable_pb_syncing"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminateBehavior="repeat"
+                        android:indeterminateDrawable="@drawable/pb_synchronize"
+                        android:indeterminateOnly="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/loading"
+                        android:textColor="@color/title_bar_text"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/title_bar_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onTitleBarClick"
+                android:padding="8dp"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/title_bar_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onTitleBarClick"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/title_bar_text" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

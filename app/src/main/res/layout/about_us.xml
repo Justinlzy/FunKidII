@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        android:contentDescription="背景"
+        android:scaleType="fitXY"
+        android:src="@drawable/about_us_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_arch"
+        android:contentDescription="拱形效果覆盖"
+        app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/ioc_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/about_us_logo"
+        app:layout_constraintBottom_toTopOf="@+id/user_agreement"
+        app:layout_constraintEnd_toEndOf="@id/title_background"
+        app:layout_constraintStart_toStartOf="@id/title_background"
+        app:layout_constraintTop_toTopOf="@id/title_background"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/about_us_kct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ioc_about_us"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_blue_bg_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/title_background"
+        app:layout_constraintStart_toStartOf="@id/title_background"
+        app:layout_constraintTop_toBottomOf="@id/ioc_about_us" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_us_kct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/current_version"
+        android:textColor="@color/text_color_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_kct" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/common_Background" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/white"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/official_website"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/url_web_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:text="http://www.cqkct.com"
+            android:textColor="@color/main_color_tone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_47"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        app:layout_constraintTop_toBottomOf="@id/title_background">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/user_agreement"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

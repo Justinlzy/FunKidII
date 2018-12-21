@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionBarSize">47dp</item>
+        <item name="actionBarSize">47dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 欢迎页背景，可以用此避免启动时的白屏 -->
+        <!--<item name="android:windowBackground">@drawable/welcome_bg</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    </style>
+
+</resources>

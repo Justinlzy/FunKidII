@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sg_bg_Color"
+    tools:context="com.cqkct.FunKidII.Ui.Activity.GuideActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_time"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_time"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:background="@color/sg_bg_Color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_blue_background"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_3"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_3"
+                    android:text="@string/guard_time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_am_guard_time"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_am_guard_time"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_time"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:id="@+id/sg_am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/am_guard_time"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_sg_am_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/sg_am_next"
+                    android:text="00:00-00:00"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/sg_am_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_pm_guard_time"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_pm_guard_time"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_am_guard_time"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+
+                <TextView
+                    android:id="@+id/sg_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/pm_guard_time"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_sg_pm_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:layout_toStartOf="@+id/sg_pm_next"
+                    android:text="00:00-00:00"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/sg_pm_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_last_back"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_last_back"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_pm_guard_time"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+
+                <TextView
+                    android:id="@+id/sg_last_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/last_back_guard_time"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_latest_go_home_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:layout_toStartOf="@+id/sg_last_back_next"
+                    android:text="00:00"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sg_last_back_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_re"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_re"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_last_back"
+                android:layout_centerHorizontal="true"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+
+                <TextView
+                    android:id="@+id/sg_re"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/repetition"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_repeat_guardian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/sg_re_next"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sg_re_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_statutory_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_re"
+                android:layout_alignParentStart="true"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/sg_statutory_holiday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/sg_statutory_holiday"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_holiday_guardian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/sg_statutory_holiday_next"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sg_statutory_holiday_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/guardian_address"
+                android:background="@color/common_Background" />
+
+
+            <RelativeLayout
+                android:id="@+id/guardian_address"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_statutory_holiday">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_blue_background"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_3"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_3"
+                    android:text="@string/sg_guardian_address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/sg_rl_school_address"
+                android:background="@color/common_Background" />
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_school_address"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/guardian_address"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+
+                <TextView
+                    android:id="@+id/sg_school_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/sg_school_address"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_school_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:layout_toStartOf="@+id/sg_school_address_next"
+                    android:layout_toEndOf="@+id/sg_school_address"
+                    android:ellipsize="marquee"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sg_school_address_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sg_rl_home_address"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/sg_rl_school_address"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:id="@+id/tv_home_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/sg_home_address"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_home_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:layout_toStartOf="@+id/sg_home_address_next"
+                    android:layout_toEndOf="@+id/tv_home_address_label"
+                    android:ellipsize="marquee"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sg_home_address_next"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/enter" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+</RelativeLayout>

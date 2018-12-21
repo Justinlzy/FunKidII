@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:gravity="center_vertical|left" android:src="@drawable/button_clean_normal" android:tileMode="disabled" />
+    </item>
+    <item>
+        <bitmap android:gravity="center_vertical|left" android:src="@drawable/button_clean_over" android:state_pressed="true" android:tileMode="disabled" />
+    </item>
+</selector>

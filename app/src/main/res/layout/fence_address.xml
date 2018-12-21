@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color">
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/title_bar" />
+
+
+    <EditText
+        android:id="@+id/fence_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_address_bg"
+        android:gravity="center"
+        android:hint="@string/input_address"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintTop_toBottomOf="@+id/include7" />
+
+
+    <TextView
+        android:id="@+id/watch_current_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/text_blue_background"
+        android:paddingStart="8dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="3dp"
+        android:text="@string/school_guide_nearby_watch"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fence_address_name" />
+
+
+    <RelativeLayout
+        android:id="@+id/watch_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        app:layout_constraintTop_toBottomOf="@+id/watch_current_label">
+
+        <TextView
+            android:id="@+id/watch_current_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:background="@null"
+            android:textSize="15sp"
+            tools:text="康居西城康居西城康居西城康居西城康居西城康居西城康居西城康居西城" />
+
+
+        <ImageView
+            android:id="@+id/watch_location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/location_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color"
+        app:layout_constraintBottom_toBottomOf="@+id/watch_current_location" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_blue_background"
+        android:paddingStart="8dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="3dp"
+        android:text="@string/school_guide_nearby_add"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watch_current_location" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nearby_address_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+</android.support.constraint.ConstraintLayout>

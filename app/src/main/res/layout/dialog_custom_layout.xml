@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_my_data_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义关系"
+        android:textColor="@color/text_color_one"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_select"
+            android:hint="请输入关系"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/ok"
+            android:textColor="@color/colorAccent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/cancel"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
