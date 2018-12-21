@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/amap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/gmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_20"
+            android:src="@drawable/back_button" />
+
+        <include
+            android:id="@+id/map_address_card_view"
+            layout="@layout/view_map_record_infowindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date_layout"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/location_record_time_bg">
+
+            <Button
+                android:id="@+id/select_date_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_background_color_selector"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick"
+                android:singleLine="true"
+                android:text="2016-08-09"
+                android:textColor="@color/text_blue_bg_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/pre_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:background="@drawable/button_background_color_selector"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onClick"
+                android:src="@drawable/last_day" />
+
+            <TextView
+                android:id="@+id/pre_day_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/pre_day"
+                android:onClick="onClick"
+                android:text="@string/last_day"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/next_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_background_color_selector"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onClick"
+                android:src="@drawable/next_day" />
+
+            <TextView
+                android:id="@+id/next_day_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/next_day"
+                android:onClick="onClick"
+                android:text="@string/next_day"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/google_inaccessible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_layout"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/google_inaccessible_on_map_page"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/map_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/map_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onClick"
+                android:src="@drawable/change_button" />
+
+            <ImageButton
+                android:id="@+id/map_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:onClick="onClick"
+                android:src="@drawable/enlarge_button" />
+
+            <ImageButton
+                android:id="@+id/map_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:onClick="onClick"
+                android:src="@drawable/narrow_button" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

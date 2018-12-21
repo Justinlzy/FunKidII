@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <com.cqkct.FunKidII.Ui.view.CornerImageView
+        android:id="@+id/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:contentDescription="背景"
+        android:scaleType="centerCrop"
+        android:src="@drawable/texture_material_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:topLeftRadius="24dp"
+        app:topRightRadius="24dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_arch"
+        android:contentDescription="拱形效果覆盖"
+        app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:text="标题" />
+
+</android.support.constraint.ConstraintLayout>

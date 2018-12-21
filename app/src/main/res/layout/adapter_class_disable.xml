@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/more_imp_refuse_stranger_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/main_background_color"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@drawable/text_blue_background"
+            android:paddingBottom="@dimen/dimen_3"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_3"
+            android:text="@string/class_disable_times_fragment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <ProgressBar
+            android:id="@+id/class_disable_pb_syncing"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_toEndOf="@+id/name"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/pb_synchronize"
+            android:indeterminateOnly="true" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/ib_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_repeat_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/start_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class_disable_begin_times"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/start_label"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@+id/start_label"
+            android:text="08:00"
+            android:textColor="@color/text_color_four"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/end_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_label"
+            android:text="@string/class_disable_over_times"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/end_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/end_label"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@+id/end_label"
+            android:text="13:56"
+            android:textColor="@color/text_color_four"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:id="@+id/repeat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_label"
+            android:text="@string/repeat_days"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/repeat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/repeat_label"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@+id/repeat_label"
+            android:textColor="@color/text_color_four"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <ImageView
+            android:id="@+id/detail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rl_repeat_detailed"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:background="@color/text_color_three" />
+</RelativeLayout>

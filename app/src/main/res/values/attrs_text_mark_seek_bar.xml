@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextMarkSeekBar">
+        <attr name="showMarkText" format="boolean" />
+        <attr name="markTextArray" format="reference|string" />
+        <attr name="progressMarkTextColor" format="color" />
+        <attr name="unprogressMarkTextColor" format="color" />
+        <attr name="progressMarkTextSize" format="dimension" />
+        <attr name="unprogressMarkTextSize" format="dimension" />
+        <attr name="thumbMarkTextColor" format="color" />
+        <attr name="thumbMarkTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

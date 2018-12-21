@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="11dp"
+                android:color="@color/main_background_color" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+            <stroke
+                android:width="14dp"
+                android:color="@color/main_background_color" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="13dip"
+        android:left="13dip"
+        android:right="13dip"
+        android:top="13dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="1dip"
+                android:color="@color/cardShadowColor_8" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="12dip"
+        android:left="12dip"
+        android:right="12dip"
+        android:top="12dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="2dip"
+                android:color="@color/cardShadowColor_7" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="11dip"
+        android:left="11dip"
+        android:right="11dip"
+        android:top="11dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="3dip"
+                android:color="@color/cardShadowColor_6" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="10dip"
+        android:left="10dip"
+        android:right="10dip"
+        android:top="10dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="4dip"
+                android:color="@color/cardShadowColor_5" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="9dip"
+        android:left="9dip"
+        android:right="9dip"
+        android:top="9dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="5dip"
+                android:color="@color/cardShadowColor_4" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="8dip"
+        android:left="8dip"
+        android:right="8dip"
+        android:top="8dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="6dip"
+                android:color="@color/cardShadowColor_3" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="7dip"
+        android:left="7dip"
+        android:right="7dip"
+        android:top="7dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="7dip"
+                android:color="@color/cardShadowColor_2" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="6dip"
+        android:left="6dip"
+        android:right="6dip"
+        android:top="6dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="27dp" />
+            <stroke
+                android:width="8dip"
+                android:color="@color/cardShadowColor_1" />
+        </shape>
+    </item>
+
+</layer-list>

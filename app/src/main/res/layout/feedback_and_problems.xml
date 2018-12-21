@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/re_dealdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/feed_back_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        android:progressDrawable="@drawable/bg_seekbar_progress_drawable_webview"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+</android.support.constraint.ConstraintLayout>

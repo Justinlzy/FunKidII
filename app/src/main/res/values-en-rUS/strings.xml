@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE resources [<!ENTITY appname "FunKidII">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="low_memory_state">Low Cache</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="Logging">Logging In</string>
+    <string name="login_failure">Login Failed</string>
+    <string name="login_user_or_passwd_error">Incorrect Username or Password</string>
+    <string name="account_already_exists">Account Registered</string>
+    <string name="login_timeout">Login Timeout</string>
+    <string name="login_network_fault">Please check the network</string>
+    <string name="network_prompt">Network Information</string>
+    <string name="cancel">Cancel</string>
+    <string name="ask_really_cancel">Sure to cancel?</string>
+    <string name="ok">OK</string>
+    <string name="net_error">Network Error</string>
+    <string name="network_quality_poor">Poor Network</string>
+    <string name="next_step">Next Step</string>
+    <string name="please_input_your_number">Please enter the number of the watch callback</string>
+    <string name="number_not_effective">please enter valid phone number</string>
+    <string name="dialog_loading_text">Loading...</string>
+    <string name="net_error_tip">The network is not available, please check network settings</string>
+    <string name="net_timeout">Connection timed out, Please check your network status and try again!</string>
+    <string name="please_enter_verify_code">Enter Verification Code</string>
+    <string name="please_enter_verify_code_you_received">Enter the verification code you received</string>
+    <string name="next_to_indicate_your_consent">Clicking "Next" means you agree</string>
+
+    <string name="get_sms_code_failure">Failed to get verification code</string>
+    <string name="menu_tips">This is from Kevin</string>
+    <string name="drawer_layout_open">Open</string>
+    <string name="drawer_layout_close">Close</string>
+    <string name="baby_card">All Kids</string>
+    <string name="watch_the_information">Watch Infos</string>
+    <string name="bind_and_unbind">Bind And Unbind</string>
+    <string name="device_unbind">Bind And Unbind</string>
+    <string name="app_setting">APP Settings</string>
+    <string name="problems_and_feedback">Questions And Feedback</string>
+    <string name="before_dawn">Dawn</string>
+    <string name="morning">Morning</string>
+    <string name="noon">Noon</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="night">Evening</string>
+
+    <string name="your_phone_number">Please input your phone number</string>
+    <string name="please_input_your_phone_number">Please input your registered phone number</string>
+    <string name="week_text_monday">Monday</string>
+    <string name="week_text_tuesday">Tuesday</string>
+    <string name="week_text_wednesday">Wednesday</string>
+    <string name="week_text_thursday">Thursday</string>
+    <string name="week_text_friday">Friday</string>
+    <string name="week_text_saturday">Saturday</string>
+    <string name="week_text_sunday">Sunday</string>
+    <string name="week_short_text_monday">Mon</string>
+    <string name="week_short_text_tuesday">Tue</string>
+    <string name="week_short_text_wednesday">Wed</string>
+    <string name="week_short_text_thursday">Thu</string>
+    <string name="week_short_text_friday">Fri</string>
+    <string name="week_short_text_saturday">Sat</string>
+    <string name="week_short_text_sunday">Sun</string>
+
+    <!--about us-->
+    <string name="about_us">About Us</string>
+    <string name="current_version">Current Version: v%s</string>
+    <string name="official_website">Official Website</string>
+    <string name="user_agreement">User Agreement</string>
+    <!--AppSetting-->
+    <string name="notification">Notification</string>
+    <string name="change_the_password">Change Password</string>
+    <string name="clear_the_cache">Clear Cache</string>
+    <string name="check_the_update">Check for updates</string>
+    <string name="cache_unit">0.0 M</string>
+    <string name="version">V 1.0.0</string>
+    <!--babyCard-->
+    <string name="select_baby">Kids List</string>
+    <string name="please_select_grade">Select Grade</string>
+    <string name="one_grade">Grade One</string>
+    <string name="two_grade">Grade Two</string>
+    <string name="three_grade">Grade Three</string>
+    <string name="four_grade">Grade Four</string>
+    <string name="five_grade">Grade Five</string>
+    <string name="six_grade">Grade Six</string>
+    <string name="name">Nickname</string>
+    <string name="me_and_baby">I am kid\'s %1$s</string>
+    <string name="baby_information">Kid Information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="baby_sex">Sex</string>
+    <string name="birthday">Birthday</string>
+    <string name="grade">Grade</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="current_baby">Selected Kid</string>
+    <string name="baby_information_saving">saving...</string>
+    <string name="setting_alarm_clock_maximum_of_five">At Most Five</string>
+    <string name="setting_alarm_clock_model_all">Daily</string>
+    <string name="setting_alarm_clock_model_once">Once</string>
+    <string name="setting_alarm_clock_model_workday">Workday</string>
+    <string name="setting_alarm_clock_model_weekend">Weekend</string>
+    <string name="setting_alarm_clock_model_repeat_custom">Custom</string>
+
+    <string name="location_record_calendar_week_monday">Mon</string>
+    <string name="location_record_calendar_week_tuesday">Tue</string>
+    <string name="location_record_calendar_week_wednesday">Wed</string>
+    <string name="location_record_calendar_week_thursday">Thu</string>
+    <string name="location_record_calendar_week_friday">Fri</string>
+    <string name="location_record_calendar_week_saturday">Sat</string>
+    <string name="location_record_calendar_week_sunday">Sun</string>
+
+
+    <!--对讲 SpeakingFragment-->
+
+    <string name="text_ack_msg">Has Read</string>
+    <string name="text_delivered_msg">Has Reached</string>
+    <string name="speaking_message_title">Voice Chat</string>
+    <string name="speaking_message_state_send_fail_message_resend">Resend this voice message?</string>
+    <string name="no_permission_audiorecord">Missing Recording Authority</string>
+    <string name="no_current_device_information">Missing Current Device Information</string>
+    <string name="canceled">Cancelled</string>
+
+    <string name="datetime_year">Year</string>
+    <string name="datetime_month">Month</string>
+    <string name="datetime_day">Day</string>
+    <string name="datetime_hour">Hour</string>
+    <string name="datetime_minute">Minute</string>
+    <string name="datetime_second">Second</string>
+    <string name="am">Morning</string>
+    <string name="pm">Afternoon</string>
+    <string name="kid_position_time_MMddHHmm">%02d-%02d %02d:%02d</string>
+    <string name="kid_position_time_yyyyMMddHHmm">%d-%02d-%02d %02d:%02d</string>
+    <string name="message_time_yesterday">Yesterday</string>
+
+    <string name="date_picker_unit_year">-</string>
+    <string name="date_picker_unit_month">-</string>
+    <string name="date_picker_unit_day">""</string>
+
+    <string name="fence_title">Guard Fence</string>
+    <string name="fence_add_success">Added E-fence Successfully!</string>
+    <string name="fence_add_failth">Failed To Add E-fence!</string>
+    <string name="fence_delete_confirm">Are you sure to delete this e-fence?</string>
+    <string name="fence_delete_success">Deleted the e-fence successfully!</string>
+    <string name="fence_delete_failth">Failed to delete the e-fence! Please retry!</string>
+    <string name="fence_alert_content">Your kid[%1$s]is at%2$s%2$s[%3$s]</string>
+    <string name="fence_name">Please enter the fence name</string>
+    <string name="fence_in_alarm">Alert Of Entering</string>
+    <string name="fence_out_alarm">Alert Of Leaving</string>
+    <string name="fence_adding_fence">Add fence</string>
+    <string name="fence_arrive">Reached The Fence</string>
+    <string name="fence_leave">Leaved The Fence</string>
+    <string name="fence_arrive_leave">Reached/Leaved The Fence</string>
+    <string name="fence_add_area">Fence Scope</string>
+    <string name="fence_enter_fence_name">Please enter the fence name</string>
+    <string name="fence_name_conflict">Fence name conflicts! The name already exists!</string>
+    <string name="fence_select_fence_type">You should choose alarm mode</string>
+    <string name="device_state_low_power">Alarm Of Low Battery</string>
+    <string name="device_state_sos">Emergency Alerm</string>
+    <string name="device_alert">Sended</string>
+    <string name="toast_title">Prompt</string>
+    <!--register-->
+    <string name="check_empty_error">%1$s cannot be empty, please re-enter!</string>
+    <string name="check_match_error">%1$s is not valid, Please re-enter!</string>
+    <string name="check_same_name_error">%1$s already exists, Please re-enter!</string>
+    <string name="check_nickname_error">The nickname is a combination of 2~10 digits and letters, please re-enter!</string>
+    <string name="check_password_error">The password is a combination of 6~16 digits or letters. Please enter it again!</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="different_password">The two passwords you entered mismatch</string>
+    <!--绑定设备-->
+    <string name="permission_to_apply">Apply for Permission</string>
+    <string name="permission_dialog_message_head">Turn on in Settings-App-&appname;-Permission</string>
+    <string name="permission_dialog_message_end">permissions, to use functions of &appname;
+        normally</string>
+    <string name="permission_camera">Camera</string>
+    <string name="permission_location">Location</string>
+    <string name="permission_storage">Storage</string>
+    <string name="permission_phone">Tel</string>
+    <string name="permission_sms">SMS</string>
+    <string name="permission_contacts">Contacts</string>
+    <string name="bind_device_scan_qr_code">Scan QR Code</string>
+    <string name="login_out_title">Quit Current Account</string>
+    <string name="login_out_message">Whether or not sign out the current &appname; account</string>
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+
+    <string name="bright_screen_time">Duration of screen bright</string>
+    <string name="second">Second</string>
+    <string name="last_time_login">Last Time:</string>
+    <string name="device_location_way">Location Way:&#160;</string>
+    <string name="timing_shutdown">Timing Switch</string>
+    <string name="timing_open_device_time">Scheduled Boot Time</string>
+    <string name="timing_shutdown_device_time">Scheduled Off Time</string>
+    <string name="notice">Notice:</string>
+    <string name="notice_text">When charging, the watch will keep power on, and Scheduled boot will not take effect.</string>
+    <string name="open_timing_shutdown">Turn On The Timing Power Switch</string>
+
+    <string name="close_timing_shutdown">Turn Off The Timing Power Switch</string>
+    <string name="select_relation">Select Relationship</string>
+    <string name="next">Next Step</string>
+    <string name="please_input_baby_phone">Please enter kid\'s phone number</string>
+    <string name="country_area">Country/Region</string>
+    <string name="china">China</string>
+    <string name="baba">Dad</string>
+    <string name="mama">Mom</string>
+    <string name="jiejie">Sister</string>
+    <string name="yeye">Paternal Grandpa</string>
+    <string name="nainai">Paternal Grandma</string>
+    <string name="gege">Brother</string>
+    <string name="waigong">Maternal Grandpa</string>
+    <string name="waipo">Maternal Grandma</string>
+    <string name="laoshi">Teacher</string>
+    <string name="custom">Custom</string>
+    <string name="save_power">Power Reserved</string>
+    <string name="save_power_notice_text">When power remained less than 10%, watch is disabled</string>
+    <string name="save_power_notice">Only can answer the phone</string>
+    <string name="save_power_notice_text2">Unable to use location and micro chat, can answer phone only</string>
+    <string name="save_power_notice_text3">When power remained less than 10%, location and microChat cannot be used, only can answer phone.</string>
+    <string name="open_save_power">Turn On Reserving Power</string>
+    <string name="close_save_power">Turn Off Reserving Power</string>
+
+    <string name="save_power_notice2">Disable Watch</string>
+    <string name="report_watch_lost">Report Loss Of Watch</string>
+    <string name="report_location">Position Report</string>
+    <string name="report_watch_text">After reporting lost, position will be automatically sent to APP once the watch is connected</string>
+    <string name="report_watch_lost_bt">Turn on reporting loss of watch</string>
+    <string name="register_code_received">Verification code received</string>
+    <string name="resend">Resend</string>
+    <string name="refuse_strangers_call">Reject strange calls</string>
+    <string name="intercept_record">Intercept record</string>
+    <string name="intercept_record_text">Strange calls will trigger a message to App, for parents to determine</string>
+    <string name="track_playback_review">Play</string>
+    <string name="track_stopback_review">Stop</string>
+    <string name="track_playback_footer">Track</string>
+    <string name="track_playback_data_total">Total</string>
+    <string name="track_playback_title">Track Playback</string>
+    <string name="tomorrow_no">Tomorrow is not yet!</string>
+    <string name="track_is_autio_playing">Track is playing</string>
+    <string name="choose_date">Select Date</string>
+    <string name="track_empty">There is no track data for this period</string>
+    <string name="northeast">Northeast</string>
+    <string name="northwest">Northwest</string>
+    <string name="southeast">Southeast</string>
+    <string name="southwest">Southwest</string>
+    <string name="the_input_is_empty">Input cannot be blank or space character</string>
+    <string name="fence_fence_name_length">Fence name should not be more than 20 English letters</string>
+    <string name="location_show_near">(nearby)</string>
+
+    <string name="button_delete">Delete</string>
+    <string name="button_add">Add</string>
+    <!--changePasswordActivity-->
+    <string name="change_password">Change Password</string>
+    <string name="save_setting">Save Settings</string>
+    <string name="please_input_all_password">Please enter the whole password</string>
+    <string name="twice_password_diffent">Inconsistent passwords input</string>
+    <string name="before_password_error">The original password entered not correctly</string>
+    <string name="please_input_password">Please enter a new password</string>
+    <string name="passwd_invalid_tip">Password is composed of 6~16 digits or letters</string>
+    <string name="before_password">Original password</string>
+    <string name="new_password">New password</string>
+    <!--BabyCardActivity-->
+    <string name="boy">Boy</string>
+    <string name="gril">Girl</string>
+    <string name="choose_head_icon">Select Avatar</string>
+    <string name="take_photo">Camera</string>
+    <string name="school_guardian">Campus Guard</string>
+    <string name="album">Album</string>
+    <string name="phonenumber_can_not_be_null">Number should not be blank</string>
+    <string name="choose_baby">Choose Kid</string>
+    <string name="please_input_baby_number">Input the baby mobile phone number</string>
+    <string name="your_baby_number">Please enter the watch Tel</string>
+    <string name="your_baby_number_no_hasEditPermission">The watch number has not been set, please remind the administrator to set</string>
+    <string name="input_baby_name">Input the kid\'s nickname</string>
+    <string name="your_baby_name">Your kid\'s nickname</string>
+    <string-array name="list_persons">
+        <item>Burma</item>
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Hongkong</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Laos</item>
+        <item>Macao</item>
+        <item>Malaysia</item>
+        <item>Philippines</item>
+        <item>Singapore</item>
+        <item>Taiwan</item>
+        <item>Thailand</item>
+        <item>U.S.A</item>
+        <item>Vietnam</item>
+        <item>Canada</item>
+        <item>England</item>
+    </string-array>
+    <string name="more_function">More Functions</string>
+
+    <string name="location">Locate</string>
+    <string name="update_location">Update Location</string>
+    <string name="no_data">No fenced</string>
+    <string name="title_associate_user">Associate Users</string>
+    <string name="title_chat">Micro chat</string>
+    <string name="title_device_info">Watch Infos</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_more_function">Functions</string>
+    <string name="title_notifi_message">Message Record</string>
+    <string name="title_bind_device">Associate Device</string>
+    <string name="refuse_stranger_call">Stranger Reject</string>
+    <string name="timing_shut_down">Timing Switch</string>
+
+    <string name="watch_setting">Watch Settings</string>
+    <string name="sos_contact">SOS Numbers</string>
+    <string name="contact">Contacts Book</string>
+    <string name="baby">Kid</string>
+    <string name="title_location_record">Position Record</string>
+    <string name="title_baby_card">Kid\'s Card</string>
+    <string name="title_date_picker">Date</string>
+    <string name="find_psw">Retrieve password</string>
+    <string name="register_failed">Failed To Register</string>
+    <string name="register_failed2">Registration failed, please check the network</string>
+    <string name="register_user_already_exists">Number has been registered</string>
+    <string name="find_psw_failed">Failed to retrieve your password</string>
+    <string name="number_format_error">Format Error</string>
+
+    <string-array name="decode_relation">
+        <item>Dad</item>
+        <item>Mom</item>
+        <item>Sister</item>
+        <item>Paternal Grandpa</item>
+        <item>Paternal Grandma</item>
+        <item>Brother</item>
+        <item>Maternal Grandpa</item>
+        <item>Maternal Grandma</item>
+        <item>Teacher</item>
+    </string-array>
+
+    <string name="tip_locating_device">Getting Position...</string>
+    <string name="tip_device_not_online">Device Offline</string>
+    <string name="tip_locate_device_failure">Unable to get Position</string>
+    <string name="tip_locate_device_timeout">Timeout For Fetching Data</string>
+    <string name="tip_get_fencesing">Getting Fence...</string>
+    <string name="tip_get_fences_failure">Failed To Fetch Fence</string>
+    <string name="tip_get_fences_timieout">Timeout For Fetching Fence</string>
+    <string name="tip_del_fencesing">Deleting Fence...</string>
+    <string name="tip_add_fencing">Adding Fences...</string>
+    <string name="tip_add_fence_failure">Failed to add fence</string>
+    <string name="tip_add_fence_timeout">Timeout For Adding Fence</string>
+    <string name="tip_add_fence_success">Fence Added Successfully</string>
+    <string name="tip_modify_fencing">Modifying The Fence...</string>
+    <string name="tip_modify_fence_failure">Modify Fence Failed</string>
+    <string name="tip_modify_fence_timeout">Modify Fence Timeout</string>
+    <string name="tip_modify_fence_success">Modify Fence Success</string>
+
+    <string name="checking_sms_code">Validating Verification Code...</string>
+    <string name="sms_code_error">Verification code cannot be null</string>
+    <string name="find_psw_failure">Failed to retrieve your password</string>
+    <string name="taking_photo">Photograph...</string>
+    <string name="looking_watch">Looking For Watch...</string>
+    <string name="take_photo_failure">Failed To take Photograph</string>
+    <string name="set_contact_success">Contacts Sync Successfully</string>
+    <string name="set_contact_failure">Contacts Sync Failed</string>
+    <string name="set_contact_error">Sync Error</string>
+    <string name="setting_failure">Failed To Set</string>
+    <string name="setup_failed">Failed To Set</string>
+    <string name="setting_success">Set Successfully</string>
+    <string name="setup_timeout">Timeout For Setting</string>
+    <string name="saving_settings">Saving Settings...</string>
+    <string name="watch_not_net">Watch Not Online</string>
+    <string name="one_way_calling">One-way Call...</string>
+    <string name="one_way_call_failed">One-way Call Failed</string>
+    <string name="one_way_call_timeout">One-way Call Request Timeout</string>
+
+    <string name="one_way_call_success">Watch will call back, please pay attention to answer.</string>
+    <string name="device_does_not_exist">Device Not Exist</string>
+    <string name="invalid_parameter">Invalid Parameters</string>
+    <string name="user_not_exists">Number Not Exist</string>
+
+    <string name="tip_unbinding_device">Unbinding...</string>
+    <string name="tip_invalid_device_id">Invalid Device</string>
+    <string name="add_alarm_clock">Create Alarm Clock</string>
+    <string name="class_disable">Class Disabled</string>
+    <string name="save">Save</string>
+    <string name="name_text">Set name</string>
+    <string name="repeat">Repeat time</string>
+    <string name="start_time">Start Time</string>
+    <string name="week_everyday">Daily</string>
+    <string name="find_watch">Find Watch</string>
+    <string name="please_set_baby_phone">Please set your kid\'s phone number at first</string>
+    <string name="save_success">Saved Successfully</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="edit_class_disable">Edit Class Disabled Period</string>
+    <string name="edit_alarm_clock">Edit Alarm</string>
+    <string name="watch_not_online">Watch Offline</string>
+    <string name="notice_type">Alert type:</string>
+    <string name="shock">Vibrate</string>
+    <string name="beep">Buzz</string>
+    <string name="shock_beep">Buzz + Shock</string>
+    <string name="alarm_clock">Alarm Clock</string>
+    <string name="edit">Edit</string>
+    <string name="unselect_all">Clear</string>
+    <string name="select_all">Select All</string>
+    <string name="customize_relation">User-defined Relationship</string>
+    <string name="relation">Relationship</string>
+    <string name="contact_name">Name</string>
+    <string name="avatar">Avatar</string>
+    <string name="number">Phone number</string>
+    <string name="user_type_label_name">Type</string>
+    <string name="permission">Permissions</string>
+
+    <string-array name="user_roles">
+        <item>Unknown</item>
+        <item>Admin</item>
+        <item>Admin</item>
+        <item>Relatives Or Friends</item>
+        <item>Contacts</item>
+        <item>Friend</item>
+    </string-array>
+
+    <string-array name="user_permissions">
+        <item>Unknown</item>
+        <item>Editable</item>
+        <item>Editable</item>
+        <item>View Only</item>
+        <item>Call Only</item>
+        <item>Call Only</item>
+    </string-array>
+
+    <string name="user_roles_friend">Friend</string>
+
+    <string-array name="user_permissions_view_array">
+        <item>Administrator Permission</item>
+        <item>View Permissions</item>
+        <item>View Only</item>
+    </string-array>
+
+    <string-array name="user_permissions_in_bind_req_view_array">
+        <item>Admin</item>
+        <item>Relatives Or Friends</item>
+    </string-array>
+
+
+    <string name="unbind">Unbind</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="_cannot_be_empty">Can\'t be empty</string>
+    <string name="number_already_exists">The number has already existed</string>
+    <string name="setup_success">Set Successfully</string>
+    <string name="loading">Loading...</string>
+    <string name="submit_temporarily_unable">Temporarily unable to submit</string>
+    <string name="submitting">In the submission...</string>
+    <string name="submit_failure">Submission failure</string>
+    <string name="submit_timeout">Submit a timeout</string>
+    <string name="submit_success">Submitted successfully</string>
+    <string name="load_failure">Load failed</string>
+    <string name="load_timeout">Load the timeout</string>
+    <string name="step">Step</string>
+    <string name="class_disable_disabled">Class disable closed</string>
+    <string name="class_disable_enabled">Class disable opened</string>
+    <string name="school_guardian_disabled">Campus guardians closed</string>
+    <string name="school_guardian_enabled">Campus guardians opened</string>
+    <string name="repeat_days">Repeat time:&#160;</string>
+    <string name="model">Model</string>
+    <string name="watch_model">Watch model</string>
+    <string name="version_number">The version number: v%s</string>
+    <string name="device_version">Watch software version</string>
+    <string name="your_pwd">Please enter your password</string>
+    <string name="forget_pwd">Forget your password?</string>
+    <string name="unknown">Unknown</string>
+    <string name="hw_ver">Hardware version</string>
+    <string name="sw_ver">Software version</string>
+    <string name="unfilled">Did not fill in</string>
+    <string name="start_use">Start to experience</string>
+    <string name="unbind_short">Unbind</string>
+    <string name="ask_really_delete">Are you sure to delete it?</string>
+    <string name="ask_really_unbind">Are you sure to unbind to <![CDATA[<font color=\"#11cbd7\">%1$s</font>]]>?</string>
+    <string name="is_online">Online</string>
+    <string name="is_offline">Offline</string>
+    <string name="scan_then_bind">Scan, bind the watch</string>
+    <string name="device_already_bound">Device is bound</string>
+    <string name="input_the_bind_num">Enter the binding number</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="invalid_device">Invalid Device</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="request_timed_out">Request Timeout</string>
+    <string name="request_failed">The request failed</string>
+    <string name="logging">Logging in...</string>
+    <string name="no_record_audio_permission">No recording permission</string>
+    <string name="no_camera_permission">No camera permission</string>
+    <string name="no_gallery_permission">No permission to access photos</string>
+    <string name="no_album_permission">No permission to access a album</string>
+    <string name="no_location_permission">No positioning permission</string>
+    <string name="camera_permission">Camera permissions</string>
+    <string name="please_enable_camera_permission_in_setting">Please open the permission in <b>Settings</b> to allow <b>&appname;</b> access the camera</string>
+    <string name="notify_title_modify_baby_info">Modify baby information</string>
+    <string name="notify_title_modify_dev_functions">Modify the baby watch configuration</string>
+    <string name="notify_title_modify_fences">Modify fence information</string>
+    <string name="notify_title_modify_sos">Modify SOS information</string>
+    <string name="notify_title_modify_contacts">Modify contacts</string>
+    <string name="notify_title_modify_alarm_clock">Modify watch alarm clock</string>
+    <string name="notify_title_modify_class_disable">modify the class disable on watch</string>
+    <string name="notify_title_request_bind">Binding application</string>
+    <string name="notify_title_bind_success">Binding success</string>
+    <string name="notify_title_unbound">The device has been unbound</string>
+    <string name="notify_title_dev_in_call">Watch answering phone</string>
+    <string name="notify_title_dev_out_call">The watch call out the telephone</string>
+    <string name="notify_title_dev_incid_sos">The watch triggers an SOS event</string>
+    <string name="notify_title_dev_incid_low_battery">Watch low power</string>
+    <string name="notify_title_dev_incid_power_on">Turn on the watch</string>
+    <string name="notify_title_dev_incid_power_off">Turn off the watch</string>
+    <string name="notify_title_dev_incid_off_wrist">Watch took off from the wrist</string>
+    <string name="notify_title_dev_incid_soak_water">Watch bubble water</string>
+    <string name="notify_title_dev_incid_report_loss">Report Loss Of Watch</string>
+    <string name="notify_title_dev_incid_fence">Watch trigger fence</string>
+    <string name="str_piece_modified">Modified</string>
+    <string name="str_piece_baby_info">Kid Information</string>
+    <string name="str_piece_on_device">On the watch</string>
+    <string name="str_piece_refuse_stranger_call_in">Reject strange calls</string>
+    <string name="str_piece_refuse_stranger_call_out">Refuse to call up the strangers</string>
+    <string name="str_piece_timer_power_on_off">Timing Switch</string>
+    <string name="is_updated">It\'s the latest version</string>
+    <string name="no_write_external_storage_permission">No storage permission</string>
+    <string name="record_audio_permission">The recording permissions</string>
+    <string name="please_enable_record_audio_permission_in_setting">Please open the permission in <b>Settings</b> to allow the <b>&appname;</b> to record audio</string>
+    <string name="external_storage_permission">Storage permissions</string>
+    <string name="please_enable_external_storage_permission_in_setting">Please open the permission in <b>Settings</b> to allow <b>&appname;</b> access to photos, media, and files on the device</string>
+    <string name="no_external_storage_permission">No storage permission</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="tip_deleting">Deleting...</string>
+    <string name="delete_failure">Delete failed</string>
+    <string name="delete_success">Delete successfully</string>
+    <string name="ask_del_alarm_clock">Are you sure to delete the alarm?</string>
+    <string name="delete_alarm_clock">Delete the alarm clock</string>
+    <string name="delete_class_disable">Delete the class disable</string>
+    <string name="location_permission">Location information permission</string>
+    <string name="please_enable_location_permission_in_setting">Please open the permission of getting the location information of this device in the <b>&appname;</b> <b>Settings</b></string>
+    <string name="watch_number">Watch Tel</string>
+    <string name="the_number_of_to_listen">One-way call</string>
+    <string name="the_number_of_to_listen_tip">After receiving the instructions, the watch will dial back the number you entered. Your voice will not be heard on the phone.</string>
+    <string name="in_progress">Dealing with...</string>
+    <string name="kct">KCT</string>
+    <string name="add_watch">Add</string>
+    <string name="crop">Cutting</string>
+    <string name="baby_name_not_allow_empty">Nickname cannot be empty</string>
+    <string name="locate_type_GPS">GPS</string>
+    <string name="locate_type_BDS">Beidou</string>
+    <string name="locate_type_GALILEO">Galileo</string>
+    <string name="locate_type_GLONASS">Glonass</string>
+    <string name="locate_type_cell">Cellular location</string>
+    <string name="locate_type_WiFi">Wifi location</string>
+    <string name="locate_type_HYBRID">Hybrid location</string>
+    <string name="app_upgrade">Version update</string>
+    <string name="app_upgrade_to_">The <b>&appname;</b> will be upgraded to version v%s</string>
+    <string name="install">Installation</string>
+    <string name="download_manager_STATUS_PENDING">Waiting for download</string>
+    <string name="download_manager_STATUS_RUNNING">Downloading</string>
+    <string name="download_manager_STATUS_PAUSED">Suspended</string>
+    <string name="download_manager_STATUS_SUCCESSFUL">Download complete</string>
+    <string name="download_manager_STATUS_FAILED">Download failed</string>
+    <string name="download_manager_canceled">Cancelled</string>
+    <string name="check_upgrade_failure">Check update failed</string>
+    <string name="check_upgrade">Check for updates</string>
+    <string name="downloading">Downloading...</string>
+    <string name="hide">Hide</string>
+    <string name="work_day">Workday</string>
+    <string name="none">None</string>
+    <string name="alarm_notice_sound">Buzz</string>
+    <string name="alarm_notice_vibrate">Vibrate</string>
+    <string name="calculating">Calculating</string>
+    <string name="please_enable_app_notification">Please open the relevant permissions of the <b>&appname;</b> notification in the <b>Settings</b></string>
+    <string name="enable_app_notification">Enable notification</string>
+    <string name="open_guardian">Open the guardian</string>
+    <string name="guard_time">Guardian of time</string>
+    <string name="am_guard_time">Morning guard time:</string>
+    <string name="pm_guard_time">Afternoon guard time:</string>
+    <string name="last_back_guard_time">Latest arrival time</string>
+    <string name="repetition">Repeat:</string>
+    <string name="sg_statutory_holiday">Legal holidays:</string>
+    <string name="sg_guardian_address">Guardian address</string>
+    <string name="sg_school_address">School address:</string>
+    <string name="sg_home_address">Home address:</string>
+    <string name="statutory_holiday_open_guard">Whether the official holiday is open to guard</string>
+    <string name="collect_praise">Like-Collections</string>
+    <string name="edit_collect_praise">Like-Collections Edit</string>
+    <string name="collecting_praise">Collecting Like</string>
+    <string name="am_guardian_time">Morning Guardian time</string>
+    <string name="am_arrivals_school_time">Morning arrival time</string>
+    <string name="am_leave_school_time">Morning departure time</string>
+    <string name="pm_guardian_time">Afternoon Guardian time</string>
+    <string name="pm_arrivals_school_time">Afternoon to arrive school time</string>
+    <string name="pm_leave_school_time">Afternoon departure time</string>
+    <string name="school_guardian_error">Campus Guardian settings fail</string>
+    <string name="school_guardian_success">Set Successfully</string>
+    <string name="end_time">The end of time</string>
+    <string name="notification_channel_name_bind_request">The bind request</string>
+    <string name="notification_channel_name_micro_chat">Micro chat</string>
+    <string name="notification_channel_name_message_center">The message center</string>
+    <string name="notify_title_dev_incid_school_guard">Campus Guard</string>
+    <string name="notify_title_modify_scholl_guard">Modify the watch\'s campus guard</string>
+    <string name="notify_title_modify_collect_praise">Modify Like-Collections</string>
+    <string name="contacts_permission">Contacts permission</string>
+    <string name="please_enable_contacts_permission_in_setting">Please open the permission in <b>Settings</b> to allow the <b>&appname;</b> to access the Contacts</string>
+    <string name="no_contacts_permission">No permission to access the Contacts</string>
+    <string name="is_turned_on">Opened</string>
+    <string name="is_turned_off">Unopened</string>
+
+    <string name="time">Time</string>
+    <string name="unbind_owner_device_tip">You are the super manager of the watch. Unbinding will delete all members in the contacts book and remove all data related to the watch. Please be careful.</string>
+    <string name="newpassword_oldpassword_same">The new password is the same as the original password, please re-enter!</string>
+    <string name="please_input_watch_number">Input Watch Tel</string>
+    <string name="please_select_sex">Please Select Sex</string>
+    <string name="select_sex">Select Sex</string>
+    <string name="please_select_birthday">Select Birthday</string>
+    <string name="please_select_height">Select Height</string>
+    <string name="please_select_weight">Select Weight</string>
+    <string name="has_no_permission">No permission</string>
+    <string name="simplex_call_do_not_frequent">Do not operate frequently</string>
+    <string name="map_amap">Scott Map</string>
+    <string name="map_baidumap">Baidu Map</string>
+    <string name="please_install_map_app">Please install the navigation application</string>
+    <string name="location_service">Positioning service</string>
+
+
+    <string name="please_enable_location_service_in_setting">Please open the positioning service in the Settings</string>
+    <string name="locating">Getting location...</string>
+
+    <!--mainActivity-->
+    <string name="main_sure_call_for_baby">Are you sure you want to call baby?</string>
+    <string name="main_click_again_exit">Click again to exit the application</string>
+    <string name="main_class_disable_open">The class disable is opened. If you need to make a call, please click the ok button to set it</string>
+    <string name="main_step">Step counting</string>
+    <string name="main_steps_of_today">Steps today</string>
+    <string name="main_page_chat">Chat</string>
+    <string name="main_page_call">Call</string>
+    <string name="main_page_location">Position</string>
+
+    <!--collectPraise-->
+    <string name="collect_maximum_input_four_4">Please enter the name of the task</string>
+    <string name="collect_gift">Prize</string>
+    <string name="collect_create_gift">Add a gift</string>
+    <string name="collect_task">Task</string>
+    <string name="collect_gift_colon">Prize:</string>
+    <string name="collect_use_time">The time already spent</string>
+    <string name="collect_last_time">Take</string>
+    <string name="collect_use_times">The time used:</string>
+    <string name="collect_day">Day</string>
+    <string name="collect_history">History</string>
+    <string name="collect_permission_not_hint">At present, you only have view permission and can not participate in the like-collections process.</string>
+    <string name="collect_day_task_only_one">Note: each task can be completed only once a day</string>
+    <string name="collect_commitments_hint">Go ahead and fulfill your promise. Don\'t let children wait~</string>
+    <string name="collect_start_new_collect_hint">After the baby confirms that the reward is received by watch terminal,\n a new round of praise can be performed</string>
+    <string name="collect_begin_collect">Start</string>
+    <string name="collect_cancel_collect">Cancel like-collections</string>
+    <string name="collect_Max_6_task">A maximum of 6 tasks</string>
+    <string name="collect_task_name">Add a task</string>
+    <string name="collect_task_name_not_null">The name of the task cannot be empty</string>
+    <string name="collect_task_same">The task already exists</string>
+    <string name="collect_create_task_one">Create at least one task</string>
+    <string name="collect_gift_name_not_null">The name of the prize cannot be empty</string>
+    <string name="collect_target_collects">Target number of like</string>
+    <string name="collect_hint">Prompt</string>
+    <string name="collect_sure_cancel_cp">Are you sure to cancel this like-collections program?</string>
+    <string name="collect_input_target_collects">Please enter the goal number of likes</string>
+    <string name="collect_input_large">The input is too big</string>
+    <string name="collect_input_numbers">Please enter the number</string>
+    <string name="collect_sure_delete_context">Are you sure to delete this like-collections program?</string>
+    <string name="collect_input_prize">Please enter the gift name</string>
+
+
+    <!--clock-->
+    <string name="clock_SoundAndVibrateDes">Sound and vibration</string>
+    <string name="clock_SoundDes">Sound</string>
+    <string name="clock_VibrateDes">Vibration</string>
+    <string name="clock_BuzzingAndVibrateDes">Buzzer+Vibration</string>
+
+
+    <!--all-->
+    <string name="all_CallFromWatchDes">Watch calls</string>
+    <string name="all_MessageFromWatchDes">Watch messages</string>
+
+
+    <!--SosContact-->
+    <string name="sos_contact_sure_delete_number">Are you sure to delete the number?</string>
+    <string name="sos_contact_noting_number">No number</string>
+    <string name="sos_contact_plz_input_contact_name">Please enter contact name</string>
+    <string name="sos_contact_plz_input_contact_number">Please enter contact number</string>
+
+    <string name="sos_contact_SOS_number">SOS Tel</string>
+    <string name="sos_contact_name_noting_null">The name cannot be empty</string>
+    <string name="sos_contact_number_formal_error">Wrong telephone number format</string>
+
+
+    <!--moreActivity-->
+    <string name="more_class_disable_open_call_sure_setting">The class disable is opened. Please click the ok button to set up the one-way call</string>
+    <string name="more_find_failure">To find the failure</string>
+    <string name="more_find_suc">Find the watch successfully</string>
+    <string name="more_find_watch_failure">Failed to find the watch</string>
+    <string name="more_find_number_formal_error">Wrong number format</string>
+    <string name="more_common_function">Common Functions</string>
+    <string name="more_line_call">One-way Call</string>
+
+
+    <!--classDisable-->
+    <string name="class_disable_name_not_null">Name can not be empty</string>
+    <string name="class_disable_select_weekclass_disable_select_week">Please select the repeat cycle</string>
+    <string name="class_disable_times">Disable Time</string>
+    <string name="class_disable_times_fragment">Disable time period</string>
+    <string name="class_disable_no_setting">Not set up for class disable</string>
+    <string name="class_disable_begin_times">Start time:</string>
+    <string name="class_disable_over_times">End time:</string>
+    <string name="class_disable_begin_over_time_noting_same">The start time is not the same as the end time</string>
+    <string name="class_disable_start_should_be_less_than_over_time">The start time should be less than the end time</string>
+    <string name="class_disable_with_other_periods">Repeat with other time periods</string>
+    <string name="class_disable_title">Disable title</string>
+    <string name="ask_del_class_disable">Are you sure to delete this Class-Disable time?</string>
+    <string name="class_disable_hint1">1. All calls (including one-way calls) will be rejected during the disabled period.</string>
+    <string name="class_disable_hint2">2. Chat can be received but will not be reminded.</string>
+    <string name="class_disable_hint3">3. SOS function is normal.</string>
+    <string name="class_disable_hint4">4. Normal positioning.</string>
+    <string name="class_disable_times_select">Time selection</string>
+
+    <!--TimingShutdownWatch-->
+    <string name="timing_shut_open">The timing switch is on</string>
+    <string name="timing_shut_close">The timer is not switched on</string>
+    <string name="timing_select_shutdown_time">Select shutdown time</string>
+    <string name="timing_time_5_min">On time and off time cannot be less than 5 minutes</string>
+    <string name="timing_select_start_up_time">Select boot time</string>
+
+    <!--RejectStrangerCall-->
+    <string name="reject_stranger_down_call_phone">Refusing to answer stranger\'s phone</string>
+    <string name="reject_stranger_out_call_phone">Refusing to call stranger\'s phone</string>
+
+    <!--watchSetting-->
+    <string name="watch_setting_calculator">Watch Calculator</string>
+    <string name="watch_setting_select_light_time">Select the screen time</string>
+
+    <!--AlarmClock-->
+    <string name="alarm_clock_setting_hint">Please set up the alert type</string>
+    <string name="alarm_clock_edit_name">Edit the name of the alarm clock</string>
+    <string name="alarm_clock_input_name">Please fill in the name of the alarm clock</string>
+    <string name="alarm_clock_input_here">Enter here</string>
+
+    <!--school_guard-->
+    <string name="school_guard_not_open">Campus guard not opened</string>
+    <string name="school_guide_no_guide">Not guarded</string>
+    <string name="school_guide_guide">Guard</string>
+    <string name="school_guide_OK">Complete</string>
+    <string name="school_guide_close">Close the campus guard</string>
+    <string name="school_guide_open">Open the campus guard</string>
+    <string name="school_guide_do_open">Campus guard has been opened</string>
+    <string name="school_guide_SchoolProNote3">Leave school in the morning not later than the afternoon Arrive at school time</string>
+    <string name="school_guide_SchoolProNote2">The arrival time of the school is not later than the departure time</string>
+    <string name="school_guide_SchoolProNote4">The departure time in the afternoon is not later than the late arrival home time</string>
+    <string name="school_guide_setting_school_address">Please set up the school address</string>
+    <string name="school_guide_setting_home_address">Please set home address</string>
+    <string name="school_guide_put_setting">The setting is being submitted</string>
+    <string name="school_guide_setting_time_out">Campus Guardian setting overtime</string>
+    <string name="school_guide_select_time">To choose time</string>
+    <string name="school_guide_select_PM_go_school_time">Choose the time to arrive school in the afternoon</string>
+    <string name="school_guide_select_PM_leave_school_time">Choose the time to leave school in the afternoon</string>
+    <string name="school_guide_select_AM_go_school_time">Choose the time to arrive school in the morning</string>
+    <string name="school_guide_select_AM_leave_school_time">Choose the time to leave school in the morning</string>
+    <string name="school_guide_home_address">Home address</string>
+    <string name="school_guide_school_address">The school address</string>
+    <string name="school_guide_business_house">Commercial housing</string>
+    <string name="school_guide_school">School</string>
+    <string name="school_guide_nearby_add">Nearby address</string>
+    <string name="school_guide_nearby_school">Nearby schools</string>
+    <string name="school_guide_nearby_phone">Position of mobile phone</string>
+    <string name="school_guide_nearby_watch">Position of watch</string>
+    <string name="school_guide_current_addr">Position of setting</string>
+    <string name="school_guide_recommend">(recommended)</string>
+    <string name="school_guide_address_ing">Retrieving Address</string>
+    <string name="school_guide_select_around">Select the Guardians</string>
+
+    <!--contacts-->
+    <string name="contacts_name_not_null">The name cannot be empty</string>
+    <string name="contacts_number_not_null">Number should not be blank</string>
+    <string name="contacts_number_not_error">Wrong number format</string>
+    <string name="contacts_add_user">Add contacts</string>
+    <string name="contact_users_watch">\'s watch</string>
+    <string name="contact_administrator">Super admin</string>
+    <string name="contact_me">(Me)</string>
+    <string name="contact_edit_user_number">Modify the contact number</string>
+    <string name="contact_edit_user_name">Modify the name of the contact</string>
+    <string name="contact_names">Name</string>
+    <string name="contact_unbind_user_sure">Are you sure to unbind the user to the device?</string>
+    <string name="contact_delete_user_sure">Are you sure to delete the contact?</string>
+
+    <!--babyCard-->
+    <string name="grade_not_attending_school">Didn\'t go to school</string>
+    <string name="grade_kindergarten">Kindergarten Junior</string>
+    <string name="grade_kindergarten_middle_school">Kindergarten Middle</string>
+    <string name="grade_kindergarten_class">Kindergarten Senior</string>
+    <string name="grade_preschool">Preschool</string>
+    <string name="grade_first_grade">Primary 1</string>
+    <string name="grade_second_grade">Primary 2</string>
+    <string name="grade_third_grade">Primary 3</string>
+    <string name="grade_fourth_grade">Primary 4</string>
+    <string name="grade_fifth_grade">Primary 5</string>
+    <string name="grade_grade_6">Primary 6</string>
+    <string name="grade_junior_high_school">Junior 1</string>
+    <string name="grade_second_grade_junior_high_school">Junior 2</string>
+    <string name="junior_high_school">Junior 3</string>
+    <string name="grade_high_school_first_grade">Senior 1</string>
+    <string name="grade_high_school_second_grade">Senior 2</string>
+    <string name="grade_high_school_senior">Senior 3</string>
+    <string name="other">Other</string>
+    <string name="baby_card_up_head_icon_failed">Failed to upload avatar</string>
+    <string name="fail_to_save">Failed to save</string>
+    <string name="time_out_to_save">Save Timeout</string>
+
+    <!--watchInformation-->
+    <string name="watch_information_config">Configuration</string>
+    <string name="watch_information_indoor_localization">Mainly used for indoor Locating</string>
+    <string name="watch_information_outdoor_positioning">Mainly used for outdoor Locating</string>
+    <string name="watch_information_gravity_acceleration_sensor">Gravity acceleration sensor</string>
+    <string name="watch_information_step_count">Used for step counting</string>
+
+    <!--appSetting-->
+    <string name="app_setting_cache_cleaning_completed">Cleaning Completed</string>
+    <string name="app_setting_logout">Log Out</string>
+    <string name="app_setting_message_bell">Message Notification Ring</string>
+    <string name="app_setting_message_shake">Message Notification Vibration</string>
+    <string name="app_setting_message_close">After closing, there will be no ringing or vibrating alerts when the phone receives the message!</string>
+    <string name="app_setting_changing">Modifying...</string>
+    <string name="app_setting_change_ok">Modify Success</string>
+    <string name="app_setting_change_timeout">Modified Timeout</string>
+    <string name="app_setting_cannot_change">Can\'t modify right now</string>
+    <string name="app_setting_original_password_error">Original Password Error</string>
+    <string name="app_setting_change_failed">Modification Failed</string>
+    <string name="app_setting_in_version">Internal Version: v%s</string>
+    <string name="app_setting_version_too_low">Version Is Too Low</string>
+    <string name="app_setting_version_too_low_update_now">Your current app version is too low and needs to be upgraded</string>
+
+    <!--feedback-->
+    <string name="feedback_number">Contact Number:</string>
+    <string name="feedback_call_phone">Make a call</string>
+    <string name="feedback_call_text">Your opinions and suggestions are our driving force!</string>
+
+    <!--unbindAndBind-->
+    <string name="unbind_and_bind_device_ID">Device No:</string>
+    <string name="unbind_and_bind_unbind_suc">Unbind Success</string>
+    <string name="unbind_and_bind_unable_to_unbind">Temporarily Unable To Unbind</string>
+    <string name="unbind_and_bind_unbind_failure">Unbind Failed</string>
+
+    <!--bindDevice-->
+    <string name="bind_device_request_title">Apply To Become A Guardian</string>
+    <string name="bind_device_request_content"><![CDATA[<font color=\"#11cbd7\">%1$s</font>]]> (<![CDATA[<font color=\"#11cbd7\">%2$s</font>]]>) want to apply to become <![CDATA[<font color=\"#11cbd7\">%3$s</font>]]> (<![CDATA[<font color=\"#11cbd7\">%4$s</font>]]>) guardian, do you agree?</string>
+    <string name="bind_device_request_agree">Agree</string>
+    <string name="bind_device_request_ignore">Ignore</string>
+    <string name="bind_device_watch">Bind Watch</string>
+    <string name="bind_device_change_user">Switch Users</string>
+    <string name="bind_device_login_ok_need_bind">You have successfully logged in. You need to bind your watch before you can use it</string>
+    <string name="bind_device_check_bindID">Check The Binding Number...</string>
+    <string name="bind_device_select_code_image">Select QR Code Picture</string>
+    <string name="bind_device_no_qr_code_was_identified">Unrecognized QR Code</string>
+    <string name="bind_device_identify_ing">Recognizing...</string>
+    <string name="bind_device_scan_again">Rescan</string>
+    <string name="bind_device_scan_watch_type">Put the watch\'s QR code into the scan box, which can automatically scan</string>
+    <string name="bind_device_bind_fail">Binding Failed</string>
+    <string name="bind_device_binding">Bind...</string>
+    <string name="bind_device_wait_administrator_agree">Wait for the administrator to agree to your binding application</string>
+    <string name="bind_device_custom_not_null">Custom Cannot Be Empty</string>
+    <string name="bind_device_custom_relation">User-defined Relationship</string>
+    <string name="bind_device_no_bind_number">No Binding Number</string>
+    <string name="bind_device_input_bind_number">Please enter the binding number</string>
+    <string name="bind_device_type">The binding number is a set of strings, please view in the watch</string>
+    <string name="bind_device_bind">Bind</string>
+    <string name="bind_device_apply">Apply</string>
+    <string name="bind_device_apply_finish">Application Completed</string>
+    <string name="bind_device_apply_seed_wait_sure">Your application has been sent. Please wait for confirmation</string>
+
+    <!--mapActivity-->
+    <string name="map_load_local_fail_type">Can\'t get location information, the signal of the location of the watch is not good</string>
+    <string name="map_location_ing">Locating...</string>
+    <string name="map_select_map">Select Map</string>
+    <string name="map_location_accuracy_fmt">Accuracy:&#160;%1$.1fm</string>
+    <string name="map_location_way_base_station">Base Station</string>
+
+    <!--fenceSetting-->
+    <string name="fence_setting_delete_fail">Delete Fence Failed</string>
+    <string name="fence_setting_delete_timeout">Delete Fence Timeout</string>
+    <string name="fence_setting_warn">Alarm</string>
+    <string name="fence_setting_edit_fence">Modify Fence</string>
+    <string name="fence_setting_fence_name_null">Name can not be empty</string>
+    <string name="fence_setting_setting_start_time">Start time cannot be empty</string>
+    <string name="fence_setting_setting_over_time">End time cannot be empty</string>
+    <string name="fence_setting_edit_name">Modify Fence Name</string>
+    <string name="fence_setting_begin_over_time_5min">The difference between start time and end time cannot be less than 5 minutes</string>
+    <string name="fence_setting_input_fence_name">Please enter the fence name</string>
+
+    <!--locationRecord-->
+    <string name="location_record_time_not_for">The Time Hasn\'t Arrived</string>
+    <string name="location_record_load_data_ing">Getting Data...</string>
+    <string name="location_record_load_fail">Failed To Get Data</string>
+    <string name="location_record_load_not">Data is temporarily unavailable</string>
+    <string name="location_record_load_call_in">Incoming Call</string>
+    <string name="location_record_load_call_out">Outgoing Call</string>
+    <string name="location_record_sos">SOS</string>
+    <string name="location_record_low_power">Low Battery</string>
+    <string name="location_record_start_up">Boot</string>
+    <string name="location_record_power_off">Shut Down</string>
+    <string name="location_record_get_hand">Off Wrist</string>
+    <string name="location_record_water">Soak Water</string>
+    <string name="location_record_lose">Report Loss</string>
+    <string name="location_record_fence">Fence</string>
+    <string name="location_record_not_thing">No Events</string>
+    <string name="location_record_watch_thing">Watch Events:</string>
+
+    <!--notifyMessage-->
+    <string name="notify_message_canceled">Canceled</string>
+    <string name="notify_message_collected">\'s Like-Collections</string>
+    <string name="notify_message_finish">Finish</string>
+    <string name="notify_message_highly">Has Liked</string>
+    <string name="notify_message_edited">Modified</string>
+    <string name="notify_message_deleted">Deleted</string>
+    <string name="notify_message_is">is</string>
+    <string name="notify_message_add_collect">Added Like-Collections, prize is:</string>
+    <string name="notify_message_school_guide">\'s Campus Guard</string>
+    <string name="notify_message_add_class">Has Added Class Disable:</string>
+    <string name="notify_message_is_class_disable">\'s Class Disable</string>
+    <string name="notify_message_add_clock">Added Alarm Clock:</string>
+    <string name="notify_message_s_clock">\'s Alarm Clock</string>
+    <string name="notify_message_s_contact">\'s Contacts</string>
+    <string name="notify_message_add_contact">Added Alarm Clock:</string>
+    <string name="notify_message_s_sos">\'s SOS</string>
+    <string name="notify_message_add_SOS">Added SOS:</string>
+    <string name="notify_message_s_fence">\'s Fence</string>
+    <string name="notify_message_fence_m">Fence</string>
+    <string name="notify_message_add_fence">Added Fence</string>
+    <string name="notify_message_opened">Opened</string>
+    <string name="notify_message_closed">Closed</string>
+    <string name="notify_message_timing_power_off_on">Timed Power On/Off Time</string>
+    <string name="notify_message_open_light_time">Watch Bright Screen Time Is</string>
+    <string name="notify_message_call_location">Call Location</string>
+    <string name="notify_message_change">Modify</string>
+    <string name="notify_message_save_power_mode">Power Saving Mode</string>
+    <string name="notify_message_water_hint">Soak Reminder</string>
+    <string name="notify_message_not_go_home">Not Home Yet</string>
+    <string name="notify_message_go_home">Home Yet</string>
+    <string name="notify_message_not_go_school">Not Yet Reached School</string>
+    <string name="notify_message_back_school">Back To School</string>
+    <string name="notify_message_leave_school">Leave School</string>
+    <string name="notify_message_go_school">Arrive At School</string>
+    <string name="notify_message_in">Enter</string>
+    <string name="notify_message_out">Leave</string>
+    <string name="notify_trigger_SOS">Triggering SOS Events</string>
+    <string name="notify_message_receive_call">Received Calls</string>
+    <string name="notify_message_by"></string>
+    <string name="notify_message_watch">Watch</string>
+    <string name="notify_message_unbind">Unbind</string>
+    <string name="notify_message_yet_bind">Binded</string>
+    <string name="notify_message_s_apply">\'s Application</string>
+    <string name="notify_message_agree_bind">Agreed to your binding</string>
+    <string name="notify_message_apply_bind">Request Binding</string>
+    <string name="notify_who_request_bind_which_device">%1$s Request Binding %2$s</string>
+    <string name="notify_who_agree_you_bind_which_device">%1$s Agreed to your binding %2$s\'s Application</string>
+    <string name="notify_who_bind_which_device">%1$s Binded %2$s</string>
+    <string name="notify_which_device_unbind">%1$s Watch Unbind</string>
+    <string name="notify_who_unbind_which_device">%1$s Unbind %2$s</string>
+    <string name="notify_which_device_unbind_by_who">%2$s unbound by %1$s</string>
+    <string name="notify_who_trigger_call_in_event">%1$s Received Call</string>
+    <string name="notify_who_trigger_call_out_event">%1$s Outgoing Call</string>
+    <string name="notify_who_trigger_sos_event">%1$s Triggering SOS Event</string>
+    <string name="notify_who_trigger_low_battery_event">%1$s Low Battery</string>
+    <string name="notify_who_trigger_power_on_event">%1$s Boot</string>
+    <string name="notify_who_trigger_power_off_event">%1$s Shut Down</string>
+    <string name="notify_who_trigger_off_wrist_event">%1$s Off Wrist</string>
+    <string name="notify_who_trigger_soak_water_event">%1$s Soak Water</string>
+    <string name="notify_who_trigger_what_fence_event">%1$s %2$s fence: %3$s</string>
+    <string name="notify_who_trigger_what_school_guard_event">%1$s %2$s</string>
+    <string name="notify_who_reject_stranger_in_modified_on_device">%1$s On the watch %2$s Reject strange calls</string>
+    <string name="notify_who_reject_stranger_in_modified_by_who">%1$s %3$s %2$s Reject strange calls</string>
+    <string name="notify_who_reject_stranger_out_modified_on_device">%1$s On the watch %2$s Refuse to call up the strangers</string>
+    <string name="notify_who_reject_stranger_out_modified_by_who">%1$s %3$s %2$s Refuse to call up the strangers</string>
+    <string name="notify_who_inundate_hint_modified_on_device">%1$s On the watch %2$s Soak Reminder</string>
+    <string name="notify_who_inundate_hint_modified_by_who">%1$s %3$s %2$s Soak Reminder</string>
+    <string name="notify_who_save_power_mode_modified_on_device">%1$s On the watch %2$s Power Saving Mode</string>
+    <string name="notify_who_save_power_mode_modified_by_who">%1$s %3$s %2$s Power Saving Mode</string>
+    <string name="notify_who_call_location_modified_on_device">%1$s On the watch %2$s Call Location</string>
+    <string name="notify_who_call_location_modified_by_who">%1$s %3$s %2$s Call Location</string>
+    <string name="notify_who_light_time_modified_on_device">%1$s change the screen time to %2$ds on watch</string>
+    <string name="notify_who_light_time_modified_by_who">%1$s change %2$s screen time to %3$ds</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_to_on">%1$s change the timed power On to: %2$s</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_to_off">%1$s change the timed power Off to: %2$s</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_onoff">%1$s %2$s the timed power On/Off</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_onoff">%1$s %3$s %2$s timed power On/Off</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_on">%1$s changed %2$s timed power On: %3$s</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_off">%1$s changed %2$s timed power Off: %3$s</string>
+    <string name="notify_who_calculator_modified_on_device">%1$s %2$s calculator on watch</string>
+    <string name="notify_who_calculator_modified_by_who">%1$s %3$s %2$s calculator</string>
+    <string name="notify_who_kid_info_modified_on_device">%1$s modified kid information on watch</string>
+    <string name="notify_who_kid_info_modified_by_who">%1$s modified %2$s kid information</string>
+    <string name="notify_who_which_fence_add_by_who">%1$s added fence %3$s for %2$s</string>
+    <string name="notify_who_which_fence_del_by_who">%1$s deleted %2$s\'s fence: %3$s</string>
+    <string name="notify_who_which_fence_modified_by_who">%1$s modified %2$s\'s fence: %3$s</string>
+    <string name="notify_who_which_sos_add_by_who">%1$s added SOS %3$s(%4$s) for %2$s</string>
+    <string name="notify_who_which_sos_del_by_who">%1$s deleted %2$s\'s SOS: %3$s(%4$s)</string>
+    <string name="notify_who_which_sos_modified_by_who">%1$s modified %2$s\'s SOS: %3$s(%4$s)</string>
+    <string name="notify_who_which_contacts_add_by_who">%1$s added contacts %3$s(%4$s) for %2$s</string>
+    <string name="notify_who_which_contacts_del_by_who">%1$s deleted %2$s\'s contacts: %3$s(%4$s)</string>
+    <string name="notify_who_which_contacts_modified_by_who">%1$s modified %2$s\'s contacts: %3$s(%4$s)</string>
+    <string name="notify_who_which_alarm_clock_add_on_device">%1$s added alarm clock %2$s by watch</string>
+    <string name="notify_who_which_alarm_clock_del_on_device">%1$s deleted alarm clock %2$s by watch</string>
+    <string name="notify_who_which_alarm_clock_modified_on_device">%1$s modified alarm clock %2$s by watch</string>
+    <string name="notify_who_which_alarm_clock_add_by_who">%1$s added alarm clock %3$s for %2$s</string>
+    <string name="notify_who_which_alarm_clock_del_by_who">%1$s deleted %2$s\'s alarm clock: %3$s</string>
+    <string name="notify_who_which_alarm_clock_modified_by_who">%1$s modified %2$s\'s alarm clock: %3$s</string>
+    <string name="notify_who_which_class_disable_add_on_device">%1$s added Class Disable %2$s by watch</string>
+    <string name="notify_who_which_class_disable_del_on_device">%1$s deleted Class Disable %2$s by watch</string>
+    <string name="notify_who_which_class_disable_modified_on_device">%1$s modified Class Disable %2$s by watch</string>
+    <string name="notify_who_which_class_disable_add_by_who">%1$s added Class Disable %3$s for %2$s</string>
+    <string name="notify_who_which_class_disable_del_by_who">%1$s deleted %2$s\'s Class Disable: %3$s</string>
+    <string name="notify_who_which_class_disable_modified_by_who">%1$s modified %2$s\'s Class Disable: %3$s</string>
+    <string name="notify_who_school_guard_modified_by_who">%1$s modified %2$s\'s Campus Guard</string>
+    <string name="notify_who_which_collect_praise_add_by_who">%1$s add Like-Collections for %2$s, prize is: %3$s</string>
+    <string name="notify_who_which_collect_praise_del_by_who">%1$s deleted %2$s\'s Like-Collections: %3$s</string>
+    <string name="notify_who_which_collect_praise_modified_by_who">%1$s modified %2$s\'s Like-Collections: %3$s</string>
+    <string name="notify_who_which_collect_praise_item_praised_by_who">%1$s has liked %2$s\'s Like-Collections task: %3$s</string>
+    <string name="notify_who_which_collect_praise_complete">%1$s\'s Like-Collections "%2$s" completed</string>
+    <string name="notify_who_which_collect_praise_finish">%1$s\'s Like-Collections "%2$s" finished</string>
+    <string name="notify_who_which_collect_praise_canceled_by_who">%1$s cancelled %2$s\'s Like-Collections: %3$s</string>
+    <string name="notify_who_which__modified_location_mode_by_who">%1$smodified %2$s\'s location mode：%3$s</string>
+    <string name="notify_who_which__modified_sms_agent_by_who">%1$s%3$s了%2$s\s sms agent</string>
+
+    <!--chat-->
+    <string name="chat_loosen_over">Release End</string>
+    <string name="chat_long_click_speak">Hold Speak</string>
+    <string name="chat_loosen_finger_cancel_send">Release finger to cancel</string>
+    <string name="chat_finger_up_cancel_send">Slide up to cancel</string>
+    <string name="chat_time_to_short">Time is too short</string>
+    <string name="chat_send">Send</string>
+
+    <!--register_login  -->
+    <string name="register_login_off_line_hint">Offline Notification</string>
+    <string name="register_login_other_phone_login">Your account is logged in on another phone</string>
+    <string name="register_login_again_login">Log In Again</string>
+    <string name="register_login_out">Quit</string>
+    <string name="register_login_input_password">Please Enter Password</string>
+    <string name="register_login_sure_password">Confirm password</string>
+    <string name="register_login_setting_password">Set Password</string>
+    <string name="register_login_setting_password_suc">Set Password Success</string>
+    <string name="register_login_register_suc">Register Success</string>
+    <string name="register_login_setting_pas_fail">set Password Failed</string>
+    <string name="register_login_seed_code">A verification code has been sent to</string>
+    <string name="register_login_user_service_protocol">&lt;User Services Agreement&gt;</string>
+    <string name="register_login_verification_code_format_error">Invalid Verification Code Format</string>
+    <string name="register_login_request_too_often">Request Too Frequent</string>
+    <string name="register_login_select_county_or_district">Select Country</string>
+    <string name="register_login_plz_wait">Please Wait...</string>
+    <string name="register_login_ver_code_ing">Sending verification code...</string>
+    <string name="register_login_user_have">User Already Exists</string>
+    <string name="register_login_user_not_have">User doesn\'t Exist</string>
+    <string name="register_login_not_register">Can\'t Register Right Now</string>
+
+    <string name="register_login_macao_district">Macao</string>
+    <string name="register_login_china">China</string>
+    <string name="register_login_vietnam">Vietnam</string>
+    <string name="register_login_indonesia">Indonesia</string>
+    <string name="register_login_india">India</string>
+    <string name="register_login_iran">Iran</string>
+    <string name="register_login_singapore">Singapore</string>
+    <string name="register_login_hk_district">Hongkong</string>
+    <string name="register_login_taiwan_district">Taiwan</string>
+    <string name="register_login_thailand">Thailand</string>
+    <string name="register_login_burma">Burma</string>
+    <string name="register_login_american">U.S.A</string>
+    <string name="register_login_malaysia">Malaysia</string>
+    <string name="register_login_laos">Laos</string>
+    <string name="register_login_cambodia">Cambodia</string>
+    <string name="register_login_philippines">Philippines</string>
+    <string name="register_login_canada">Canada</string>
+    <string name="register_login_england">England</string>
+
+    <string name="register_login_type1">&#160;The love&#160;</string>
+    <string name="register_login_type2">&#160;Never leave&#160;</string>
+    <string name="register_login_type3">KCT Inc. All Rights Reserved</string>
+    <string name="register_login_type4">© 2018 KCT Inc. All Rights Reserved</string>
+    <string name="register_login_result">Result:</string>
+    <string name="register_login_code_disable">Invalid Verification Code</string>
+    <string name="register_login_send_fail_plz_anew_send">Failed to send verification code, please resend</string>
+    <string name="register_login_tomorrow">Request verification code too many. Please try again tomorrow</string>
+    <string name="register_login_too_often">Request verification code too often. Please try again later</string>
+
+    <!--引导页-->
+    <string name="guidance_type1">Wherever You Are</string>
+    <string name="guidance_type2">Accurately Locate Wild Kids</string>
+    <string name="guidance_type3">&appname; Knows Better Than You</string>
+    <string name="guidance_type4">Your Love For Him/Her</string>
+    <string name="guidance_skip">Skip</string>
+
+    <!--下载更新-->
+    <string name="download_hint">Tips</string>
+    <string name="download_sd_card_not_use">SD card not available, please insert SD card</string>
+    <string name="download_download_manager_ban">System Download Manager is disabled and needs to be manually opened</string>
+    <string name="download_now_use_phone_network">The data network is currently in use. This may incur additional costs. Continue?</string>
+
+    <!--第三方登录-->
+    <string name="other_login_hint1">Need to associate your mobile phone number for normal use</string>
+    <string name="other_login_connected_account">Associated Account</string>
+    <string name="other_login_connected">Associated</string>
+    <string name="other_login_not_connected">Unassociated</string>
+    <string name="other_login_remove_connected">Are you sure to disassociate <![CDATA[<font color=\"#11cbd7\">%s</font>]]>?</string>
+    <string name="other_login_now_you_use_which_login_will_logout">You are currently using <![CDATA[<font color=\"#11cbd7\">%s</font>]]> login, after disassociation, you will log out.</string>
+    <string name="other_login_cancel">Authorized Login Cancelled</string>
+    <string name="other_login_fail">Authorization Failed</string>
+    <string name="other_login_my_account">My account</string>
+    <string name="other_login_nonsupport">Do Not Support</string>
+    <string name="third_plat_qq">QQ</string>
+    <string name="third_plat_wechat">WeChat</string>
+    <string name="third_plat_weibo">Weibo</string>
+    <string name="third_plat_facebook">Facebook</string>
+    <string name="third_plat_twitter">Twitter</string>
+    <string name="third_plat_google">Google</string>
+    <string name="third_plat_login">Third Party Login</string>
+    <string name="third_plat_connect_ing">Associating...</string>
+    <string name="third_plat_connect_cancel">Disassociation</string>
+    <string name="third_plat_unbind_connect_new">Can be associated with new</string>
+    <string name="third_plat_unbind_connect_suc">Disassociate success</string>
+    <string name="third_plat_unbind_connect_fail">Disassociate failed</string>
+    <string name="third_plat_login_fail_check_network">Login failed, please check the network</string>
+    <string name="third_plat_the_number_connect">This mobile number has been associated</string>
+    <string name="third_plat_ID">Account Number</string>
+    <string name="third_plat_plz_phone_or_last">Please via mobile number or original</string>
+    <string name="third_plat_plz_ID_login_unbind">login, unlock and re-bind.</string>
+    <string name="third_plat_connect_suc">Associated success</string>
+    <string name="third_plat_connect_fail">Associate failed</string>
+    <string name="third_plat_connect_fail_check_network">Associate failed, please check the network</string>
+    <string name="third_plat_connect_ios">Disassociate and re-associate new</string>
+    <string name="already_assoc_other_user">This %1$s account has been associated with other accounts. To link this number, please use %2$s login and unbind.</string>
+    <string name="third_plat_more_login">Other ways to login</string>
+    <string name="third_plat_click_relieve">Click to unlock account associated third-party applications</string>
+    <string name="number_of_sos_out_of_limit">The SOS counts has reached the upper limit!</string>
+    <string name="number_of_contacts_out_of_limit">The number of contacts has reached the upper limit!</string>
+    <string name="number_of_fence_out_of_limit">The number of fences has reached the limit!</string>
+    <string name="number_of_class_disable_out_of_limit">The number of class disable has reached the upper limit!</string>
+    <string name="number_of_alarm_clock_out_of_limit">The number of alarm clocks has reached the limit!</string>
+
+
+    <!--IOS新增-->
+    <string name="babycard_unbind_baby">You were released from binding with the baby</string>
+    <string name="babycard_more_8">Enter up to 16 characters</string>
+    <string name="babycard_fail_load">Failed to load,Click to retry</string>
+    <string name="babycard_SetCurrentBabyReminder">Set to current baby?</string>
+    <string name="babycard_Birthdays_cannot_be_greater_than_the_current_date.">Birthday cannot be greater than current date</string>
+    <string name="babycard_Input_cannot_contain_Spaces.">Input cannot contain spaces</string>
+    <string name="collect_Contains_illegal_characters_please_retype..">Contain illegal characters, please re-enter</string>
+    <string name="collect_sure_to_save_the_task">Are you sure to save the task?</string>
+    <string name="collect_object_to_delete">Like-Collection Project has been Deleted</string>
+    <string name="collect_object_to_finish">Like-Collection Project has been completed</string>
+    <string name="collect_object_to_over">Like-Collection Project has been finished</string>
+    <string name="collect_object_to_cancel">Like-Collection Project has been cancelled</string>
+    <string name="collect_object_to_update">Server Data Updated</string>
+    <string name="collect_OperationDoing">In operation...</string>
+    <string name="collect_OperationFailed">Operation Failed</string>
+    <string name="collect_OperationSuc">Operation Success</string>
+    <string name="collect_MAX_10">Enter up to 20 characters</string>
+    <string name="collect_MIN_0">The number of goal-likes can not be 0</string>
+    <string name="collect_adding">Adding...</string>
+    <string name="collect_add_success">Add Success</string>
+    <string name="collect_add_fail">Add Failed</string>
+    <string name="collect_PraiseExistedDes">Exited Like-Collection Project</string>
+
+    <!--SOS-->
+    <string name="sos_name_to_long">The name is too long, please re-enter</string>
+
+    <!--通讯录-->
+    <string name="contact_user_nonentity">Contact does not exist</string>
+    <string name="contact_unbind_noting">Unbind Failed</string>
+    <string name="contact_user_max">Contact limit is</string>
+    <string name="contact_FetchDoing">Fetching</string>
+    <string name="contact_FetchSuc">Fetch success</string>
+    <string name="contact_FetchFailed">Fetch Failed</string>
+    <string name="contact_Request_binding_device">Request binding device</string>
+
+    <!--更多功能-->
+    <string name="more_requesting">Requesting...</string>
+    <string name="more_request_noting">The request failed</string>
+    <string name="more_DownLoadImageDoing">Requesting...</string>
+    <string name="more_DownloadImageFailed">Picture Download Failed</string>
+    <string name="more_wait_watch_back_call">Please wait, the watch is being dialed back...</string>
+    <string name="more_class_disable_find_device_sure_setting">The class disable is opened. If you need to track the watch, please click the ok button to set it</string>
+    <!--单项通话请求成功，手表回拨前-->
+    <string name="more_find_watch_sure_button_setting">If you need to find the watch when Class-Disable turned on, please click the OK button to set it.</string>
+    <string name="more_call_phone_sure_button_setting">The class disable is opened. If you need to make a call, please click the ok button to set it</string>
+    <string name="more_FetchListDoing">Fetching List</string>
+
+    <!--上课禁用-->
+    <string name="class_disable_add_max">Number has reached the limit</string>
+    <string name="class_disable_dont_add_again">Do not repeat adding</string>
+    <string name="class_disable_content_same">Same content already exists</string>
+    <string name="class_disable_begin_time_noting_null">Start time cannot be empty</string>
+    <string name="class_disable_over_time_noting_null">End time cannot be empty</string>
+    <string name="class_disable_plz_input_name">Please enter a name</string>
+    <string name="class_disable_period">Disable Period</string>
+    <string name="class_disable_DisablePeriodCanEmergencyCallDes">Can make emergency calls during Disable-Period</string>
+    <string name="class_disable_DisablePeriodCanCallAdminReminder">The watch can also call the administrator in addition to watching the time while the class is disabled.</string>
+    <string name="class_disable_HolidayDonotDisableDes">Legal holiday is not disabled</string>
+    <string name="class_disable_AvoidHolidayReminder">When turned on, watch disable will take the initiative to avoid the statutory holidays</string>
+
+    <!--上学守护-->
+    <string name="school_guide_MorningProtectTimeCannotNull">Morning guard time cannot be empty</string>
+    <string name="school_guide_AfternoonProtectTimeCannotNull">Afternoon guard time cannot be empty</string>
+    <string name="school_guide_LatestArriveHomeTimeCannotNull">The latest arrival time cannot be empty</string>
+    <string name="school_guide_HolidayProtectCannotNull">Statutory holiday guard cannot be empty</string>
+    <string name="school_guide_SchoolAddrCannotNull">School address cannot be empty</string>
+    <string name="school_guide_HomeAddrCannotNull">Home address cannot be empty</string>
+    <string name="school_guide_right_up_click_edit">Please click on the edit in the upper right corner</string>
+    <string name="school_guide_AlreadyOpenDes">Opened</string>
+    <string name="school_guide_HaventOpenDes">Unopened</string>
+    <string name="school_guide_SchoolProNote1">The arrival time of the school is not later than the departure time</string>
+    <string name="school_guide_select">select</string>
+
+    <!--定时开关机-->
+    <string name="timing_shutdown_times_noting_same">On/Off time cannot be the same</string>
+
+    <!--闹钟-->
+    <string name="clock_alert_noting_null">Alert type cannot be empty</string>
+    <string name="clock_max_16_size">Enter up to 16 characters</string>
+
+    <!--登录-->
+    <string name="login_LoginSucDes">Login Success</string>
+
+    <!--chat-->
+    <string name="ios_1">Recording Error</string>
+
+    <!--地图-->
+    <string name="ios_2">Please turn on permission to access the location in Settings</string>
+
+    <!--更新-->
+    <string name="ios_3">Update Tips</string>
+    <string name="ios_4">Update Success</string>
+    <string name="ios_5">Update Failed</string>
+    <string name="ios_6">Update</string>
+    <string name="ios_7">The latest version is</string>
+    <string name="ios_8">There is a new version update, whether to go to update?</string>
+
+    <!--app设置-->
+    <string name="ios_9">Cleaning...</string>
+    <string name="ios_10">Cleaning Completed</string>
+
+    <!--登录注册-->
+    <string name="ios_11">Get verification code success</string>
+    <string name="ios_12">Failed to get verification code</string>
+    <string name="ios_13">Submit verification code success</string>
+    <string name="ios_14">Submit verification code failed</string>
+    <string name="ios_15">Unbind Device</string>
+    <string name="ios_16">Has been unbinded by the administrator</string>
+    <string name="ios_17">Verification Code Error</string>
+    <string name="ios_18">Registering...</string>
+
+    <string name="ios_19">Select Permissions</string>
+    <string name="ios_20">You haven\'t turned on camera permission, click OK to jump to system settings</string>
+    <string name="ios_21">You haven\'t turned on album permission, click OK to jump to system settings</string>
+    <string name="ios_22">You haven\'t turned on notification permission, click OK to jump to system settings</string>
+    <string name="ios_23">You haven\'t turned on microphone permission, click OK to jump to system settings</string>
+
+    <string name="ios_24">Invalid Device</string>
+    <string name="ios_25">Existed Device</string>
+    <string name="ios_26">Fetch user\'s device list failed</string>
+    <string name="ios_27">Fetch user\'s device list success</string>
+    <string name="ios_28">Fetch user\'s device information failed</string>
+    <string name="ios_29">Fetch user\'s device information success</string>
+    <string name="ios_30">Fetch user information failed</string>
+    <string name="ios_31">Fetch user information success</string>
+
+    <string name="ios_32">Unrecognized QR Code</string>
+    <string name="ios_33">Get the QR code success</string>
+    <string name="ios_34">Get the QR code failed</string>
+    <string name="ios_35">The QR code is written locally success</string>
+    <string name="ios_36">The QR code is written locally failed</string>
+    <string name="ios_37">Existed Administrator</string>
+    <string name="ios_38">Binding</string>
+    <string name="ios_39">The administrator has agreed on you binding device</string>
+
+    <string name="ios_40">The network is not available, please check the network settings</string>
+    <string name="ios_41">Connecting to network, please wait</string>
+    <string name="ios_42">Poor network signal, please wait or change network</string>
+    <string name="ios_43">Server Disconnected</string>
+    <string name="ios_44">Request Cancelled</string>
+    <string name="ios_45">Number Query Failed</string>
+
+    <string name="ios_46">Open</string>
+    <string name="ios_47">Close</string>
+    <string name="ios_48">No data</string>
+    <string name="ios_49">Call</string>
+    <string name="ios_50">Load Success</string>
+    <string name="ios_51">Updating</string>
+    <string name="ios_52">Click here to enter</string>
+    <string name="ios_53">Verification code Invalidated</string>
+
+    <string name="ios_54">Please enter contact number</string>
+    <string name="ios_55">Call Only</string>
+    <string name="ios_57">Add SOS Tel</string>
+    <string name="ios_59">Modify SOS</string>
+    <string name="ios_60">\n1. All calls (including one-way calls) will be rejected during the disabled period.\n2. Chat can be received but will not be reminded.\n3. SOS function is normal.\n4. Normal positioning.</string>
+    <string name="ios_61">Enter up to 14 characters</string>
+    <string name="ios_62">The end time must be later than the start time</string>
+    <string name="ios_63">Updating configuration</string>
+    <string name="ios_64">Fence Name</string>
+    <string name="ios_65">Add Campus Guard</string>
+    <string name="ios_66">Are you sure to delete fence?</string>
+    <string name="ios_67">With 10% remaining power, positioning and chat cannot be used, only calls can be answered</string>
+    <string name="ios_68">Acquiring watch location</string>
+    <string name="ios_69">Location Method</string>
+    <string name="ios_70">GPS Location</string>
+    <string name="ios_71">Nearby</string>
+    <string name="ios_72">Acquire watch location failed</string>
+    <string name="ios_73">Location Accuracy</string>
+    <string name="ios_74">Last Time</string>
+    <string name="ios_75">Watch Events</string>
+    <string name="ios_76">Watch Events:No events</string>
+    <string name="ios_77">Acquiring Track</string>
+    <string name="ios_78">Acquire Track Failed</string>
+    <string name="ios_79">No Track Data</string>
+    <string name="ios_80">Starting Point</string>
+    <string name="ios_81">Base Station Location Point</string>
+    <string name="ios_82">GPS Location Point</string>
+    <string name="internal_version">China Mainland</string>
+    <string name="other_area">Other Areas</string>
+    <string name="map_googlemap">Google Map</string>
+    <string name="app_used_area">Using Area</string>
+    <string name="phone">Phone</string>
+    <string name="not_support_google_play_cannot_use_google_map">Google Map won\'t run without Google Play services, which are not supported by your devices.</string>
+    <string name="sep_char_comma">,&#160;</string>
+    <string name="select_areas">Select areas</string>
+    <string name="new_micro_chat_message">New message</string>
+    <string name="you_have_new_micro_message">You have new message</string>
+    <string name="google_inaccessible_on_map_page">Please switch to "China Mainland" in "App Settings".</string>
+    <string name="user_google_map_throw_exception">Some problems happened when trying to use Google Map. You can try to update the Google Play Service to resolve it.</string>
+
+    <string name="emoticon_thanks">Thanks</string>
+    <string name="emoticon_meal">Meal</string>
+    <string name="emoticon_good">Thumb</string>
+    <string name="emoticon_cute">Cute</string>
+    <string name="emoticon_love">Love</string>
+    <string name="emoticon_good_night">Good Night</string>
+    <string name="emoticon_ok">OK</string>
+    <string name="emoticon_get_up">Get Up</string>
+    <string name="emoticon_homework">Homework</string>
+
+    <string name="chat_conversation_message_voice">[Voice]</string>
+    <string name="chat_conversation_message_emotion">[%s]</string>
+    <string name="emoticon">Emoticon</string>
+    <string name="family_group_chat_of_baby">%s\'s family group chat</string>
+    <string name="try_to_chat_with_baby">Try to chat with your baby</string>
+    <string name="try_to_chat_with_family_members">Try to chat with your family members</string>
+    <string name="please_input_send_message">Please input message</string>
+    <string name="family_group_of_baby">%s\'s family group</string>
+    <string name="family_chat_group_detail_page_tip">Family members who are bound to the watch will be added to the chat automatically.</string>
+    <string name="clear_chat_history">Clear Chat History</string>
+    <string name="ask_clean_chat_history">Are you sure to delete the chatting records?</string>
+    <string name="unread_message_count_overflow">99+</string>
+
+    <string name="location_mode">location mode</string>
+    <string name="passive_mode_detailed">The watch will not report the location voluntarily, only when APP is opened, there will be no school guard and electronic fence notice. The most power saving is the longest waiting time for the watch.</string>
+    <string name="passive_mode">Passive mode</string>
+    <string name="save_power_mode">Save Mode</string>
+    <string name="normal_mode">Normal mode</string>
+    <string name="save_power_detailed">Reporting frequency is lower, electricity saving, school guarding and electronic fence function can not be promptly notified.</string>
+    <string name="normal_mode_detailed">The best mode to enable all positioning functions of the watch.</string>
+
+    <string name="sms_agent">Sms Agent</string>
+    <string name="no_more">no more</string>
+    <string name="setting">Setting</string>
+
+    <string name="watch_call">Watch call</string>
+    <string name="change_settings">Change settings</string>
+    <string name="contacts_change">Contacts change</string>
+    <string name="collect_praise_information">Collect praise information</string>
+    <string name="message_settings">Message settings</string>
+    <string name="modify_sms_agent">Modify Sms Agent</string>
+    <string name="notification_setting_tips">After turning off, the message will not be reminded when you receive it.</string>
+
+    <string name="friend_of_baby">Baby\'s Friend</string>
+    <string name="delete_friend">Delete Friend</string>
+    <string name="ask_sure_delete_the_friend">Are you sure to delete the friend?</string>
+    <string name="friend_display_name_combination">%s(%s)</string>
+    <string name="on_phone_number">No number</string>
+    <string name="tip_of_sms_agent_disable">You can view all the SMS received from the watch</string>
+    <string name="more">more</string>
+    <string name="set_as_current">Set as current</string>
+    <string name="add_baby">add new watch</string>
+    <string name="sos_tips_1">1.When the watch issues an SOS request, it will dial according to the priority of the following contacts. When a contact is answered successfully, the watch will end the dialing behavior.</string>
+    <string name="tips">Tips</string>
+    <string name="sos_tips_2">2.Long press a contact to adjust its priority, right swipe to delete the contact.</string>
+    <string name="class_disable_tips">Disabling the time period will reject all calls (including one-way calls).</string>
+    <string name="class_disable_tips_2">Micro chat can be received but not reminded</string>
+    <string name="class_disable_tips_3">The SOS feature will work properly.</string>
+    <string name="class_disable_tips_4">The positioning function will work normally.</string>
+    <string name="timing_tips">When the baby is resting also \n let the watch work for a day \n take a break~</string>
+    <string name="select_fence_icon">select fence icon</string>
+    <string name="ring_time">ring time</string>
+    <string name="collect_praise_tips">A small gift, Can give the baby unlimited power</string>
+    <string name="collect_praise_tips_2">Click to add a gift</string>
+    <string name="collect_praise_schedule">schedule: </string>
+    <string name="complete_schedule">complete schedule</string>
+    <string name="refuse_tips">Control the contact of strangers with the baby \n Give the baby a safe environment</string>
+    <string name="search">search</string>
+    <string name="search_address">Address search</string>
+    <string name="input_address">Please enter an address name</string>
+    <string name="private_place">private</string>
+    <string name="public_place">public</string>
+    <string name="select_icon">select icon</string>
+    <string name="select_fence_area">Please select fence range</string>
+    <string name="information_condition">Notification condition</string>
+    <string name="not_set">Not yet set</string>
+    <string name="who_message">\'s Message</string>
+    <string name="selected_items">chosen %d item</string>
+    <string name="clear_all_message">Clear option</string>
+    <string name="multiselection">Multiselection</string>
+    <string name="delete_selected">Delete(%d)</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="count_pwd_login">Account password login</string>
+    <string name="register_login_send_register_code_again">Resend</string>
+    <string name="register_login_cant_receive_code">Cannot receive verification code?</string>
+    <string name="register_please_re_input_password">Please confirm your password</string>
+    <string name="set_and_login">Complete setup and login</string>
+    <string name="register_please_input_password">Please enter your password (16–20 digits or letters)</string>
+    <string name="register_login_change_account">Switch account</string>
+    <string name="bind_device_bind_watch">Binding device</string>
+    <string name="register_login_bind_hint_one">Please pass the watch</string>
+    <string name="register_login_bind_hint_two">Setting-QR code</string>
+    <string name="register_login_bind_hint_three">View the binding number of this watch</string>
+    <string name="bind_device_bind_watch_again">Bind again</string>
+    <string name="bind_device_bind_and_fail">Binding failed, You are not licensed by this watch administrator</string>
+    <string name="bind_edit_identity">Identity filling</string>
+    <string name="bind_default">default</string>
+    <string name="bind_click_to_change_icon">Click to switch avatar</string>
+    <string name="bind_input_your_relation">Please enter your title</string>
+    <string name="country">country</string>
+    <string name="bind_device">Binding device</string>
+    <string name="last_day">before</string>
+    <string name="next_day">after</string>
+    <string name="contacts">Contact</string>
+    <string name="please_input_baby_name">Please enter the baby name</string>
+    <string name="head_set_is_null">The avatar is set to empty</string>
+    <string name="sms_agent_tips">There is nothing here, open the collection of SMS messages \n You can view all the text messages received by this baby \'s watch.</string>
+    <string name="contacts_category_admin">Admin</string>
+    <string name="contacts_category_normal">Contacts</string>
+    <string name="contacts_category_friends">Friends</string>
+    <string name="please_enter_contact_name">Please enter a contact name</string>
+    <string name="please_enter_contact_tel_number">Please enter the contact phone number</string>
+    <string name="contacts_category_assoc">Admin</string>
+    <string name="appellation">appellation</string>
+    <string name="baby_name">baby name</string>
+    <string name="input_bind_number">Manually enter the device number</string>
+    <string name="fence_guard">Fence guard</string>
+    <string name="class_disable_period_name_hint">Please set the disabled time zone name</string>
+    <string name="class_disable_period_add">add period of class disable</string>
+
+    <string name="of_unbind"> \'s Bind?</string>
+    <string name="sure_unbind">You are sure to lift </string>
+    <string name="banner_one_tips">Here, your communication with your baby \n will be more at your heart.</string>
+    <string name="banner_two_tips">Here, you will know \n the baby’s whereabouts, safe and secure.</string>
+    <string name="banner_three_tips">You can agree on a goal \n with the baby and set a gift to \n let the baby have more growth momentum!</string>
+    <string name="collection_praise">Current episode final prize</string>
+    <string name="collect_praise_prompt">The task can only be completed once a day~</string>
+    <string name="click_add_collect_praise">Click to add collect praise</string>
+    <string name="rebuild_collect_praise">Reset prizes</string>
+    <string name="map_navigation_to_here">Ahead</string>
+    <string name="bind_by_bindnumber">Device Number Binding</string>
+    <string name="new_user_register">New User Register</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="set_new_password">Set New Password</string>
+    <string name="register_and_bind">Complete registration and bind</string>
+    <string name="associate_phone_number">Associate Phone Number</string>
+    <string name="register_login_phonenumber_invalid">Invalid phonenumber, please re-enter</string>
+    <string name="take_photo_instructions_already_send_please_wait">The photo request has been sent to the watch. Please be patient.  If there is no response after %1$s s, please re-operate.</string>
+    <string name="babycard_birthday_choice">Birthday Choice</string>
+    <string name="change_password_confirm">Please confirm your new password</string>
+    <string name="change_password_input_old">Please input your current password</string>
+    <string name="fence_add_area_set">Set Fence Scope</string>
+    <string name="fence_notification_in">Notify when entering the fence</string>
+    <string name="fence_notification_out">Notify when leaving the fence</string>
+    <string name="fence_add_ok">Complete add</string>
+    <string name="fence_home_input_name">Please enter the name of kid\'s home </string>
+    <string name="fence_school_input_name">Please enter the name of kid\'s school</string>
+    <string name="school_holiday_keeps_guard">Holiday keeps guard</string>
+    <string name="alarm_edit_note">Edit remarks</string>
+    <string name="alarm_intput_note">Please enter an alarm name</string>
+    <string name="alarm_note_not_null">remarks cannot be empty</string>
+    <string name="babycard_relation">I am the baby\'s</string>
+    <string name="alarm_list_note">Alarm remarks:</string>
+    <string name="no_collect_praise_tips_text">You haven\'t started collecting praise yet~</string>
+    <string name="watch_activity">Watch activity</string>
+    <string name="save_img_local">Saved to local</string>
+    <string name="bind_device_inactivated">The watch is not activated. Please insert the SIM card into the watch to activate it.</string>
+    <string name="please_choose_relation">Please choose the relationship</string>
+    <string name="photo_request_failed">Photo request failed to be sent</string>
+    <string name="save_album">save into the album</string>
+    <string name="single_alarm">Single alarm</string>
+    <string name="register_tips_user_agreement">By clicking<![CDATA[<font color="#fa4659">“Next”</font>]]>you agree to</string>
+    <string name="register_user_agreement">《the User Service Agreement》</string>
+
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.cqkct.FunKidII.Ui.widget.NumberPickerView
+        android:id="@+id/hour_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        app:npv_ItemPaddingHorizontal="8dp"
+        app:npv_MaxValue="23"
+        app:npv_MinValue="0"
+        app:npv_RespondChangeOnDetached="false"
+        app:npv_ShowCount="3"
+        app:npv_ShowDivider="false"
+        app:npv_TextArray="@array/hour_display_24"
+        app:npv_TextColorNormal="@color/normal_secondary_text"
+        app:npv_TextColorSelected="@color/red_tone"
+        app:npv_TextSizeNormal="22sp"
+        app:npv_TextSizeSelected="38sp"
+        app:npv_WrapSelectorWheel="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/class_disable_semicolon" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/class_disable_semicolon" />
+    </LinearLayout>
+
+    <com.cqkct.FunKidII.Ui.widget.NumberPickerView
+        android:id="@+id/minute_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        app:npv_ItemPaddingHorizontal="8dp"
+        app:npv_MaxValue="59"
+        app:npv_MinValue="0"
+        app:npv_RespondChangeOnDetached="false"
+        app:npv_ShowCount="3"
+        app:npv_ShowDivider="false"
+        app:npv_TextArray="@array/minute_display"
+        app:npv_TextColorNormal="@color/normal_secondary_text"
+        app:npv_TextColorSelected="@color/red_tone"
+        app:npv_TextSizeNormal="22sp"
+        app:npv_TextSizeSelected="38sp"
+        app:npv_WrapSelectorWheel="true" />
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text_message_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/dimen_12sp" />
+    <LinearLayout
+        android:id="@+id/ll_text_message_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/ib_text_message_left_status"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <com.cqkct.FunKidII.Ui.view.ImageCircleView
+            android:id="@+id/iv_text_message_sender_left_icon"
+            android:layout_width="@dimen/setting_list_item_height"
+            android:layout_height="@dimen/setting_list_item_height"
+            android:layout_marginStart="@dimen/system_padding_left"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_text_message_left_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_speaking_message_left_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="@dimen/dimen_17sp"
+                android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/tv_text_message_voice_left_time"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_receiving"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:indeterminateOnly="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_message_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/system_padding_left">
+
+        <ImageButton
+            android:id="@+id/ib_text_message_right_status"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:indeterminateOnly="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_text_message_right_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/tv_text_message_voice_right"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <com.cqkct.FunKidII.Ui.view.ImageCircleView
+            android:id="@+id/iv_text_message_sender_right_icon"
+            android:layout_width="@dimen/setting_list_item_height"
+            android:layout_height="@dimen/setting_list_item_height"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>

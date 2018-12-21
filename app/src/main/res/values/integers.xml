@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="svanimation_default_duration">300</integer>
+
+
+    <integer name="maxLength_of_baby_name">8</integer>
+    <integer name="maxLength_of_custom_relation">8</integer>
+    <integer name="maxLength_of_contact_name">8</integer>
+    <integer name="maxLength_of_alarm_clock_name">8</integer>
+    <integer name="maxLength_of_class_disable_name">8</integer>
+    <integer name="maxLength_of_fence_name">8</integer>
+    <integer name="maxLength_of_item_name_of_collect_praise">4</integer>
+    <integer name="maxLength_of_prize_name_of_collect_praise">10</integer>
+    <integer name="maxLength_of_phone_number">15</integer>
+    <integer name="maxLength_of_text_chat_message">200</integer>
+</resources>

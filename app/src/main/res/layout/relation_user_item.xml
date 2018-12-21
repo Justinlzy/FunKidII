@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_2"
+    android:background="@color/common_Background">
+    <RelativeLayout
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:id="@+id/relation_number"
+            android:textSize="@dimen/dimen_13sp"
+            android:textColor="@color/text_color_one"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:text="+8615112460122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/relation_relation"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/text_color_three"
+            android:layout_below="@+id/relation_number"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:text="外公"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+         android:layout_height="0.1dp"
+         android:background="#EBEBEB"
+        android:layout_width="wrap_content"/>
+</LinearLayout>

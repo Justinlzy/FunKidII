@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_20"
+  >
+
+    <LinearLayout
+        android:background="@drawable/confirm_dialog_background_white"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <com.cqkct.FunKidII.Ui.view.CornerImageView
+            android:id="@+id/title_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="背景"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baby_card_top_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:topLeftRadius="24dp"
+            app:topRightRadius="24dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_arch_white"
+            android:contentDescription="拱形效果覆盖"
+            app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/head_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:onClick="onDebouncedClick"
+                android:src="@drawable/mod_baby_male"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/baby_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:ellipsize="marquee"
+                android:foreground="@drawable/foreground_shadow"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/device_number_label"
+                app:layout_constraintEnd_toStartOf="@id/baby_name_edit"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/head_icon"
+                app:layout_constraintTop_toTopOf="@id/head_icon"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintWidth_default="wrap"
+                tools:text="阿阮" />
+
+            <ImageView
+                android:id="@+id/baby_name_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow"
+                android:src="@drawable/revise_baby_card"
+                app:layout_constraintBottom_toBottomOf="@id/baby_name"
+                app:layout_constraintEnd_toStartOf="@id/baby_card_qr_code"
+                app:layout_constraintStart_toEndOf="@id/baby_name"
+                app:layout_constraintTop_toTopOf="@id/baby_name" />
+
+            <ImageView
+                android:id="@+id/baby_card_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baby_card_qr_code"
+                app:layout_constraintBottom_toBottomOf="@id/baby_name"
+                app:layout_constraintEnd_toStartOf="@id/select_as_current"
+                app:layout_constraintStart_toEndOf="@id/baby_name_edit"
+                app:layout_constraintTop_toTopOf="@id/baby_name" />
+
+
+            <TextView
+                android:id="@+id/device_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/unbind_and_bind_device_ID"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/head_icon"
+                app:layout_constraintStart_toStartOf="@id/baby_name"
+                app:layout_constraintTop_toBottomOf="@id/baby_name" />
+
+            <TextView
+                android:id="@+id/device_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:ellipsize="marquee"
+                android:onClick="onDebouncedClick"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/device_number_label"
+                app:layout_constraintEnd_toEndOf="@id/select_as_current"
+                app:layout_constraintStart_toEndOf="@id/device_number_label"
+                app:layout_constraintTop_toTopOf="@id/device_number_label"
+                tools:text="358688000000001" />
+
+            <TextView
+                android:id="@+id/select_as_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/baby_card_current_text_bg"
+                android:foreground="@drawable/foreground_shadow_cornered_rect"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="3dp"
+                android:text="@string/set_as_current"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/baby_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/baby_name" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onDebouncedClick">
+
+        <ImageView
+            android:id="@+id/number_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_card_phone_number" />
+
+        <TextView
+            android:id="@+id/number_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_toEndOf="@id/number_icon"
+            android:text="@string/watch_number"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/number_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:text="@string/please_input_watch_number"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <ImageView
+            android:id="@+id/number_can_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color_two" />
+
+    <RelativeLayout
+        android:id="@+id/sex_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onDebouncedClick">
+
+        <ImageView
+            android:id="@+id/sex_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_card_sex" />
+
+        <TextView
+            android:id="@+id/sex_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@id/sex_icon"
+            android:text="@string/baby_sex"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sex_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:text="@string/please_select_sex"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <ImageView
+            android:id="@+id/sex_can_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color_two" />
+
+    <RelativeLayout
+        android:id="@+id/birthday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onDebouncedClick">
+
+        <ImageView
+            android:id="@+id/birthday_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_card_birthday" />
+
+        <TextView
+            android:id="@+id/birthday_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_toEndOf="@id/birthday_icon"
+            android:text="@string/birthday"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/birthday_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:text="@string/please_select_birthday"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <ImageView
+            android:id="@+id/birthday_can_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color_two" />
+
+    <RelativeLayout
+        android:id="@+id/relation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onDebouncedClick">
+
+        <ImageView
+            android:id="@+id/relation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_card_relation" />
+
+        <TextView
+            android:id="@+id/relation_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_toEndOf="@+id/relation_icon"
+            android:text="@string/babycard_relation"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/relation_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:text="@string/select_relation"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <ImageView
+            android:id="@+id/relation_can_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color_two"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/unbind_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onDebouncedClick"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/unbind_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_card_unbind" />
+
+        <TextView
+            android:id="@+id/unbind_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_toEndOf="@id/unbind_icon"
+            android:text="@string/unbind"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <ImageView
+            android:id="@+id/unbind_can_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

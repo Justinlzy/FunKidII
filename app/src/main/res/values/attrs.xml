@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HorizontalProgressbarWithProgress">
+        <attr name="progress_unreach_color" />
+        <attr name="progress_unreach_height" />
+        <attr name="progress_reach_color" />
+        <attr name="progress_reach_height" />
+        <attr name="progress_text_color" />
+        <attr name="progress_text_size" />
+        <attr name="progress_text_offset" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressbarWithProgress">
+        <attr name="radiuss" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageCircleView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--引导页 圆点-->
+    <declare-styleable name="DotIndicator">
+        <attr name="distance" format="dimension" />
+    </declare-styleable>
+
+    <!--dialog-->
+    <declare-styleable name="SVCircleProgressBar">
+        <attr name="svprogress_roundColor" format="color" />
+        <attr name="svprogress_roundProgressColor" format="color" />
+        <attr name="svprogress_roundWidth" format="dimension" />
+        <attr name="svprogress_max" format="integer" />
+        <attr name="svprogress_style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DialogTitle">
+        <attr name="title" format="string" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleColor" format="color" />
+        <attr name="radian" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RecordButton">
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="textMarginRight" format="dimension"/>
+        <attr name="textMarginLeft" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CornerImageView">
+        <attr name="radius" format="reference"/>
+        <attr name="bottomLeftRadius" format="reference"/>
+        <attr name="bottomRightRadius" format="reference"/>
+        <attr name="topLeftRadius" format="dimension"/>
+        <attr name="topRightRadius" format="dimension"/>
+    </declare-styleable>
+
+</resources>

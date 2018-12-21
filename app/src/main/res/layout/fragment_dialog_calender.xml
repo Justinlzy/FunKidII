@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_20"
+    tools:ignore="RtlHardcoded,HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/calen_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <com.cqkct.FunKidII.Ui.view.CornerImageView
+                android:id="@+id/title_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="背景"
+                android:scaleType="centerCrop"
+                android:src="@drawable/texture_material_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:topLeftRadius="24dp"
+                app:topRightRadius="24dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_arch"
+                android:contentDescription="拱形效果覆盖"
+                app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+            <TextView
+                android:id="@+id/tvCurrentMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnNextMonth"
+                app:layout_constraintStart_toEndOf="@id/btnPreMonth"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4"
+                tools:text="2018-01" />
+
+            <ImageView
+                android:id="@+id/btnPreMonth"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/choose_date"
+                android:scaleType="centerInside"
+                android:src="@drawable/last_day"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnNextMonth"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/choose_date"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_day"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background_color"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_sunday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_monday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_tuesday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_wednesday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_thursday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_friday"
+                android:textColor="@color/calendar_text_color" />
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/location_record_calendar_week_saturday"
+                android:textColor="@color/calendar_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textl"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/dialog_bottom_bg"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

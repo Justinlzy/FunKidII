@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include7"
+        app:layout_constraintVertical_bias="0.15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register_login_bind_hint_one"
+            android:textColor="@color/text_color_six"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register_login_bind_hint_two"
+            android:textColor="@color/text_blue_bg_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register_login_bind_hint_three"
+            android:textColor="@color/text_color_six"
+            android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_input_bind_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hint">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_bindNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/input_the_bind_num"
+            android:textColorHint="@color/normal_primary_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/btn_bind_number_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top"
+            android:onClick="onClick"
+            android:visibility="gone"
+            android:src="@drawable/button_clean" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@color/normal_primary_text"
+        app:layout_constraintTop_toBottomOf="@+id/rl_input_bind_number" />
+
+
+    <TextView
+        android:id="@+id/btn_bind_device_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/text_red_background_two"
+        android:gravity="center"
+        android:onClick="onDebouncedClick"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="@string/bind_device_scan_qr_code"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/rl_input_bind_number"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rl_input_bind_number"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/bt_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/login_button_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:onClick="onDebouncedClick"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="@string/bind_device"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/rl_input_bind_number"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rl_input_bind_number"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+
+</android.support.constraint.ConstraintLayout>

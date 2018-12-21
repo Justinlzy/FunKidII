@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#EBEBEB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background">
+
+        <TextView
+            android:id="@+id/model_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/model"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:ellipsize="marquee"
+            android:layout_toEndOf="@+id/model_label"
+            android:layout_marginStart="16dp"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="@string/unknown"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EBEBEB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/hw_ver"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/hw_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:ellipsize="marquee"
+            android:gravity="end"
+            android:singleLine="true"
+            android:layout_toEndOf="@id/textView6"
+            android:layout_marginStart="16dp"
+            android:text="@string/unknown"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EBEBEB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background">
+
+        <TextView
+            android:id="@+id/sw_ver_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/sw_ver"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/sw_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sw_ver_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:ellipsize="marquee"
+            android:layout_toEndOf="@id/sw_ver_label"
+            android:layout_marginStart="16dp"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="@string/unknown"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:background="#EBEBEB"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dimen_20"
+        android:text="@string/watch_information_config"
+        android:textColor="@color/text_color_two"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <RelativeLayout
+        android:id="@+id/has_gps"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="GPS"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:text="@string/watch_information_outdoor_positioning"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/has_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="Wi-Fi"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/watch_information_indoor_localization"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EBEBEB" />
+
+    <RelativeLayout
+        android:id="@+id/has_g_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47"
+        android:background="@color/common_Background"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/watch_information_gravity_acceleration_sensor"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:text="@string/watch_information_step_count"
+            android:textColor="@color/text_color_two"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_Background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_save_fence"
+        android:layout_below="@+id/title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/name_text"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/ed_fence_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/fence_setting_input_fence_name"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/line_color" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_blue_background"
+                android:paddingBottom="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:text="@string/start_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <include layout="@layout/select_start_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_red_background"
+                android:paddingBottom="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:text="@string/end_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <include layout="@layout/select_end_time" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_blue_background"
+                android:paddingBottom="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:text="@string/information_condition"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/fence_notification_in"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ib_switch_in_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:thumb="@drawable/thumb"
+                    app:showText="false"
+                    app:track="@drawable/track" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:text="@string/fence_notification_out"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ib_switch_out_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:thumb="@drawable/thumb"
+                    app:showText="false"
+                    app:track="@drawable/track" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/line_color" />
+            <RelativeLayout
+                android:id="@+id/fence_address"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/fence_add_area"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fence_address_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/iv_fence_address_next" />
+
+
+                <ImageView
+                    android:id="@+id/iv_fence_address_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/enter" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/repeat_time"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/repeat"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/repeat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/iv_fence_repeat_next" />
+
+
+                <ImageView
+                    android:id="@+id/iv_fence_repeat_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/enter" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/select_fence_icon"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/select_fence_icon"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fence_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/iv_fence_select_icon_next" />
+
+
+                <ImageView
+                    android:id="@+id/iv_fence_select_icon_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/enter" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_save_fence"
+        android:background="@drawable/login_button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        android:text="@string/fence_add_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp" />
+
+</RelativeLayout>

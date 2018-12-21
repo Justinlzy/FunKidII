@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/bright_screen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:text="@string/bright_screen_time"
+            android:textColor="@color/normal_primary_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/watch_set_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:textColor="@color/text_color_four"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <com.cqkct.FunKidII.Ui.widget.TextMarkSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/common_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:progressDrawable="@drawable/bg_seekbar_progress_drawable"
+        android:thumb="@drawable/watch_setting_seekbar"
+        android:thumbOffset="5dp"
+        app:markTextArray="5,10,15,20,30,60"
+        app:progressMarkTextColor="@color/white"
+        app:progressMarkTextSize="12sp"
+        app:showMarkText="true"
+        app:thumbMarkTextColor="@color/white"
+        app:thumbMarkTextSize="15sp"
+        app:unprogressMarkTextColor="@color/white"
+        app:unprogressMarkTextSize="12sp" />
+
+    <View
+        android:id="@+id/line_sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_47">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/watch_setting_calculator"
+            android:textColor="@color/normal_primary_text"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:padding="10dp"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_location_mode"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/location_mode"
+            android:textColor="@color/normal_primary_text"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/location_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/location_way_next"
+            android:textColor="@color/normal_secondary_text"
+            android:textSize="@dimen/dimen_12sp"
+            tools:text="省电模式" />
+
+        <ImageView
+            android:id="@+id/location_way_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/enter" />
+    </RelativeLayout>
+</LinearLayout>

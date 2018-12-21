@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/amap_fence_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/gmap_fence_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/google_inaccessible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/google_inaccessible_on_map_page"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/google_inaccessible"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bg"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_real_time_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/location_range" />
+
+        <TextView
+            android:id="@+id/tv_real_time_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_toEndOf="@+id/iv_real_time_icon"
+            android:textColor="@color/fence_wheel_select_text"
+            tools:text="九龙坡区海涵路26-附12号" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/address"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="onViewClick"
+        android:src="@drawable/change_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bg">
+
+        <com.cqkct.FunKidII.Ui.view.WheelView
+            android:id="@+id/wheel_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:HighlightColor="@color/fence_wheel_select_line"
+            app:IntervalFactor="0.5"
+            app:MarkRatio="0.1"
+            app:MarkTextColor="@color/text_color_six" />
+    </LinearLayout>
+
+
+</RelativeLayout>

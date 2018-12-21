@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ls_sms_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/delete_ll"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:dividerHeight="5dp"
+        android:listSelector="#00000000"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:transcriptMode="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/delete_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_background_color"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/micro_chat_record_indicator_dialog_tip_text_bg"
+            android:foreground="@drawable/foreground_shadow"
+            android:onClick="onDebouncedClick"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

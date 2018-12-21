@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:id="@+id/top_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_indicator_point_normal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/voice_message_mode_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_divider"
+            android:layout_alignTop="@id/bt_press_speak"
+            android:layout_alignBottom="@id/text_editor"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_divider"
+            app:layout_constraintVertical_bias="1">
+
+            <ImageView
+                android:id="@+id/voice_message_mode_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/keyboard"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/emotion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_divider"
+            android:layout_alignBottom="@id/text_editor"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:padding="4dp"
+            android:src="@drawable/expression"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_divider"
+            app:layout_constraintVertical_bias="1" />
+
+        <com.cqkct.FunKidII.Ui.view.MicroChatEditText
+            android:id="@+id/text_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/micro_chat_text_editor_background"
+            android:hint="@string/please_input_send_message"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minHeight="36dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/text_color_four"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/emotion_button"
+            app:layout_constraintStart_toEndOf="@id/voice_message_mode_button_layout"
+            app:layout_constraintTop_toBottomOf="@id/top_divider"
+            tools:text="你你好你好你好你好你你好你好你好你好你你好你好你好你好你你好你好你好你好你你好你好你好你好你你好你好你好你好" />
+
+        <View
+            android:id="@+id/button_layout_foreground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/transparent_70_percent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.cqkct.FunKidII.Ui.view.RecordButton
+            android:id="@+id/bt_press_speak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/record_button_background_release"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:paddingStart="18dp"
+            android:text="@string/chat_long_click_speak"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:drawableLeft="@drawable/voice_input"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/emotion_button"
+            app:layout_constraintStart_toEndOf="@id/voice_message_mode_button_layout"
+            app:layout_constraintTop_toBottomOf="@id/top_divider"
+            app:textMarginLeft="-2dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbox_layout_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/toolbox_pagers_face"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/toolbox_layout_face_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/toolbox_pagers_face"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_70_percent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

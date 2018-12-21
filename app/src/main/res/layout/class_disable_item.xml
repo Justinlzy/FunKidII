@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:foreground="@drawable/foreground_shadow"
+                android:gravity="center_vertical"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:id="@+id/class_disable_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:text="@string/name_text"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+
+                <EditText
+                    android:id="@+id/ed_disable_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_toEndOf="@+id/class_disable_name_label"
+                    android:background="@null"
+                    android:maxLength="16"
+                    android:padding="@dimen/dimen_10"
+                    android:singleLine="true"
+                    android:hint="@string/class_disable_period_name_hint"
+                    android:textColor="@color/text_color_four"
+                    android:textSize="@dimen/dimen_13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/dimen_15"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/text_blue_background"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_3"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_3"
+                    android:text="@string/start_time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <include
+                    android:id="@+id/begin_time_picker"
+                    layout="@layout/layout_time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_red_background"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_3"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_3"
+                    android:text="@string/end_time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <include
+                    android:id="@+id/end_time_picker"
+                    layout="@layout/layout_time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:background="@color/divider" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/main_background_color"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:text="@string/repeat"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <TextView
+                    android:id="@+id/repeat_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_toStartOf="@+id/repeat_detailed"
+
+                    android:textColor="@color/text_color_three"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/repeat_detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingBottom="@dimen/dimen_15"
+                    android:src="@drawable/enter" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/save_class_disable"
+                style="@style/bind_device"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:layout_marginBottom="8dp"
+                android:foreground="@drawable/foreground_shadow_cornered_rect"
+                android:gravity="center"
+                android:onClick="onDebouncedClick"
+                android:text="@string/save_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/TimePickerDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_20">
+
+    <include layout="@layout/normal_dialog_arched_top_title_layout" />
+
+    <com.cqkct.FunKidII.Ui.view.NumberPickerBlue
+        android:id="@+id/sex_pick"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_background_color"
+        android:paddingTop="4dp">
+
+    </com.cqkct.FunKidII.Ui.view.NumberPickerBlue>
+
+    <include layout="@layout/ok_and_cancel" />
+</LinearLayout>

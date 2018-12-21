@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:layout_centerHorizontal="true">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_then_bind"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/bd_qrc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/qr_img_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <ImageView
+        android:id="@+id/bd_qrc"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qr_img_top_guideline" />
+
+    <TextView
+        android:id="@+id/tv_bd_deviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_top_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bd_qrc"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/bt_bd"
+        style="@style/bind_device"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        android:text="@string/unbind"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/button_start_guideline"
+        app:layout_constraintTop_toTopOf="@+id/button_top_guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/button_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/button_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/button_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqkct.FunKidII.Ui.view.PullBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_back_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="659dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/baby_card_vp"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/status_bar_height"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@id/ll_add_baby"
+            app:layout_constraintTop_toTopOf="@id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/baby_card_add_new_button_bg"
+            android:foreground="@drawable/foreground_shadow_cornered_rect"
+            android:paddingStart="47dp"
+            android:paddingEnd="47dp"
+            app:layout_constraintBottom_toTopOf="@id/slide_down_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/baby_card_vp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baby_card_add" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:gravity="center"
+                android:text="@string/add_baby"
+                android:textColor="@color/normal_secondary_text"
+                android:textSize="@dimen/dimen_15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/slide_down_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:src="@drawable/down_double_arrow"
+            app:layout_constraintBottom_toTopOf="@id/baby_select_pager_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_add_baby" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/baby_select_pager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <include
+                layout="@layout/navigation_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/indicator_line"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/indicator_line"
+                android:layout_width="25dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</com.cqkct.FunKidII.Ui.view.PullBackLayout>
+

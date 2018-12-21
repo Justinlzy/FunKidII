@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/title_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="背景"
+            android:scaleType="fitXY"
+            android:src="@drawable/refuse_stranger_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_arch"
+            android:contentDescription="拱形效果覆盖"
+            app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/stranger" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="@string/refuse_tips"
+                android:textColor="@color/text_color_three"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/more_imp_refuse_stranger_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@+id/line_sep">
+
+        <TextView
+            android:id="@+id/refuse_stranger_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:ellipsize="marquee"
+            android:padding="@dimen/dimen_10"
+            android:singleLine="true"
+            android:text="@string/reject_stranger_down_call_phone"
+            android:textColor="@color/text_color_three"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/reject_stranger_call_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line_color"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_below="@+id/line_sep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/top_content">
+
+        <TextView
+            android:id="@+id/refuse_stranger_out_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:ellipsize="marquee"
+            android:padding="@dimen/dimen_10"
+            android:singleLine="true"
+            android:text="@string/reject_stranger_out_call_phone"
+            android:textColor="@color/text_color_three"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/reject_stranger_call_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

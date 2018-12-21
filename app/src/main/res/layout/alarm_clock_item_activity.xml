@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_Background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_Background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_red_background"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_3"
+                android:text="@string/ring_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <include
+                layout="@layout/layout_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/rl_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:text="@string/alarm_edit_note"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:layout_marginEnd="@dimen/dimen_20"
+                        android:background="@null"
+                        android:hint="@string/alarm_intput_note"
+                        android:maxLength="16"
+                        android:paddingTop="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_10"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_color_four"
+                        android:textSize="@dimen/dimen_13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rl_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:text="@string/repeat"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <TextView
+                    android:id="@+id/repeat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/iv_repeat_next"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="@dimen/dimen_10sp" />
+
+                <ImageView
+                    android:id="@+id/iv_repeat_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingBottom="@dimen/dimen_15"
+                    android:src="@drawable/enter" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_blue_background"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_3"
+                android:text="@string/notice_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_47"
+                android:foreground="@drawable/foreground_shadow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_40"
+                    android:text="@string/beep"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ib_switch_beep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:thumb="@drawable/thumb"
+                    app:showText="false"
+                    app:track="@drawable/track" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shock"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_40"
+                    android:text="@string/shock"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ib_switch_shock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:thumb="@drawable/thumb"
+                    app:showText="false"
+                    app:track="@drawable/track" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/save_alarm_clock"
+                style="@style/bind_device"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:layout_marginBottom="8dp"
+                android:foreground="@drawable/foreground_shadow"
+                android:onClick="onDebouncedClick"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

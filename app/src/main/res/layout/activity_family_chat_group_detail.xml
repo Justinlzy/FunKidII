@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/family_chat_group_detail_page_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar" />
+
+    <View
+        android:id="@+id/tip_bottom_border_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/line_color"
+        app:layout_constraintEnd_toEndOf="@id/tip"
+        app:layout_constraintStart_toStartOf="@id/tip"
+        app:layout_constraintTop_toBottomOf="@id/tip" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/members"
+        android:layout_width="match_parent"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/clean_chat_history"
+        app:layout_constraintTop_toBottomOf="@id/tip_bottom_border_line" />
+
+    <Button
+        android:id="@+id/clean_chat_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_button_bg"
+        android:foreground="@drawable/foreground_shadow_cornered_rect"
+        android:onClick="onDebouncedClick"
+        android:text="@string/clear_chat_history"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

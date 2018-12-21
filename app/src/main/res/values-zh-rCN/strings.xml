@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "悦守护">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="low_memory_state">低缓存</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="Logging">登录中</string>
+    <string name="login_failure">登录失败</string>
+    <string name="login_user_or_passwd_error">账号或密码错误</string>
+    <string name="account_already_exists">账号已注册</string>
+    <string name="login_timeout">登录超时</string>
+    <string name="login_network_fault">请检查网络</string>
+    <string name="network_prompt">网络提示信息</string>
+    <string name="cancel">取消</string>
+    <string name="ask_really_cancel">确定取消?</string>
+    <string name="ok">确定</string>
+    <string name="net_error">网络错误</string>
+    <string name="network_quality_poor">网络不给力</string>
+    <string name="next_step">下一步</string>
+    <string name="please_input_your_number">请输入手表回拨的号码</string>
+    <string name="number_not_effective">请输入有效的手机号</string>
+    <string name="dialog_loading_text">加载中...</string>
+    <string name="net_error_tip">当前网络不可用，请检查您的网络设置</string>
+    <string name="net_timeout">网络连接超时,请检查您的网络状态后重试！</string>
+    <string name="please_enter_verify_code">输入验证码</string>
+    <string name="please_enter_verify_code_you_received">请输入您收到的验证码</string>
+    <string name="next_to_indicate_your_consent">点击“下一步”表示您同意</string>
+    <string name="get_sms_code_failure">获取验证码失败</string>
+
+    <string name="menu_tips">This is from Kevin</string>
+    <string name="drawer_layout_open">Open</string>
+    <string name="drawer_layout_close">Close</string>
+    <string name="baby_card">所有宝贝</string>
+    <string name="watch_the_information">手表信息</string>
+    <string name="bind_and_unbind">绑定与解绑</string>
+    <string name="device_unbind">绑定与解绑</string>
+    <string name="app_setting">APP设置</string>
+    <string name="problems_and_feedback">问题与反馈</string>
+    <string name="before_dawn">凌晨</string>
+    <string name="morning">上午</string>
+    <string name="noon">中午</string>
+    <string name="afternoon">下午</string>
+    <string name="night">晚上</string>
+    <string name="your_phone_number">请输入您的手机号码</string>
+    <string name="please_input_your_phone_number">请输入你注册时的手机号码</string>
+
+    <string name="week_text_monday">周一</string>
+    <string name="week_text_tuesday">周二</string>
+    <string name="week_text_wednesday">周三</string>
+    <string name="week_text_thursday">周四</string>
+    <string name="week_text_friday">周五</string>
+    <string name="week_text_saturday">周六</string>
+    <string name="week_text_sunday">周日</string>
+    <string name="week_short_text_monday">周一</string>
+    <string name="week_short_text_tuesday">周二</string>
+    <string name="week_short_text_wednesday">周三</string>
+    <string name="week_short_text_thursday">周四</string>
+    <string name="week_short_text_friday">周五</string>
+    <string name="week_short_text_saturday">周六</string>
+    <string name="week_short_text_sunday">周日</string>
+
+    <!--about us-->
+    <string name="about_us">关于我们</string>
+    <string name="current_version">当前版本: v%s</string>
+    <string name="official_website">官方网站</string>
+    <string name="user_agreement">用户协议</string>
+    <!--AppSetting-->
+    <string name="notification">消息通知</string>
+    <string name="change_the_password">修改密码</string>
+    <string name="clear_the_cache">清除缓存</string>
+    <string name="check_the_update">检查更新</string>
+    <string name="cache_unit">0.0 M</string>
+    <string name="version">V 1.0.0</string>
+    <!--babyCard-->
+    <string name="select_baby">宝贝列表</string>
+    <string name="please_select_grade">请选择年级</string>
+    <string name="one_grade">一年级</string>
+    <string name="two_grade">二年级</string>
+    <string name="three_grade">三年级</string>
+    <string name="four_grade">四年级</string>
+    <string name="five_grade">五年级</string>
+    <string name="six_grade">六年级</string>
+    <string name="name">昵称</string>
+    <string name="me_and_baby">我与宝贝的关系：%1$s</string>
+    <string name="baby_information">宝贝信息</string>
+    <string name="phone_number">手机号码</string>
+    <string name="baby_sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="grade">年级</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="current_baby">当前宝贝</string>
+    <string name="baby_information_saving">保存中...</string>
+    <string name="setting_alarm_clock_maximum_of_five">最多五个</string>
+    <string name="setting_alarm_clock_model_all">每天</string>
+    <string name="setting_alarm_clock_model_once">一次</string>
+    <string name="setting_alarm_clock_model_workday">工作日</string>
+    <string name="setting_alarm_clock_model_weekend">周末</string>
+    <string name="setting_alarm_clock_model_repeat_custom">自定义</string>
+
+    <string name="location_record_calendar_week_monday">一</string>
+    <string name="location_record_calendar_week_tuesday">二</string>
+    <string name="location_record_calendar_week_wednesday">三</string>
+    <string name="location_record_calendar_week_thursday">四</string>
+    <string name="location_record_calendar_week_friday">五</string>
+    <string name="location_record_calendar_week_saturday">六</string>
+    <string name="location_record_calendar_week_sunday">日</string>
+
+
+    <!--对讲 SpeakingFragment-->
+
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="speaking_message_title">语聊</string>
+    <string name="speaking_message_state_send_fail_message_resend">是否重新发送这条语音消息?</string>
+    <string name="no_permission_audiorecord">没有录音权限</string>
+    <string name="no_current_device_information">无当前设备信息</string>
+    <string name="canceled">已取消</string>
+
+    <string name="datetime_year">年</string>
+    <string name="datetime_month">月</string>
+    <string name="datetime_day">日</string>
+    <string name="datetime_hour">时</string>
+    <string name="datetime_minute">分</string>
+    <string name="datetime_second">秒</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="kid_position_time_MMddHHmm">%02d月%02d日 %02d:%02d</string>
+    <string name="kid_position_time_yyyyMMddHHmm">%d年%02d月%02d日 %02d:%02d</string>
+    <string name="message_time_yesterday">昨天</string>
+
+    <string name="date_picker_unit_year">年</string>
+    <string name="date_picker_unit_month">月</string>
+    <string name="date_picker_unit_day">日</string>
+
+    <string name="fence_title">围栏守护</string>
+    <string name="fence_add_success">添加电子围栏成功!</string>
+    <string name="fence_add_failth">添加电子围栏失败!</string>
+    <string name="fence_delete_confirm">确定要删除该电子围栏吗?</string>
+    <string name="fence_delete_success">删除电子围栏成功！</string>
+    <string name="fence_delete_failth">删除电子围栏失败！请重新操作！</string>
+    <string name="fence_alert_content">您的宝贝[%1$s]在%2$s%3$s[%4$s]</string>
+    <string name="fence_name">请输入围栏名称</string>
+    <string name="fence_in_alarm">进入警报</string>
+    <string name="fence_out_alarm">离开警报</string>
+    <string name="fence_adding_fence">添加围栏</string>
+    <string name="fence_arrive">到达围栏</string>
+    <string name="fence_leave">离开围栏</string>
+    <string name="fence_arrive_leave">到达/离开围栏</string>
+    <string name="fence_add_area">围栏范围</string>
+    <string name="fence_enter_fence_name">请输入围栏名称</string>
+    <string name="fence_name_conflict">围栏名称冲突！该名称已存在！</string>
+    <string name="fence_select_fence_type">必须选择报警方式</string>
+    <string name="device_state_low_power">低电量报警</string>
+    <string name="device_state_sos">紧急报警</string>
+    <string name="device_alert">发出了</string>
+    <string name="toast_title">提示信息</string>
+    <!--register-->
+    <string name="check_empty_error">%1$s不能为空,请重新输入!</string>
+    <string name="check_match_error">%1$s内容不正确,请重新输入!</string>
+    <string name="check_same_name_error">%1$s已经存在,请重新输入!</string>
+    <string name="check_nickname_error">昵称格式为2~10位数字、字母和中文的组合，请重新输入!</string>
+    <string name="check_password_error">密码格式为6~16位数字或字母的组合，请重新输入!</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="different_password">您两次输入的密码不匹配</string>
+    <!--绑定设备-->
+    <string name="permission_to_apply">权限申请</string>
+    <string name="permission_dialog_message_head">在设置-应用-&appname;-权限中开启</string>
+    <string name="permission_dialog_message_end">权限，以正常使用悦宝贝功能</string>
+    <string name="permission_camera">相机</string>
+    <string name="permission_location">位置</string>
+    <string name="permission_storage">存储</string>
+    <string name="permission_phone">电话</string>
+    <string name="permission_sms">短信</string>
+    <string name="permission_contacts">通讯录</string>
+    <string name="bind_device_scan_qr_code">二维码扫描</string>
+    <string name="bind_device_bind_watch">绑定设备</string>
+    <string name="login_out_title">退出当前帐号</string>
+    <string name="login_out_message">是否退出当前&appname;帐号</string>
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+
+    <string name="bright_screen_time">亮屏时间</string>
+    <string name="second">秒</string>
+    <string name="last_time_login">最后时间:</string>
+    <string name="device_location_way">定位方式:</string>
+    <string name="timing_shutdown">定时开关机</string>
+    <string name="timing_open_device_time">开机时间</string>
+    <string name="timing_shutdown_device_time">关机时间</string>
+    <string name="notice">注意：</string>
+    <string name="notice_text">充电时，手表会一直保持开机状态，定时开机不会生效</string>
+    <string name="open_timing_shutdown">开启定时开关机</string>
+    <string name="close_timing_shutdown">关闭定时开关机</string>
+
+    <string name="select_relation">选择关系</string>
+    <string name="next">下一步</string>
+    <string name="please_input_baby_phone">请输入宝贝手机号</string>
+    <string name="country_area">国家/地区</string>
+    <string name="china">中国</string>
+    <string name="baba">爸爸</string>
+    <string name="mama">妈妈</string>
+    <string name="jiejie">姐姐</string>
+    <string name="yeye">爷爷</string>
+    <string name="nainai">奶奶</string>
+    <string name="gege">哥哥</string>
+    <string name="waigong">外公</string>
+    <string name="waipo">外婆</string>
+    <string name="laoshi">老师</string>
+    <string name="custom">自定义</string>
+    <string name="save_power">预留电量</string>
+    <string name="save_power_notice_text">电量剩余10%时，手表禁用</string>
+    <string name="save_power_notice">仅能接听电话</string>
+    <string name="save_power_notice_text2">无法使用定位和微聊，仅能接听电话</string>
+    <string name="save_power_notice_text3">电量剩余10%时，无法使用定位和微聊，仅能接听电话。</string>
+    <string name="open_save_power">开启预留电量</string>
+    <string name="close_save_power">关闭预留电量</string>
+
+    <string name="save_power_notice2">手表禁用</string>
+    <string name="report_watch_lost">手表挂失</string>
+    <string name="report_location">位置上报</string>
+    <string name="report_watch_text">挂失后，只要手表联网成功就能自动发送位置到APP</string>
+    <string name="report_watch_lost_bt">开启手表挂失</string>
+    <string name="register_code_received">收到的验证码</string>
+    <string name="resend">重新发送</string>
+    <string name="refuse_strangers_call">拒接陌生人</string>
+    <string name="intercept_record">拦截记录</string>
+    <string name="intercept_record_text">有陌生来电会发送消息给App，方便家长确定</string>
+    <string name="track_playback_review">播放</string>
+    <string name="track_stopback_review">停止</string>
+    <string name="track_playback_footer">轨迹</string>
+    <string name="track_playback_data_total">总数:</string>
+    <string name="track_playback_title">轨迹回放</string>
+    <string name="tomorrow_no">明天还未到呢！</string>
+    <string name="track_is_autio_playing">轨迹正在播放中</string>
+    <string name="choose_date">选择日期</string>
+    <string name="track_empty">该时间段没有轨迹数据</string>
+    <string name="northeast">东北</string>
+    <string name="northwest">西北</string>
+    <string name="southeast">东南</string>
+    <string name="southwest">西南</string>
+    <string name="the_input_is_empty">输入内容不能为空或空格字符</string>
+    <string name="fence_fence_name_length">围栏名称不得多于10个汉字或20个英文字母</string>
+    <string name="location_show_near">(附近)</string>
+
+    <string name="button_delete">删除</string>
+    <string name="button_add">添加</string>
+    <!--changePasswordActivity-->
+    <string name="change_password">修改密码</string>
+    <string name="save_setting">保存设置</string>
+    <string name="please_input_all_password">请输入完整的密码</string>
+    <string name="twice_password_diffent">两次密码输入不一致</string>
+    <string name="before_password_error">原先的密码输入有误</string>
+    <string name="please_input_password">请输入您的新密码</string>
+    <string name="register_please_input_password">请输入密码</string>
+    <string name="passwd_invalid_tip">密码为6~16位的数字或字母组成</string>
+    <string name="before_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <!--BabyCardActivity-->
+    <string name="boy">男孩</string>
+    <string name="gril">女孩</string>
+    <string name="choose_head_icon">选择头像</string>
+    <string name="take_photo">拍照</string>
+    <string name="school_guardian">上学守护</string>
+    <string name="album">相册</string>
+    <string name="phonenumber_can_not_be_null">号码不能为空</string>
+    <string name="choose_baby">选择宝贝</string>
+    <string name="please_input_baby_number">填写宝贝手机号码</string>
+    <string name="your_baby_number">请输入手表号码</string>
+    <string name="your_baby_number_no_hasEditPermission">尚未设置手表号码，请提醒管理员设置</string>
+    <string name="input_baby_name">填写宝贝昵称</string>
+    <string name="your_baby_name">您宝贝的昵称</string>
+    <string-array name="list_persons">
+        <item>澳门地区</item>
+        <item> 菲律宾</item>
+        <item> 柬埔寨</item>
+        <item> 老挝</item>
+        <item> 马来西亚</item>
+        <item> 美国</item>
+        <item> 缅甸</item>
+        <item> 泰国</item>
+        <item> 台湾地区</item>
+        <item> 香港地区</item>
+        <item> 新加坡</item>
+        <item> 伊朗</item>
+        <item> 印度</item>
+        <item> 印度尼西亚</item>
+        <item> 越南</item>
+        <item> 中国</item>
+    </string-array>
+    <string name="more_function">更多功能</string>
+
+    <string name="location">定位</string>
+    <string name="update_location">更新位置</string>
+    <string name="no_data">没有围栏</string>
+    <string name="title_associate_user">关联用户</string>
+    <string name="title_chat">微聊</string>
+    <string name="title_device_info">手表信息</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_more_function">功能</string>
+    <string name="title_notifi_message">消息记录</string>
+    <string name="title_bind_device">绑定设备</string>
+    <string name="refuse_stranger_call">拒绝陌生人</string>
+    <string name="timing_shut_down">定时开关机</string>
+
+    <string name="watch_setting">手表设置</string>
+    <string name="sos_contact">SOS 号码</string>
+    <string name="contact">通讯录</string>
+    <string name="baby">宝贝</string>
+    <string name="title_location_record">位置记录</string>
+    <string name="title_baby_card">宝贝名片</string>
+    <string name="title_date_picker">日期</string>
+    <string name="find_psw">找回密码</string>
+    <string name="register_failed">注册失败</string>
+    <string name="register_failed2">注册失败，请检查一下网络</string>
+    <string name="register_user_already_exists">号码已被注册</string>
+    <string name="find_psw_failed">找回密码失败</string>
+    <string name="number_format_error">格式错误</string>
+
+    <string-array name="decode_relation">
+        <item>爸爸</item>
+        <item>妈妈</item>
+        <item>姐姐</item>
+        <item>爷爷</item>
+        <item>奶奶</item>
+        <item>哥哥</item>
+        <item>外公</item>
+        <item>外婆</item>
+        <item>老师</item>
+    </string-array>
+
+    <string name="tip_locating_device">正在获取定位...</string>
+    <string name="tip_device_not_online">设备离线</string>
+    <string name="tip_locate_device_failure">无法获取定位</string>
+    <string name="tip_locate_device_timeout">获取超时</string>
+    <string name="tip_get_fencesing">正在获取围栏...</string>
+    <string name="tip_get_fences_failure">无法获取围栏</string>
+    <string name="tip_get_fences_timieout">获取围栏超时</string>
+    <string name="tip_del_fencesing">正在删除围栏...</string>
+    <string name="tip_add_fencing">正在添加围栏...</string>
+    <string name="tip_add_fence_failure">添加围栏失败</string>
+    <string name="tip_add_fence_timeout">添加围栏超时</string>
+    <string name="tip_add_fence_success">添加围栏成功</string>
+    <string name="tip_modify_fencing">正在修改围栏...</string>
+    <string name="tip_modify_fence_failure">修改围栏失败</string>
+    <string name="tip_modify_fence_timeout">修改围栏超时</string>
+    <string name="tip_modify_fence_success">修改围栏成功</string>
+
+    <string name="checking_sms_code">效验验证码...</string>
+    <string name="sms_code_error">验证码不能为空</string>
+    <string name="find_psw_failure">找回密码失败</string>
+    <string name="taking_photo">正在拍照...</string>
+    <string name="looking_watch">正在查找手表...</string>
+    <string name="take_photo_failure">拍照失败</string>
+    <string name="set_contact_success">通讯录同步成功</string>
+    <string name="set_contact_failure">联系人同步失败</string>
+    <string name="set_contact_error">同步错误</string>
+    <string name="setting_failure">设置失败</string>
+    <string name="setup_failed">设置失败</string>
+    <string name="setting_success">设置成功</string>
+    <string name="setup_timeout">设置超时</string>
+    <string name="saving_settings">正在保存设置...</string>
+    <string name="watch_not_net">手表未联网</string>
+    <string name="one_way_calling">单向通话...</string>
+    <string name="one_way_call_failed">单向通话失败</string>
+    <string name="one_way_call_timeout">单向通话请求超时</string>
+    <string name="one_way_call_success">手表即将回拨，请注意接听。</string>
+
+    <string name="device_does_not_exist">设备不存在</string>
+    <string name="invalid_parameter">无效参数</string>
+    <string name="user_not_exists">号码不存在</string>
+
+    <string name="tip_unbinding_device">正在解绑...</string>
+    <string name="tip_invalid_device_id">无效的设备</string>
+    <string name="add_alarm_clock">新建闹钟</string>
+    <string name="class_disable">上课禁用</string>
+    <string name="save">保存</string>
+    <string name="name_text">设置名称</string>
+    <string name="repeat">重复时段</string>
+    <string name="start_time">开始时间</string>
+    <string name="week_everyday">每天</string>
+    <string name="find_watch">查找手表</string>
+    <string name="please_set_baby_phone">请先设置宝贝手机号</string>
+    <string name="save_success">保存成功</string>
+    <string name="delete">删除</string>
+    <string name="copy">复制</string>
+    <string name="edit_class_disable">编辑上课禁用时段</string>
+    <string name="edit_alarm_clock">编辑闹钟</string>
+    <string name="watch_not_online">手表不在线</string>
+    <string name="notice_type">提醒方式:</string>
+    <string name="shock">震动</string>
+    <string name="beep">蜂鸣</string>
+    <string name="shock_beep">蜂鸣+震动</string>
+    <string name="alarm_clock">闹钟</string>
+    <string name="edit">编辑</string>
+    <string name="unselect_all">清除</string>
+    <string name="select_all">选择全部</string>
+    <string name="customize_relation">自定义关系</string>
+    <string name="relation">关系</string>
+    <string name="contact_name">名字</string>
+    <string name="avatar">头像</string>
+    <string name="number">号码</string>
+    <string name="user_type_label_name">类型</string>
+    <string name="permission">权限</string>
+
+    <string-array name="user_roles">
+        <item>未知</item>
+        <item>管理员</item>
+        <item>管理员</item>
+        <item>亲友</item>
+        <item>联系人</item>
+        <item>好友</item>
+    </string-array>
+
+    <string name="user_roles_friend">好友</string>
+
+    <string-array name="user_permissions">
+        <item>未知</item>
+        <item>允许编辑</item>
+        <item>允许编辑</item>
+        <item>仅查看</item>
+        <item>仅拨打电话</item>
+        <item>仅拨打电话</item>
+    </string-array>
+
+    <string-array name="user_permissions_view_array">
+        <item>管理员权限</item>
+        <item>查看权限</item>
+        <item>仅查看</item>
+    </string-array>
+
+    <string-array name="user_permissions_in_bind_req_view_array">
+        <item>管理员</item>
+        <item>亲友</item>
+    </string-array>
+
+
+    <string name="unbind">解绑设备</string>
+    <string name="delete_contact">删除联系人</string>
+    <string name="_cannot_be_empty">不能为空</string>
+    <string name="number_already_exists">号码已存在</string>
+    <string name="setup_success">设置成功</string>
+    <string name="loading">加载中...</string>
+    <string name="submit_temporarily_unable">暂时无法提交</string>
+    <string name="submitting">提交中...</string>
+    <string name="submit_failure">提交失败</string>
+    <string name="submit_timeout">提交超时</string>
+    <string name="submit_success">提交成功</string>
+    <string name="load_failure">加载失败</string>
+    <string name="load_timeout">加载超时</string>
+    <string name="step">步</string>
+    <string name="class_disable_disabled">上课禁用未开启</string>
+    <string name="class_disable_enabled">上课禁用已开启</string>
+    <string name="school_guardian_disabled">上学守护未开启</string>
+    <string name="school_guardian_enabled">上学守护已开启</string>
+    <string name="repeat_days">重复时段:</string>
+    <string name="model">型号</string>
+    <string name="watch_model">手表型号</string>
+    <string name="version_number">版本号: v%s</string>
+    <string name="device_version">手表软件版本</string>
+    <string name="your_pwd">请输入您的密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="unknown">未知</string>
+    <string name="hw_ver">硬件版本</string>
+    <string name="sw_ver">软件版本</string>
+    <string name="unfilled">未填写</string>
+    <string name="start_use">开始体验更多惊喜</string>
+    <string name="unbind_short">解绑</string>
+    <string name="ask_really_delete">确定删除?</string>
+    <string name="ask_really_unbind">您确定要解除绑定 <![CDATA[<font color=\"#11cbd7\">%1$s</font>]]> 吗?</string>
+    <string name="is_online">在线</string>
+    <string name="is_offline">离线</string>
+    <string name="scan_then_bind">扫一扫，绑定手表</string>
+    <string name="device_already_bound">设备已绑定</string>
+    <string name="input_the_bind_num">请输入手表的设备号</string>
+    <string name="please_wait">请稍后...</string>
+    <string name="invalid_device">无效的设备</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="request_timed_out">请求超时</string>
+    <string name="request_failed">请求失败</string>
+    <string name="logging">登录中...</string>
+    <string name="no_record_audio_permission">无录音权限</string>
+    <string name="no_camera_permission">无相机权限</string>
+    <string name="no_gallery_permission">没有访问照片的权限</string>
+    <string name="no_album_permission">没有访问相册的权限</string>
+    <string name="no_location_permission">无定位权限</string>
+    <string name="camera_permission">相机权限</string>
+    <string name="please_enable_camera_permission_in_setting">请在<b>设置</b>中开启<b>&appname;</b>访问相机的权限</string>
+    <string name="notify_title_modify_baby_info">修改宝贝信息</string>
+    <string name="notify_title_modify_dev_functions">修改宝贝手表配置</string>
+    <string name="notify_title_modify_fences">修改围栏信息</string>
+    <string name="notify_title_modify_sos">修改SOS信息</string>
+    <string name="notify_title_modify_contacts">修改联系人</string>
+    <string name="notify_title_modify_alarm_clock">修改手表闹钟</string>
+    <string name="notify_title_modify_class_disable">修改手表上课禁用</string>
+    <string name="notify_title_request_bind">绑定申请</string>
+    <string name="notify_title_bind_success">绑定成功</string>
+    <string name="notify_title_unbound">设备被解绑</string>
+    <string name="notify_title_dev_in_call">手表接听电话</string>
+    <string name="notify_title_dev_out_call">手表呼出电话</string>
+    <string name="notify_title_dev_incid_sos">手表触发 SOS 事件</string>
+    <string name="notify_title_dev_incid_low_battery">手表低电量</string>
+    <string name="notify_title_dev_incid_power_on">手表开机</string>
+    <string name="notify_title_dev_incid_power_off">手表关机</string>
+    <string name="notify_title_dev_incid_off_wrist">手表脱腕</string>
+    <string name="notify_title_dev_incid_soak_water">手表泡水</string>
+    <string name="notify_title_dev_incid_report_loss">手表挂失</string>
+    <string name="notify_title_dev_incid_fence">手表触发围栏</string>
+    <string name="str_piece_modified">修改了</string>
+    <string name="str_piece_baby_info">宝贝信息</string>
+    <string name="str_piece_on_device">在手表上</string>
+    <string name="str_piece_refuse_stranger_call_in">拒接陌生人</string>
+    <string name="str_piece_refuse_stranger_call_out">拒呼陌生人</string>
+    <string name="str_piece_timer_power_on_off">定时开关机</string>
+    <string name="is_updated">已是最新版本</string>
+    <string name="no_write_external_storage_permission">无存储权限</string>
+    <string name="record_audio_permission">录音权限</string>
+    <string name="please_enable_record_audio_permission_in_setting">请在<b>设置</b>中开启<b>&appname;</b>录制音频的权限</string>
+    <string name="external_storage_permission">存储权限</string>
+    <string name="please_enable_external_storage_permission_in_setting">请在<b>设置</b>中开启<b>&appname;</b>访问设备上的照片、媒体内容和文件的权限</string>
+    <string name="no_external_storage_permission">无存储权限</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="tip_deleting">删除中...</string>
+    <string name="delete_failure">删除失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="ask_del_alarm_clock">确定删除该闹钟？</string>
+    <string name="delete_alarm_clock">删除闹钟</string>
+    <string name="delete_class_disable">删除上课禁用</string>
+    <string name="location_permission">位置信息权限</string>
+    <string name="please_enable_location_permission_in_setting">请在<b>设置</b>中开启<b>&appname;</b>获取此设备的位置信息的权限</string>
+    <string name="watch_number">手表号码</string>
+    <string name="the_number_of_to_listen">单向通话</string>
+    <string name="the_number_of_to_listen_tip">手表收到指令后，将回拨您所填入的号码。通话时，您所发出的声音将不会被对方听到。</string>
+    <string name="in_progress">正在处理...</string>
+    <string name="kct">金康特</string>
+    <string name="add_watch">添加手表</string>
+    <string name="crop">裁剪</string>
+    <string name="baby_name_not_allow_empty">昵称不能为空</string>
+    <string name="locate_type_GPS">GPS</string>
+    <string name="locate_type_BDS">北斗</string>
+    <string name="locate_type_GALILEO">伽利略</string>
+    <string name="locate_type_GLONASS">格洛纳斯</string>
+    <string name="locate_type_cell">蜂窝定位</string>
+    <string name="locate_type_WiFi">WiFi定位</string>
+    <string name="locate_type_HYBRID">混合定位</string>
+    <string name="app_upgrade">版本升级</string>
+    <string name="app_upgrade_to_"><b>&appname;</b>将升级至版本 v%s</string>
+    <string name="install">安装</string>
+    <string name="download_manager_STATUS_PENDING">等待下载</string>
+    <string name="download_manager_STATUS_RUNNING">正在下载</string>
+    <string name="download_manager_STATUS_PAUSED">已暂停</string>
+    <string name="download_manager_STATUS_SUCCESSFUL">下载完成</string>
+    <string name="download_manager_STATUS_FAILED">下载失败</string>
+    <string name="download_manager_canceled">已取消</string>
+    <string name="check_upgrade_failure">检查更新失败</string>
+    <string name="check_upgrade">检查更新</string>
+    <string name="downloading">正在下载中...</string>
+    <string name="hide">隐藏</string>
+    <string name="work_day">工作日</string>
+    <string name="none">无</string>
+    <string name="alarm_notice_sound">蜂鸣</string>
+    <string name="alarm_notice_vibrate">震动</string>
+    <string name="calculating">正在计算</string>
+    <string name="please_enable_app_notification">请在<b>设置</b>中开启<b>&appname;</b>通知的相关权限</string>
+    <string name="enable_app_notification">启用通知</string>
+    <string name="open_guardian">开启守护</string>
+    <string name="guard_time">守护时间</string>
+    <string name="am_guard_time">上午守护时间</string>
+    <string name="pm_guard_time">下午守护时间</string>
+    <string name="last_back_guard_time">最晚到家时间</string>
+    <string name="repetition">重复：</string>
+    <string name="sg_statutory_holiday">法定假日：</string>
+    <string name="sg_guardian_address">守护地址</string>
+    <string name="sg_school_address">学校地址</string>
+    <string name="sg_home_address">家庭地址</string>
+    <string name="statutory_holiday_open_guard">法定假日是否开启守护</string>
+    <string name="collect_praise">有奖集赞</string>
+    <string name="edit_collect_praise">编辑集赞</string>
+    <string name="collecting_praise">集赞中</string>
+    <string name="am_guardian_time">上午守护时间</string>
+    <string name="am_arrivals_school_time">上午到校时间</string>
+    <string name="am_leave_school_time">上午离校时间</string>
+    <string name="pm_guardian_time">下午守护时间</string>
+    <string name="pm_arrivals_school_time">下午到校时间</string>
+    <string name="pm_leave_school_time">下午离校时间</string>
+    <string name="school_guardian_error">上学守护设置失败</string>
+    <string name="school_guardian_success">设置成功</string>
+    <string name="end_time">结束时间</string>
+    <string name="notification_channel_name_bind_request">绑定请求</string>
+    <string name="notification_channel_name_micro_chat">微聊</string>
+    <string name="notification_channel_name_message_center">消息中心</string>
+    <string name="notify_title_dev_incid_school_guard">上学守护</string>
+    <string name="notify_title_modify_scholl_guard">修改手表上学守护</string>
+    <string name="notify_title_modify_collect_praise">修改有奖集赞</string>
+    <string name="contacts_permission">通讯录权限</string>
+    <string name="please_enable_contacts_permission_in_setting">请在<b>设置</b>中开启<b>&appname;</b>访问通讯录的权限</string>
+    <string name="no_contacts_permission">没有访问通讯录的权限</string>
+    <string name="is_turned_on">已开启</string>
+    <string name="is_turned_off">未开启</string>
+
+    <string name="time">时间</string>
+    <string name="unbind_owner_device_tip">你是手表的超级管理员，解除绑定将删除通讯录里的所有成员，并清除手表相关的所有数据，请谨慎操作。</string>
+    <string name="newpassword_oldpassword_same">新密码与原始密码一样，请重新输入!</string>
+    <string name="please_input_watch_number">请输入手表号码</string>
+    <string name="please_select_sex">请选择性别</string>
+    <string name="select_sex">性别选择</string>
+    <string name="please_select_birthday">请选择生日</string>
+    <string name="please_select_height">请选择身高</string>
+    <string name="please_select_weight">请选择体重</string>
+    <string name="has_no_permission">没有权限</string>
+    <string name="simplex_call_do_not_frequent">请勿频繁操作</string>
+    <string name="map_amap">高德地图</string>
+    <string name="map_baidumap">百度地图</string>
+    <string name="please_install_map_app">请安装导航应用</string>
+    <string name="location_service">定位服务</string>
+    <string name="please_enable_location_service_in_setting">请在<b>设置</b>中开启定位服务</string>
+    <string name="locating">正在获取位置...</string>
+
+
+    <!--mainActivity-->
+    <string name="main_sure_call_for_baby">您确定向宝贝拨打电话?</string>
+    <string name="main_click_again_exit">再按一次退出应用</string>
+    <string name="main_class_disable_open">上课禁用开启中，如需拨打电话请点击确定按钮进行设置</string>
+    <string name="main_step">计步</string>
+    <string name="main_steps_of_today">今日步数</string>
+    <string name="main_page_chat">微聊</string>
+    <string name="main_page_call">通话</string>
+    <string name="main_page_location">定位</string>
+
+
+    <!--collectPraise-->
+    <string name="collect_maximum_input_four_4">请输入任务的名称</string>
+    <string name="collect_gift">奖品</string>
+    <string name="collect_create_gift">添加礼物</string>
+    <string name="collect_task">任务</string>
+    <string name="collect_gift_colon">奖品:</string>
+    <string name="collect_use_time">已用时</string>
+    <string name="collect_last_time">历时</string>
+    <string name="collect_use_times">所用时间:</string>
+    <string name="collect_day">天</string>
+    <string name="collect_history">集赞历史</string>
+    <string name="collect_permission_not_hint">当前您仅拥有查看权限，不能参与集赞进程</string>
+    <string name="collect_day_task_only_one">注：每个任务当天只能完成一次</string>
+    <string name="collect_commitments_hint">快去履行承诺吧，不要让孩子等着急哟~</string>
+    <string name="collect_start_new_collect_hint"> 宝贝手表端确认收到奖励后，才能进行新一轮集赞</string>
+    <string name="collect_begin_collect"> 开始集赞</string>
+    <string name="collect_cancel_collect"> 取消集赞</string>
+    <string name="collect_Max_6_task">最多创建6个任务</string>
+    <string name="collect_task_name">添加任务</string>
+    <string name="collect_task_name_not_null">任务名称不能为空</string>
+    <string name="collect_task_same">已存在该任务</string>
+    <string name="collect_create_task_one">至少创建1个任务</string>
+    <string name="collect_gift_name_not_null">奖品名称不能为空</string>
+    <string name="collect_target_collects">目标赞数</string>
+    <string name="collect_hint">提示</string>
+    <string name="collect_sure_cancel_cp">确定取消此次集赞项目吗?</string>
+    <string name="collect_input_target_collects">请输入目标赞数</string>
+    <string name="collect_input_large">输入太大</string>
+    <string name="collect_input_numbers">请输入数字</string>
+    <string name="collect_sure_delete_context">确定删除此次集赞项目吗?</string>
+    <string name="collect_input_prize">请输入礼物的名称</string>
+
+
+    <!--clock-->
+    <string name="clock_SoundAndVibrateDes">声音和振动</string>
+    <string name="clock_SoundDes">声音</string>
+    <string name="clock_VibrateDes">振动</string>
+    <string name="clock_BuzzingAndVibrateDes">蜂鸣+振动</string>
+
+
+    <!--all-->
+    <string name="all_CallFromWatchDes">手表来电</string>
+    <string name="all_MessageFromWatchDes">手表消息</string>
+
+
+    <!--SosContact-->
+    <string name="sos_contact_sure_delete_number"> 确定删除该号码?</string>
+    <string name="sos_contact_noting_number">没有号码</string>
+    <string name="sos_contact_plz_input_contact_name">请输入联系人姓名</string>
+    <string name="sos_contact_plz_input_contact_number">请输入联系人电话</string>
+
+    <string name="sos_contact_SOS_number">SOS号码</string>
+    <string name="sos_contact_name_noting_null">姓名不能为空</string>
+    <string name="sos_contact_number_formal_error">电话号码格式错误</string>
+
+
+    <!--moreActivity-->
+    <string name="more_class_disable_open_call_sure_setting">上课禁用开启中，如需单向通话请点击确定按钮进行设置</string>
+    <string name="more_find_failure">查找失败</string>
+    <string name="more_find_suc">查找手表成功</string>
+    <string name="more_find_watch_failure">查找手表失败</string>
+    <string name="more_find_number_formal_error">号码格式错误</string>
+    <string name="more_common_function">常用功能</string>
+    <string name="more_line_call">单向通话</string>
+
+
+    <!--classDisable-->
+    <string name="class_disable_name_not_null">名称不能为空</string>
+    <string name="class_disable_select_weekclass_disable_select_week">请选择重复周期</string>
+    <string name="class_disable_times">禁用时间</string>
+    <string name="class_disable_times_fragment">禁用时间段</string>
+    <string name="class_disable_no_setting">未设置上课禁用</string>
+    <string name="class_disable_begin_times">开始时间:</string>
+    <string name="class_disable_over_times">结束时间:</string>
+    <string name="class_disable_begin_over_time_noting_same">开始时间不能与结束时间相同</string>
+    <string name="class_disable_start_should_be_less_than_over_time">开始时间应该小于结束时间</string>
+    <string name="class_disable_with_other_periods">与其他时间段重复</string>
+    <string name="class_disable_title">禁用标题</string>
+    <string name="ask_del_class_disable">确定删除该上课禁用时间？</string>
+    <string name="class_disable_hint1">1.禁用时段将拒绝所有电话(包括单向通话)。</string>
+    <string name="class_disable_hint2">2.微聊可以收到但不会提醒。</string>
+    <string name="class_disable_hint3">3.SOS功能正常。</string>
+    <string name="class_disable_hint4">4.定位正常。</string>
+    <string name="class_disable_times_select">时间选择</string>
+
+    <!--TimingShutdownWatch-->
+    <string name="timing_shut_open">已开启定时开关机</string>
+    <string name="timing_shut_close">未开启定时开关机</string>
+    <string name="timing_select_shutdown_time">选择关机时间</string>
+    <string name="timing_time_5_min">开关机时间差不能小于5分钟</string>
+    <string name="timing_select_start_up_time">选择开机时间</string>
+
+    <!--RejectStrangerCall-->
+    <string name="reject_stranger_down_call_phone">拒接陌生人电话</string>
+    <string name="reject_stranger_out_call_phone">拒呼陌生人电话</string>
+
+    <!--watchSetting-->
+    <string name="watch_setting_calculator">手表计算器</string>
+    <string name="watch_setting_select_light_time">选择亮屏时间</string>
+
+    <!--AlarmClock-->
+    <string name="alarm_clock_setting_hint">请设置提醒方式</string>
+    <string name="alarm_clock_edit_name">编辑闹钟名称</string>
+    <string name="alarm_clock_input_name">请填写闹钟名称</string>
+    <string name="alarm_clock_input_here">在此输入</string>
+
+    <!--school_guard-->
+    <string name="school_guard_not_open">未开启上学守护</string>
+    <string name="school_guide_no_guide">不守护</string>
+    <string name="school_guide_guide">守护</string>
+    <string name="school_guide_OK">完成</string>
+    <string name="school_guide_close">关闭上学守护</string>
+    <string name="school_guide_open">开启上学守护</string>
+    <string name="school_guide_do_open">已开启上学守护</string>
+    <string name="school_guide_SchoolProNote3">上午离校时间不能晚于下午到校时间</string>
+    <string name="school_guide_SchoolProNote2">到校时间不能晚于离校时间</string>
+    <string name="school_guide_SchoolProNote4">下午离校时间不能晚于最晚到家时间</string>
+    <string name="school_guide_setting_school_address">请设置学校地址</string>
+    <string name="school_guide_setting_home_address">请设置家庭地址</string>
+    <string name="school_guide_put_setting">正在提交设置</string>
+    <string name="school_guide_setting_time_out">上学守护设置超时</string>
+    <string name="school_guide_select_time">选择时间</string>
+    <string name="school_guide_select_PM_go_school_time">选择下午到校时间</string>
+    <string name="school_guide_select_PM_leave_school_time">选择下午离校时间</string>
+    <string name="school_guide_select_AM_go_school_time">选择上午到校时间</string>
+    <string name="school_guide_select_AM_leave_school_time">选择上午离校时间</string>
+    <string name="school_guide_home_address">选择家地址</string>
+    <string name="school_guide_school_address">选择学校地址</string>
+    <string name="school_guide_business_house">商务住宅</string>
+    <string name="school_guide_school">学校</string>
+    <string name="school_guide_nearby_add">附近地址</string>
+    <string name="school_guide_nearby_school">附近学校</string>
+    <string name="school_guide_nearby_phone">手机位置</string>
+    <string name="school_guide_nearby_watch">手表位置</string>
+    <string name="school_guide_current_addr">当前设置的位置</string>
+    <string name="school_guide_recommend">(推荐)</string>
+    <string name="school_guide_address_ing">地址获取中...</string>
+    <string name="school_guide_select_around">选择守护范围</string>
+
+    <!--contacts-->
+    <string name="contacts_name_not_null">姓名不能为空</string>
+    <string name="contacts_number_not_null">号码不能为空</string>
+    <string name="contacts_number_not_error">号码格式错误</string>
+    <string name="contacts_add_user">添加联系人</string>
+    <string name="contact_users_watch">的手表</string>
+    <string name="contact_administrator">超管</string>
+    <string name="contact_me">(我)</string>
+    <string name="contact_edit_user_number">修改联系人号码</string>
+    <string name="contact_edit_user_name">修改联系人姓名</string>
+    <string name="contact_names">姓名</string>
+    <string name="contact_unbind_user_sure">确定解除该用户对设备的绑定吗?</string>
+    <string name="contact_delete_user_sure">确定删除该联系人吗?</string>
+
+
+    <!--babyCard-->
+    <string name="grade_not_attending_school">未上学</string>
+    <string name="grade_kindergarten">幼儿园小班</string>
+    <string name="grade_kindergarten_middle_school">幼儿园中班</string>
+    <string name="grade_kindergarten_class">幼儿园大班</string>
+    <string name="grade_preschool">学前班</string>
+    <string name="grade_first_grade">小学一年级</string>
+    <string name="grade_second_grade">小学二年级</string>
+    <string name="grade_third_grade">小学三年级</string>
+    <string name="grade_fourth_grade">小学四年级</string>
+    <string name="grade_fifth_grade">小学五年级</string>
+    <string name="grade_grade_6"> 小学六年级</string>
+    <string name="grade_junior_high_school">初中一年级</string>
+    <string name="grade_second_grade_junior_high_school">初中二年级</string>
+    <string name="junior_high_school">初中三年级</string>
+    <string name="grade_high_school_first_grade">高中一年级</string>
+    <string name="grade_high_school_second_grade">高中二年级</string>
+    <string name="grade_high_school_senior">高中三年级</string>
+    <string name="other">其他</string>
+    <string name="baby_card_up_head_icon_failed">上传头像失败</string>
+    <string name="fail_to_save">保存失败</string>
+    <string name="time_out_to_save">保存超时</string>
+
+    <!--watchInformation-->
+    <string name="watch_information_config">配置</string>
+    <string name="watch_information_indoor_localization">主要用于室内定位</string>
+    <string name="watch_information_outdoor_positioning">主要用于室外定位</string>
+    <string name="watch_information_gravity_acceleration_sensor">重力加速传感器</string>
+    <string name="watch_information_step_count">用于计步</string>
+
+    <!--appSetting-->
+    <string name="app_setting_cache_cleaning_completed">清理完成</string>
+    <string name="app_setting_logout">退出登录</string>
+    <string name="app_setting_message_bell">消息铃声</string>
+    <string name="app_setting_message_shake">消息震动</string>
+    <string name="app_setting_message_close">关闭后，手机收到信息将不会有铃声或震动提醒！</string>
+    <string name="app_setting_changing">正在修改...</string>
+    <string name="app_setting_change_ok">修改成功</string>
+    <string name="app_setting_change_timeout">修改超时</string>
+    <string name="app_setting_cannot_change">暂时无法修改</string>
+    <string name="app_setting_original_password_error">原密码错误</string>
+    <string name="app_setting_change_failed">修改失败</string>
+    <string name="app_setting_in_version">内部版本：v%s</string>
+    <string name="app_setting_version_too_low">版本过低</string>
+    <string name="app_setting_version_too_low_update_now">你当前的应用版本过低，需要升级</string>
+
+    <!--feedback-->
+    <string name="feedback_number">联系电话：</string>
+    <string name="feedback_call_phone">拨打电话</string>
+    <string name="feedback_call_text">您的意见和建议，是我们前进的动力！</string>
+
+    <!--unbindAndBind-->
+    <string name="unbind_and_bind_device_ID">设备号：</string>
+    <string name="unbind_and_bind_unbind_suc">解绑成功</string>
+    <string name="unbind_and_bind_unable_to_unbind">暂时无法解绑</string>
+    <string name="unbind_and_bind_unbind_failure">解绑失败</string>
+
+    <!--bindDevice-->
+    <string name="bind_device_request_title">申请成为监护人</string>
+    <string name="bind_device_request_content"><![CDATA[<font color=\"#11cbd7\">%1$s</font>]]>(<![CDATA[<font color=\"#11cbd7\">%2$s</font>]]>)想申请成为<![CDATA[<font color=\"#11cbd7\">%3$s</font>]]>(<![CDATA[<font color=\"#11cbd7\">%4$s</font>]]>)的监护人，是否同意？</string>
+    <string name="bind_device_request_agree">同意</string>
+    <string name="bind_device_request_ignore">忽略</string>
+    <string name="bind_device_watch">绑定手表</string>
+    <string name="bind_device_change_user">切换用户</string>
+    <string name="bind_device_login_ok_need_bind">您已成功登录，需要绑定手表后才能正常使用</string>
+    <string name="bind_device_check_bindID">检验绑定号...</string>
+    <string name="bind_device_select_code_image">选择二维码图片</string>
+    <string name="bind_device_no_qr_code_was_identified">未识别到二维码</string>
+    <string name="bind_device_identify_ing">正在识别...</string>
+    <string name="bind_device_scan_again">重新扫描</string>
+    <string name="bind_device_scan_watch_type">将手表二维码放入扫描框内，即可自动扫描</string>
+    <string name="bind_device_bind_fail">绑定失败</string>
+    <string name="bind_device_bind_and_fail">绑定失败,您未获得此手表管理员的许可</string>
+    <string name="bind_device_binding">正在绑定...</string>
+    <string name="bind_device_wait_administrator_agree">等待管理员同意您的绑定申请</string>
+    <string name="bind_device_custom_not_null">自定义不能为空</string>
+    <string name="bind_device_custom_relation">自定义关系</string>
+    <string name="bind_device_no_bind_number">无绑定号</string>
+    <string name="bind_device_input_bind_number">请输入绑定号</string>
+    <string name="bind_device_type">绑定号是一组字符串，请在手表里查看</string>
+    <string name="bind_device_bind">绑定</string>
+    <string name="bind_device_apply">申请</string>
+    <string name="bind_device_apply_finish">申请完成</string>
+    <string name="bind_device_apply_seed_wait_sure">您的申请信息已发送，请等待管理员确认</string>
+
+    <!--mapActivity-->
+    <string name="map_load_local_fail_type">获取不到位置信息，手表所处位置信号不好哦</string>
+    <string name="map_location_ing">定位中...</string>
+    <string name="map_select_map">选择地图</string>
+    <string name="map_location_accuracy_fmt">精度：%1$.1f米</string>
+    <string name="map_location_way_base_station">基站定位</string>
+
+    <!--fenceSetting-->
+    <string name="fence_setting_delete_fail">删除围栏失败</string>
+    <string name="fence_setting_delete_timeout">删除围栏超时</string>
+    <string name="fence_setting_warn"> 报警</string>
+    <string name="fence_setting_edit_fence">修改围栏</string>
+    <string name="fence_setting_fence_name_null">名称不能为空</string>
+    <string name="fence_setting_setting_start_time">开始时间不能为空</string>
+    <string name="fence_setting_setting_over_time">结束时间不能为空</string>
+    <string name="fence_setting_edit_name">修改围栏名称</string>
+    <string name="fence_setting_begin_over_time_5min">开始时间与结束时间差不能小于5分钟</string>
+    <string name="fence_setting_input_fence_name">请输入围栏名称</string>
+
+    <!--locationRecord-->
+    <string name="location_record_time_not_for">时候未到</string>
+    <string name="location_record_load_data_ing">正在获取数据...</string>
+    <string name="location_record_load_fail">获取数据失败</string>
+    <string name="location_record_load_not">暂时无法获取数据</string>
+    <string name="location_record_load_call_in">电话呼入</string>
+    <string name="location_record_load_call_out">呼出电话</string>
+    <string name="location_record_sos">SOS</string>
+    <string name="location_record_low_power">低电量</string>
+    <string name="location_record_start_up">开机</string>
+    <string name="location_record_power_off">关机</string>
+    <string name="location_record_get_hand">脱腕</string>
+    <string name="location_record_water">泡水</string>
+    <string name="location_record_lose">挂失</string>
+    <string name="location_record_fence">围栏</string>
+    <string name="location_record_not_thing">暂无事件</string>
+    <string name="location_record_watch_thing">手表事件：</string>
+
+    <!--notifyMessage-->
+
+    <string name="notify_message_canceled">取消了</string>
+    <string name="notify_message_collected">的有奖集赞:</string>
+    <string name="notify_message_finish">结束</string>
+    <string name="notify_message_highly">赞了</string>
+    <string name="notify_message_edited">修改了</string>
+    <string name="notify_message_deleted">删除了</string>
+    <string name="notify_message_is">为</string>
+    <string name="notify_message_add_collect">添加了有奖集赞，奖品为:</string>
+    <string name="notify_message_school_guide">的上学守护</string>
+    <string name="notify_message_add_class">添加了上课禁用:</string>
+    <string name="notify_message_is_class_disable">的上课禁用:</string>
+    <string name="notify_message_add_clock">添加了闹钟:</string>
+    <string name="notify_message_s_clock">的闹钟: </string>
+    <string name="notify_message_s_contact">的联系人: </string>
+    <string name="notify_message_add_contact">添加了闹钟:</string>
+    <string name="notify_message_s_sos">的SOS:</string>
+    <string name="notify_message_add_SOS">添加了SOS: </string>
+    <string name="notify_message_s_fence">的围栏: </string>
+    <string name="notify_message_fence_m">围栏: </string>
+    <string name="notify_message_add_fence">添加了围栏: </string>
+    <string name="notify_message_opened">开启</string>
+    <string name="notify_message_closed">关闭</string>
+    <string name="notify_message_timing_power_off_on">定时开关机时间</string>
+    <string name="notify_message_open_light_time">手表亮屏时间为</string>
+    <string name="notify_message_call_location">通话位置</string>
+    <string name="notify_message_change">修改</string>
+    <string name="notify_message_save_power_mode">省电模式</string>
+    <string name="notify_message_water_hint">泡水提醒</string>
+    <string name="notify_message_not_go_home">还未到家</string>
+    <string name="notify_message_go_home">已到家</string>
+    <string name="notify_message_not_go_school">还未到达学校</string>
+    <string name="notify_message_back_school">回到学校</string>
+    <string name="notify_message_leave_school">离开学校</string>
+    <string name="notify_message_go_school">到达学校</string>
+    <string name="notify_message_in">进入</string>
+    <string name="notify_message_out">离开</string>
+    <string name="notify_trigger_SOS">触发SOS事件</string>
+    <string name="notify_message_receive_call">收到来电</string>
+    <string name="notify_message_by">被</string>
+    <string name="notify_message_watch">手表</string>
+    <string name="notify_message_unbind">解绑了</string>
+    <string name="notify_message_yet_bind">已绑定</string>
+    <string name="notify_message_s_apply">的申请</string>
+    <string name="notify_message_agree_bind">同意了你绑定</string>
+    <string name="notify_message_apply_bind">请求绑定</string>
+    <string name="notify_who_request_bind_which_device">%1$s请求绑定%2$s</string>
+    <string name="notify_who_agree_you_bind_which_device">%1$s同意了你绑定%2$s的申请</string>
+    <string name="notify_who_bind_which_device">%1$s已绑定%2$s</string>
+    <string name="notify_which_device_unbind">%1$s手表被解绑</string>
+    <string name="notify_who_unbind_which_device">%1$s解绑了%2$s</string>
+    <string name="notify_which_device_unbind_by_who">%2$s被%1$s解绑</string>
+    <string name="notify_who_trigger_call_in_event">%1$s收到来电</string>
+    <string name="notify_who_trigger_call_out_event">%1$s呼出电话</string>
+    <string name="notify_who_trigger_sos_event">%1$s触发SOS事件</string>
+    <string name="notify_who_trigger_low_battery_event">%1$s低电量</string>
+    <string name="notify_who_trigger_power_on_event">%1$s开机</string>
+    <string name="notify_who_trigger_power_off_event">%1$s关机</string>
+    <string name="notify_who_trigger_off_wrist_event">%1$s脱腕</string>
+    <string name="notify_who_trigger_soak_water_event">%1$s泡水</string>
+    <string name="notify_who_trigger_what_fence_event">%1$s%2$s围栏：%3$s</string>
+    <string name="notify_who_trigger_what_school_guard_event">%1$s%2$s</string>
+    <string name="notify_who_reject_stranger_in_modified_on_device">%1$s在手表上%2$s了拒接陌生人</string>
+    <string name="notify_who_reject_stranger_in_modified_by_who">%1$s%3$s了%2$s的拒接陌生人</string>
+    <string name="notify_who_reject_stranger_out_modified_on_device">%1$s在手表上%2$s了拒呼陌生人</string>
+    <string name="notify_who_reject_stranger_out_modified_by_who">%1$s%3$s了%2$s的拒呼陌生人</string>
+    <string name="notify_who_inundate_hint_modified_on_device">%1$s在手表上%2$s了泡水提醒</string>
+    <string name="notify_who_inundate_hint_modified_by_who">%1$s%3$s了%2$s的泡水提醒</string>
+    <string name="notify_who_save_power_mode_modified_on_device">%1$s在手表上%2$s了省电模式</string>
+    <string name="notify_who_save_power_mode_modified_by_who">%1$s%3$s了%2$s的省电模式</string>
+    <string name="notify_who_call_location_modified_on_device">%1$s在手表上%2$s了通话位置</string>
+    <string name="notify_who_call_location_modified_by_who">%1$s%3$s了%2$s的通话位置</string>
+    <string name="notify_who_light_time_modified_on_device">%1$s在手表上修改亮屏时间为%2$d秒</string>
+    <string name="notify_who_light_time_modified_by_who">%1$s修改%2$s的亮屏时间为%3$d秒</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_to_on">%1$s在手表上修改定时开机时间为：%2$s</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_to_off">%1$s在手表上修改定时关机时间为：%2$s</string>
+    <string name="notify_who_timer_power_onoff_modified_on_device_onoff">%1$s在手表上%2$s了定时开关机</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_onoff">%1$s%3$s了%2$s的定时开关机</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_on">%1$s修改%2$s的定时开机时间为：%3$s</string>
+    <string name="notify_who_timer_power_onoff_modified_by_who_off">%1$s修改%2$s的定时关机时间为：%3$s</string>
+    <string name="notify_who_calculator_modified_on_device">%1$s在手表上%2$s了计算器</string>
+    <string name="notify_who_calculator_modified_by_who">%1$s%3$s了%2$s的计算器</string>
+    <string name="notify_who_kid_info_modified_on_device">%1$s在手表上修改了宝贝信息</string>
+    <string name="notify_who_kid_info_modified_by_who">%1$s修改了%2$s的宝贝信息</string>
+    <string name="notify_who_which_fence_add_by_who">%1$s为%2$s添加了围栏：%3$s</string>
+    <string name="notify_who_which_fence_del_by_who">%1$s删除了%2$s的围栏：%3$s</string>
+    <string name="notify_who_which_fence_modified_by_who">%1$s修改了%2$s的围栏：%3$s</string>
+    <string name="notify_who_which_sos_add_by_who">%1$s为%2$s添加了SOS：%3$s(%4$s)</string>
+    <string name="notify_who_which_sos_del_by_who">%1$s删除了%2$s的SOS：%3$s(%4$s)</string>
+    <string name="notify_who_which_sos_modified_by_who">%1$s修改了%2$s的SOS：%3$s(%4$s)</string>
+    <string name="notify_who_which_contacts_add_by_who">%1$s为%2$s添加了联系人：%3$s(%4$s)</string>
+    <string name="notify_who_which_contacts_del_by_who">%1$s删除了%2$s的联系人：%3$s(%4$s)</string>
+    <string name="notify_who_which_contacts_modified_by_who">%1$s修改了%2$s的联系人：%3$s(%4$s)</string>
+    <string name="notify_who_which_alarm_clock_add_on_device">%1$s在手表上添加了闹钟：%2$s</string>
+    <string name="notify_who_which_alarm_clock_del_on_device">%1$s在手表上删除了闹钟：%2$s</string>
+    <string name="notify_who_which_alarm_clock_modified_on_device">%1$s在手表上修改了闹钟：%2$s</string>
+    <string name="notify_who_which_alarm_clock_add_by_who">%1$s为%2$s添加了闹钟：%3$s</string>
+    <string name="notify_who_which_alarm_clock_del_by_who">%1$s删除了%2$s的闹钟：%3$s</string>
+    <string name="notify_who_which_alarm_clock_modified_by_who">%1$s修改了%2$s的闹钟：%3$s</string>
+    <string name="notify_who_which_class_disable_add_on_device">%1$s在手表上添加了上课禁用：%2$s</string>
+    <string name="notify_who_which_class_disable_del_on_device">%1$s在手表上删除了上课禁用：%2$s</string>
+    <string name="notify_who_which_class_disable_modified_on_device">%1$s在手表上修改了上课禁用：%2$s</string>
+    <string name="notify_who_which_class_disable_add_by_who">%1$s为%2$s添加了上课禁用：%3$s</string>
+    <string name="notify_who_which_class_disable_del_by_who">%1$s删除了%2$s的上课禁用：%3$s</string>
+    <string name="notify_who_which_class_disable_modified_by_who">%1$s修改了%2$s的上课禁用：%3$s</string>
+    <string name="notify_who_school_guard_modified_by_who">%1$s修改了%2$s的上学守护</string>
+    <string name="notify_who_which_collect_praise_add_by_who">%1$s为%2$s添加了有奖集赞，奖品为：%3$s</string>
+    <string name="notify_who_which_collect_praise_del_by_who">%1$s删除了%2$s的有奖集赞：%3$s</string>
+    <string name="notify_who_which_collect_praise_modified_by_who">%1$s修改了%2$s的有奖集赞：%3$s</string>
+    <string name="notify_who_which_collect_praise_item_praised_by_who">%1$s赞了%2$s的有奖集赞任务：%3$s</string>
+    <string name="notify_who_which_collect_praise_complete">%1$s的有奖集赞“%2$s”完成</string>
+    <string name="notify_who_which_collect_praise_finish">%1$s的有奖集赞“%2$s”结束</string>
+    <string name="notify_who_which_collect_praise_canceled_by_who">%1$s取消了%2$s的有奖集赞：%3$s</string>
+    <string name="notify_who_which__modified_location_mode_by_who">%1$s修改了%2$s的定位方式为：%3$s</string>
+    <string name="notify_who_which__modified_sms_agent_by_who">%1$s%3$s了%2$s的短信代收</string>
+
+    <!--chat-->
+    <string name="chat_loosen_over">松开结束</string>
+    <string name="chat_long_click_speak">按住说话</string>
+    <string name="chat_loosen_finger_cancel_send">松开手指，取消发送</string>
+    <string name="chat_finger_up_cancel_send">手指上滑，取消发送</string>
+    <string name="chat_time_to_short">时间太短</string>
+    <string name="chat_send">发送</string>
+
+    <!--register_login  -->
+    <string name="register_login_off_line_hint">下线通知</string>
+    <string name="register_login_other_phone_login">你的账号在另一台手机登录了</string>
+    <string name="register_login_again_login">重新登录</string>
+    <string name="register_login_out">退出</string>
+    <string name="register_login_input_password">请输入密码</string>
+    <string name="register_login_sure_password">确认密码</string>
+    <string name="register_login_setting_password">设置密码</string>
+    <string name="register_login_setting_password_suc">设置密码成功</string>
+    <string name="register_login_register_suc">注册成功</string>
+    <string name="register_login_setting_pas_fail">设置密码失败</string>
+    <string name="register_login_seed_code">已发送验证码到</string>
+    <string name="register_login_user_service_protocol">《用户服务协议》</string>
+    <string name="register_login_verification_code_format_error">验证码格式错误</string>
+    <string name="register_login_request_too_often">请求过于频繁</string>
+    <string name="register_login_select_county_or_district">选择国家</string>
+    <string name="register_login_plz_wait">请稍候...</string>
+    <string name="register_login_ver_code_ing">正在发送验证码...</string>
+    <string name="register_login_user_have">用户已存在</string>
+    <string name="register_login_user_not_have">用户不存在</string>
+    <string name="register_login_not_register">暂时无法注册</string>
+    <string name="register_login_change_account">切换账户</string>
+
+    <string name="register_login_macao_district">澳门地区</string>
+    <string name="register_login_china">中国</string>
+    <string name="register_login_vietnam">越南</string>
+    <string name="register_login_indonesia">印度尼西亚</string>
+    <string name="register_login_india">印度</string>
+    <string name="register_login_iran">伊朗</string>
+    <string name="register_login_singapore">新加坡</string>
+    <string name="register_login_hk_district">香港地区</string>
+    <string name="register_login_taiwan_district">台湾地区</string>
+    <string name="register_login_thailand">泰国</string>
+    <string name="register_login_burma">缅甸</string>
+    <string name="register_login_american">美国</string>
+    <string name="register_login_malaysia">马来西亚</string>
+    <string name="register_login_laos">老挝</string>
+    <string name="register_login_cambodia">柬埔寨</string>
+    <string name="register_login_philippines">菲律宾</string>
+    <string name="register_login_canada">加拿大</string>
+    <string name="register_login_england">英国</string>
+
+    <string name="register_login_type1">&#160;悦·守·护&#160;</string>
+    <string name="register_login_type2">&#160;对ta的爱，无处不在&#160;</string>
+    <string name="register_login_type3">金康特公司 版权所有</string>
+    <string name="register_login_type4">© 2018 KCT Inc. All Rights Reserved</string>
+    <string name="register_login_result">结果：</string>
+    <string name="register_login_code_disable">验证码无效</string>
+    <string name="register_login_send_fail_plz_anew_send">验证码发送失败，请重新发送</string>
+    <string name="register_login_tomorrow">获取验证码次数过多，请明天再获取</string>
+    <string name="register_login_too_often">获取验证码太频繁，请稍候再获取</string>
+
+
+    <!--引导页-->
+    <string name="guidance_type1">无论你身在何处</string>
+    <string name="guidance_type2">精准定位熊孩子</string>
+    <string name="guidance_type3">&appname;比你更懂</string>
+    <string name="guidance_type4">你对他/她的爱</string>
+    <string name="guidance_skip">跳过</string>
+
+    <!--下载更新-->
+    <string name="download_hint">温馨提示</string>
+    <string name="download_sd_card_not_use">SD卡不可用，请插入SD卡</string>
+    <string name="download_download_manager_ban">系统下载管理器被禁止，需手动打开</string>
+    <string name="download_now_use_phone_network">当前正在使用数据网络，这可能会产生额外费用，是否继续？</string>
+
+    <!--第三方登录-->
+    <string name="other_login_hint1">需要关联您的手机号码才能正常使用</string>
+    <string name="other_login_connected_account">关联账户</string>
+    <string name="other_login_connected">已关联</string>
+    <string name="other_login_not_connected">未关联</string>
+    <string name="other_login_remove_connected">您确定要取消对<![CDATA[<font color=\"#11cbd7\">%s</font>]]>的关联吗?</string>
+    <string name="other_login_now_you_use_which_login_will_logout">您当前是使用的<![CDATA[<font color=\"#11cbd7\">%s</font>]]>登录，解除关联后，会退出登录。</string>
+    <string name="other_login_cancel">授权登录取消</string>
+    <string name="other_login_fail">授权失败</string>
+    <string name="other_login_my_account">我的账户</string>
+    <string name="other_login_nonsupport">不支持</string>
+    <string name="third_plat_qq">QQ</string>
+    <string name="third_plat_wechat">微信</string>
+    <string name="third_plat_weibo">微博</string>
+    <string name="third_plat_facebook">Facebook</string>
+    <string name="third_plat_twitter">Twitter</string>
+    <string name="third_plat_google">Google</string>
+    <string name="third_plat_login">第三方登录</string>
+    <string name="third_plat_connect_ing">关联中...</string>
+    <string name="third_plat_connect_cancel">解除关联</string>
+    <string name="third_plat_unbind_connect_new">解除后可关联新的</string>
+    <string name="third_plat_unbind_connect_suc">解除关联成功</string>
+    <string name="third_plat_unbind_connect_fail">解除关联失败</string>
+    <string name="third_plat_login_fail_check_network">登录失败，请检查一下网络</string>
+    <string name="third_plat_the_number_connect">此手机号码已经关联过</string>
+    <string name="third_plat_ID">账号</string>
+    <string name="third_plat_plz_phone_or_last">请通过手机号码或原</string>
+    <string name="third_plat_plz_ID_login_unbind">账号登录，解绑后再重新绑定。</string>
+    <string name="third_plat_connect_suc">已经成功关联账号</string>
+    <string name="third_plat_connect_fail">关联失败</string>
+    <string name="third_plat_connect_fail_check_network">关联失败，请检查一下网络</string>
+    <string name="third_plat_connect_ios">解除关联后再重新关联新的</string>
+    <string name="already_assoc_other_user">此%1$s账号已经关联其他账号，要关联此号码请先用%2$s登录并解绑。</string>
+
+
+    <string name="third_plat_more_login">第三方登录</string>
+    <string name="third_plat_click_relieve">点击将解除或关联第三方应用</string>
+
+
+    <string name="number_of_sos_out_of_limit">SOS数量已达上限！</string>
+    <string name="number_of_contacts_out_of_limit">联系人数量已达上限！</string>
+    <string name="number_of_fence_out_of_limit">围栏数量已达上限！</string>
+    <string name="number_of_class_disable_out_of_limit">上课禁用数量已达上限！</string>
+    <string name="number_of_alarm_clock_out_of_limit">闹钟数量已达上限！</string>
+
+
+    <!--IOS新增-->
+    <string name="babycard_unbind_baby">您被解除了与该宝贝的绑定</string>
+    <string name="babycard_more_8">最多输入8个汉字</string>
+    <string name="babycard_fail_load">加载失败 点击重试</string>
+    <string name="babycard_SetCurrentBabyReminder">设置为当前宝贝?</string>
+    <string name="babycard_Birthdays_cannot_be_greater_than_the_current_date.">生日不能大于当前日期</string>
+    <string name="babycard_Input_cannot_contain_Spaces.">输入不能包含空格</string>
+    <string name="collect_Contains_illegal_characters_please_retype..">含有非法字符，请重新输入</string>
+    <string name="collect_sure_to_save_the_task">确定保存任务吗?</string>
+    <string name="collect_object_to_delete">集赞项目已被删除</string>
+    <string name="collect_object_to_finish">集赞项目已完成</string>
+    <string name="collect_object_to_over">集赞项目已结束</string>
+    <string name="collect_object_to_cancel">集赞项目已取消</string>
+    <string name="collect_object_to_update">服务器数据已更新</string>
+    <string name="collect_OperationDoing">操作中...</string>
+    <string name="collect_OperationFailed">操作失败</string>
+    <string name="collect_OperationSuc">操作成功</string>
+    <string name="collect_MAX_10">最多输入10个汉字</string>
+    <string name="collect_MIN_0">目标赞数不能为0</string>
+    <string name="collect_adding">添加中...</string>
+    <string name="collect_add_success">添加成功</string>
+    <string name="collect_add_fail">添加失败</string>
+    <string name="collect_PraiseExistedDes">已存在集赞项目</string>
+
+    <!--SOS-->
+    <string name="sos_name_to_long">姓名过长，请重新输入</string>
+
+    <!--通讯录-->
+    <string name="contact_user_nonentity">联系人不存在</string>
+    <string name="contact_unbind_noting">解绑失败</string>
+    <string name="contact_user_max">联系人上限为</string>
+    <string name="contact_FetchDoing">获取中...</string>
+    <string name="contact_FetchSuc">获取成功</string>
+    <string name="contact_FetchFailed">获取失败</string>
+    <string name="contact_Request_binding_device">请求绑定设备</string>
+
+    <!--更多功能-->
+    <string name="more_requesting">请求中...</string>
+    <string name="more_request_noting">请求失败</string>
+    <string name="more_DownLoadImageDoing">图片下载中...</string>
+    <string name="more_DownloadImageFailed">图片下载失败</string>
+    <string name="more_wait_watch_back_call">请稍后，手表正在回拨中...</string>
+    <string name="more_class_disable_find_device_sure_setting">上课禁用开启中，如需查找手表请点击确定按钮进行设置。</string>
+    <!--单项通话请求成功，手表回拨前-->
+    <string name="more_find_watch_sure_button_setting">上课禁用开启中，如需查找手表请点击确定按钮进行设置</string>
+    <string name="more_call_phone_sure_button_setting">上课禁用开启中，如需拨打电话请点击确定按钮进行设置</string>
+    <string name="more_FetchListDoing">获取列表中</string>
+
+    <!--上课禁用-->
+    <string name="class_disable_add_max">添加数量已达到上限</string>
+    <string name="class_disable_dont_add_again">请勿重复添加</string>
+    <string name="class_disable_content_same">已存在相同内容</string>
+    <string name="class_disable_begin_time_noting_null">开始时间不能为空</string>
+    <string name="class_disable_over_time_noting_null">结束时间不能为空</string>
+    <string name="class_disable_plz_input_name">请输入名称</string>
+    <string name="class_disable_period">禁用时段</string>
+    <string name="class_disable_DisablePeriodCanEmergencyCallDes">禁用期间可紧急呼叫</string>
+    <string name="class_disable_DisablePeriodCanCallAdminReminder">手表端在上课禁用期间除了看时间,还可以给管理员打电话</string>
+    <string name="class_disable_HolidayDonotDisableDes">法定节假日不禁用</string>
+    <string name="class_disable_AvoidHolidayReminder">开启后,手表禁用会主动避开法定节假日</string>
+
+    <!--上学守护-->
+    <string name="school_guide_MorningProtectTimeCannotNull">上午守护时间不能为空</string>
+    <string name="school_guide_AfternoonProtectTimeCannotNull">下午守护时间不能为空</string>
+    <string name="school_guide_LatestArriveHomeTimeCannotNull">最晚到家时间不能为空</string>
+    <string name="school_guide_HolidayProtectCannotNull">法定假日守护不能为空</string>
+    <string name="school_guide_SchoolAddrCannotNull">学校地址不能为空</string>
+    <string name="school_guide_HomeAddrCannotNull">家庭地址不能为空</string>
+    <string name="school_guide_right_up_click_edit">请点击右上角编辑进行填写</string>
+    <string name="school_guide_AlreadyOpenDes">已开启</string>
+    <string name="school_guide_HaventOpenDes">未开启</string>
+    <string name="school_guide_SchoolProNote1">到校时间不能晚于离校时间</string>
+    <string name="school_guide_select">选择</string>
+
+    <!--定时开关机-->
+    <string name="timing_shutdown_times_noting_same">开关机时间不能相同</string>
+
+    <!--闹钟-->
+    <string name="clock_alert_noting_null">提醒方式不能为空</string>
+    <string name="clock_max_16_size">最多输入16个字符</string>
+
+    <!--登录-->
+    <string name="login_LoginSucDes">登录成功</string>
+
+    <!--chat-->
+    <string name="ios_1">录音错误</string>
+
+    <!--地图-->
+    <string name="ios_2">请在<b>设置</b>中开启<b>&appname;</b>访问位置的权限</string>
+
+    <!--更新-->
+    <string name="ios_3">更新提示</string>
+    <string name="ios_4">更新成功</string>
+    <string name="ios_5">更新失败</string>
+    <string name="ios_6">更新</string>
+    <string name="ios_7">最新版本为</string>
+    <string name="ios_8">有新的版本更新，是否前往更新?</string>
+
+    <!--app设置-->
+    <string name="ios_9">清理中...</string>
+    <string name="ios_10">清理完成</string>
+
+    <!--登录注册-->
+    <string name="ios_11">获取验证码成功</string>
+    <string name="ios_12">获取验证码失败</string>
+    <string name="ios_13">提交验证码成功</string>
+    <string name="ios_14">提交验证码失败</string>
+    <string name="ios_15">解绑设备</string>
+    <string name="ios_16">已被管理员解绑</string>
+    <string name="ios_17">验证码错误</string>
+    <string name="ios_18">注册中...</string>
+
+    <string name="ios_19">选择权限</string>
+    <string name="ios_20">您未开启相机权限，点击确定跳转至系统设置开启</string>
+    <string name="ios_21">您未开启相册权限，点击确定跳转至系统设置开启</string>
+    <string name="ios_22">您未开启通知权限，点击确定跳转至系统设置开启</string>
+    <string name="ios_23">您未开启麦克风权限，点击确定跳转至系统设置开启</string>
+
+    <string name="ios_24">设备无效</string>
+    <string name="ios_25">设备存在</string>
+
+    <string name="ios_26">获取用户的设备列表失败</string>
+    <string name="ios_27">获取用户的设备列表成功</string>
+    <string name="ios_28">获取用户的设备信息失败</string>
+    <string name="ios_29">获取用户的设备信息成功</string>
+    <string name="ios_30">获取用户信息失败</string>
+    <string name="ios_31">获取用户信息成功</string>
+
+    <string name="ios_32">无法识别二维码</string>
+    <string name="ios_33">获取二维码成功</string>
+    <string name="ios_34">获取二维码失败</string>
+    <string name="ios_35">二维码写入本地成功</string>
+    <string name="ios_36">二维码写入本地失败</string>
+    <string name="ios_37">已存在管理员</string>
+    <string name="ios_38">绑定中...</string>
+    <string name="ios_39">管理员已同意你绑定设备</string>
+
+    <string name="ios_40">网络不可用，请检查网络设置</string>
+    <string name="ios_41">正在连接网络中, 请稍后</string>
+    <string name="ios_42">连网信号差, 请耐心等待或更换网络</string>
+    <string name="ios_43">服务器连接断开</string>
+    <string name="ios_44">请求取消</string>
+    <string name="ios_45">号码查询失败</string>
+
+    <string name="ios_46">开启</string>
+    <string name="ios_47">关闭</string>
+    <string name="ios_48">暂无数据</string>
+    <string name="ios_49">呼叫</string>
+    <string name="ios_50">加载成功</string>
+    <string name="ios_51">更新中...</string>
+    <string name="ios_52">点此输入</string>
+    <string name="ios_53">验证码失效</string>
+
+    <string name="ios_54">请输入联系人号码</string>
+    <string name="ios_55">仅拨打电话</string>
+    <string name="ios_57">添加SOS号码</string>
+    <string name="ios_59">修改SOS</string>
+    <string name="ios_60">注意：\n1、禁用时段将拒绝所有电话（包括单向通话）。\n2、微聊可以收到但不会提醒。\n3、SOS功能正常。\n4、定位正常。</string>
+    <string name="ios_61">最多输入7个汉字</string>
+    <string name="ios_62">结束时间需晚于开始时间</string>
+    <string name="ios_63">更新配置信息中</string>
+    <string name="ios_64">围栏名称</string>
+    <string name="ios_65">添加上学守护</string>
+    <string name="ios_66">确定删除选中围栏？</string>
+    <string name="ios_67">电量还剩10%时，无法使用定位和微聊，仅能接听电话</string>
+    <string name="ios_68">正在获取手表位置</string>
+    <string name="ios_69">定位方式</string>
+    <string name="ios_70">GPS定位</string>
+    <string name="ios_71">附近</string>
+    <string name="ios_72">获取手表位置失败</string>
+    <string name="ios_73">定位精度</string>
+    <string name="ios_74">最后时间</string>
+    <string name="ios_75">手表事件</string>
+    <string name="ios_76">手表事件：暂无事件</string>
+    <string name="ios_77">获取轨迹中</string>
+    <string name="ios_78">获取轨迹失败</string>
+    <string name="ios_79">无轨迹数据</string>
+    <string name="ios_80">起点</string>
+    <string name="ios_81">基站定位点</string>
+    <string name="ios_82">GPS定位点</string>
+    <string name="internal_version">中国大陆</string>
+    <string name="other_area">其他地区</string>
+    <string name="map_googlemap">Google地图</string>
+    <string name="app_used_area">使用地区</string>
+    <string name="phone">手机号</string>
+    <string name="not_support_google_play_cannot_use_google_map">你的设备不支持 Google Play 服务，因此无法使用 Google 地图。</string>
+    <string name="sep_char_comma">、</string>
+    <string name="select_areas">选择地区</string>
+    <string name="new_micro_chat_message">新消息</string>
+    <string name="you_have_new_micro_message">你有新的消息</string>
+    <string name="google_inaccessible_on_map_page">请在APP设置里将使用地区切换为-中国大陆</string>
+    <string name="user_google_map_throw_exception">我们尝试使用 Google 地图时出现了问题，因此无法使用 Google 地图。你可以尝试更新 Google Play 服务来解决此问题。</string>
+
+    <string name="emoticon_thanks">谢谢</string>
+    <string name="emoticon_meal">用餐</string>
+    <string name="emoticon_good">赞</string>
+    <string name="emoticon_cute">可爱</string>
+    <string name="emoticon_love">爱</string>
+    <string name="emoticon_good_night">晚安</string>
+    <string name="emoticon_ok">好的</string>
+    <string name="emoticon_get_up">起床</string>
+    <string name="emoticon_homework">家庭作业</string>
+
+    <string name="chat_conversation_message_voice">[语音]</string>
+    <string name="chat_conversation_message_emotion">[%s]</string>
+    <string name="emoticon">表情</string>
+    <string name="family_group_chat_of_baby">%s的家庭群聊</string>
+    <string name="try_to_chat_with_baby">试试和宝贝聊天吧</string>
+    <string name="try_to_chat_with_family_members">试试和家庭成员聊天吧</string>
+    <string name="please_input_send_message">请输入您要发送的内容</string>
+    <string name="family_group_of_baby">%s的家庭群</string>
+    <string name="family_chat_group_detail_page_tip">绑定手表的家庭成员，会自动添加到微聊</string>
+    <string name="clear_chat_history">清空聊天记录</string>
+    <string name="ask_clean_chat_history">你确定要删除聊天记录吗？</string>
+    <string name="unread_message_count_overflow">99+</string>
+
+    <string name="location_mode">定位模式</string>
+    <string name="passive_mode_detailed">手表不会主动报告位置，仅打开APP时定位，无上学守护与电子围栏通知。最省电，可以让手表待机时间最长。</string>
+    <string name="passive_mode">被动模式</string>
+    <string name="save_power_mode">省电模式</string>
+    <string name="normal_mode">普通模式</string>
+    <string name="save_power_detailed">手表主动报告位置频率较低，较省电，上学守护与电子围栏功能无法及时通知。</string>
+    <string name="normal_mode_detailed">启用手表所有定位功能的最佳模式</string>
+
+    <string name="sms_agent">短信代收</string>
+    <string name="no_more">没有更多</string>
+    <string name="setting">设置</string>
+
+    <string name="watch_call">手表通话</string>
+    <string name="change_settings">设置更改</string>
+    <string name="contacts_change">通讯录变更</string>
+    <string name="collect_praise_information">集赞信息</string>
+    <string name="message_settings">消息设置</string>
+    <string name="modify_sms_agent">修改了短信代收</string>
+    <string name="notification_setting_tips">关闭后，消息接收时不会提醒你</string>
+
+    <string name="friend_of_baby">宝贝的好友</string>
+    <string name="delete_friend">删除好友</string>
+    <string name="ask_sure_delete_the_friend">确定删除该好友吗？</string>
+    <string name="friend_display_name_combination">%s（%s）</string>
+    <string name="on_phone_number">没有号码</string>
+    <string name="tip_of_sms_agent_disable">你可以查看手表收到的所有短信</string>
+    <string name="more">更多</string>
+    <string name="set_as_current">设为当前</string>
+    <string name="add_baby">添加新手表</string>
+    <string name="sos_tips_1">1.当手表发出SOS请求时，会根据以下联系人的优先程度依次拨号，当某一位联系人接听成功后，手表会结束拨号行为。</string>
+    <string name="tips">小提示</string>
+    <string name="sos_tips_2">2.长按某位联系人可以调节其优先顺序，右滑删除联系人。</string>
+    <string name="class_disable_tips">禁用时间段将拒接所有电话（包括单向通话）。</string>
+    <string name="class_disable_tips_2">微聊可以收到但不会提醒</string>
+    <string name="class_disable_tips_3">SOS功能将会正常运作。</string>
+    <string name="class_disable_tips_4">定位功能将会正常运行。</string>
+    <string name="timing_tips">宝贝们休息的时候、\n也让工作了一天的手表\n休息一下吧~</string>
+    <string name="select_fence_icon">选择图标</string>
+    <string name="ring_time">响铃时间</string>
+    <string name="collect_praise_tips">适当的一个小礼物,\n能给宝贝无限动力。</string>
+    <string name="collect_praise_tips_2">点击添加礼物</string>
+    <string name="collect_praise_schedule">进度: </string>
+    <string name="complete_schedule">完成进度</string>
+    <string name="refuse_tips">控制陌生人与宝贝的接触\n给宝贝更安全的环境</string>
+    <string name="search">搜索</string>
+    <string name="search_address">地址搜索</string>
+    <string name="input_address">请输入地址名称</string>
+    <string name="private_place">私人</string>
+    <string name="public_place">公共</string>
+    <string name="select_icon">请选择图标</string>
+    <string name="select_fence_area">请选择围栏范围</string>
+    <string name="information_condition">通知条件</string>
+    <string name="not_set">暂未设置</string>
+    <string name="who_message">的消息</string>
+    <string name="selected_items">已选择%d项</string>
+    <string name="clear_all_message">清空选项</string>
+    <string name="multiselection">多选</string>
+    <string name="delete_selected">删除（%d）</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="count_pwd_login">账号密码登录</string>
+    <string name="register_login_send_register_code_again">重发</string>
+    <string name="register_login_cant_receive_code">收不到验证码？</string>
+    <string name="register_please_re_input_password">请确认您的密码</string>
+    <string name="set_and_login">完成设置并登录</string>
+    <string name="register_login_bind_hint_one">请通过手表中的</string>
+    <string name="register_login_bind_hint_two">设置-二维码</string>
+    <string name="register_login_bind_hint_three">查看此手表的设备号</string>
+    <string name="bind_device_bind_watch_again">再次绑定</string>
+    <string name="bind_edit_identity">身份填写</string>
+    <string name="bind_default">默认</string>
+    <string name="bind_click_to_change_icon">点击切换头像</string>
+    <string name="bind_input_your_relation">请输入您的称呼</string>
+    <string name="bind_device">绑定设备</string>
+    <string name="country">国家</string>
+    <string name="last_day">前一天</string>
+    <string name="next_day">后一天</string>
+    <string name="contacts">联系人</string>
+    <string name="please_input_baby_name">请输入宝贝名称</string>
+    <string name="head_set_is_null">头像设置为空</string>
+    <string name="sms_agent_tips">这里还什么都没有哦，开启代收手表短信, \n 可以查看此宝贝的手表接收到的所有短信。</string>
+    <string name="contacts_category_admin">管理员</string>
+    <string name="contacts_category_normal">手表联系人</string>
+    <string name="contacts_category_friends">手表好友</string>
+    <string name="please_enter_contact_name">请输入联系人称呼</string>
+    <string name="please_enter_contact_tel_number">请输入联系电话号码</string>
+    <string name="contacts_category_assoc">管理员</string>
+    <string name="appellation">称呼</string>
+    <string name="baby_name">宝贝昵称</string>
+    <string name="input_bind_number">手动输入设备号</string>
+    <string name="fence_guard">围栏守护</string>
+    <string name="class_disable_period_name_hint">请设置禁用时段名称</string>
+    <string name="class_disable_period_add">添加禁用时段</string>
+
+    <string name="of_unbind">的绑定吗?</string>
+    <string name="sure_unbind">您确定要解除 </string>
+    <string name="banner_one_tips">在这里，您和宝贝的 \n 沟通将会更随心</string>
+    <string name="banner_two_tips">在这里，您会对宝贝的 \n 行踪了如指掌，安全又安心</string>
+    <string name="banner_three_tips">您可以和宝贝约定 \n 一个目标并设置礼物，\n 让宝贝有更多成长动力！</string>
+    <string name="collection_praise">当前集赞最终奖品</string>
+    <string name="collect_praise_prompt">每个任务每天只能完成一次哟~</string>
+    <string name="click_add_collect_praise">点击添加集赞</string>
+    <string name="rebuild_collect_praise">重设奖品</string>
+    <string name="map_navigation_to_here">去这里</string>
+    <string name="bind_by_bindnumber">设备号绑定</string>
+    <string name="new_user_register">新用户注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="set_new_password">设置新密码</string>
+    <string name="register_and_bind">完成注册并绑定</string>
+    <string name="associate_phone_number">关联手机号</string>
+    <string name="register_login_phonenumber_invalid">无效的手机号，请重新输入</string>
+    <string name="take_photo_instructions_already_send_please_wait">拍照请求已发送到手表，请耐心等待 \n 如果 %1$s 秒后无反应，请重新操作</string>
+    <string name="babycard_birthday_choice">生日选择</string>
+    <string name="change_password_confirm">请确认您的新密码</string>
+    <string name="change_password_input_old">请输入您当前密码</string>
+    <string name="fence_add_area_set">设置围栏范围</string>
+    <string name="fence_notification_in">进入围栏时通知</string>
+    <string name="fence_notification_out">离开围栏时通知</string>
+    <string name="fence_add_ok">完成添加</string>
+    <string name="fence_home_input_name">请输入宝贝家名字</string>
+    <string name="fence_school_input_name">请输入宝贝学校名字</string>
+    <string name="school_holiday_keeps_guard">节假日保持守护</string>
+    <string name="alarm_edit_note">编辑备注</string>
+    <string name="alarm_intput_note">请输入闹钟名称</string>
+    <string name="alarm_note_not_null">备注不能为空</string>
+    <string name="babycard_relation">我是宝贝的</string>
+    <string name="alarm_list_note">闹钟备注:</string>
+    <string name="no_collect_praise_tips_text">您还没有开始集赞哦~</string>
+    <string name="watch_activity">手表动态</string>
+    <string name="save_img_local">已保存到本地</string>
+    <string name="bind_device_inactivated">手表未激活，请先在手表内插入SIM卡激活。</string>
+    <string name="please_choose_relation">请选择关系</string>
+    <string name="photo_request_failed">拍照请求发送失败</string>
+    <string name="save_album">保存到相册</string>
+    <string name="single_alarm">仅一次</string>
+    <string name="register_tips_user_agreement">点击<![CDATA[<font color="#fa4659">“下一步”</font>]]>即表示您同意</string>
+    <string name="register_user_agreement">《用户服务协议》</string>
+
+
+</resources>

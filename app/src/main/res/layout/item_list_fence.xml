@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:id="@+id/cl_fence_item"
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="@drawable/foreground_shadow"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baby_card_current_text_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/fence_item_map_bg"
+            android:orientation="horizontal">
+
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/map_amap"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_weight="1.2" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_gmap"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_weight="1.2"
+                android:visibility="gone"
+                map:liteMode="true"
+                map:mapType="none" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fence_item_text_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fence_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/school_guardian"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/fence_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fence_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp"
+                    android:text="08:00-12:00|14:00-18:00"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/fence_time_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fence_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp"
+                    android:text="08:00-12:00|14:00-18:00"
+                    android:textColor="@color/text_color_six"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/fence_addreas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fence_time_repeat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="    Chong QinShi Jiu long po Qu Jinfeng dianzi xinxi canye yuan 2qi 6dong"
+                    android:textColor="@color/text_color_six"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ib_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:thumb="@drawable/thumb"
+                    android:visibility="gone"
+                    app:showText="false"
+                    app:track="@drawable/track" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/fence_type_icon_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout11"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:id="@+id/fence_type"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fence_guardian_school_icon" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

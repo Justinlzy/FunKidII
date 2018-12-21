@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cqkct.FunKidII.zxing.view.ViewfinderView
+        android:id="@+id/viewfinderview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/surfaceview"
+        app:layout_constraintEnd_toEndOf="@+id/surfaceview"
+        app:layout_constraintStart_toStartOf="@+id/surfaceview"
+        app:layout_constraintTop_toTopOf="@+id/surfaceview" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/bind_device_scan_watch_type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewfinderview"
+        app:layout_constraintEnd_toEndOf="@+id/viewfinderview"
+        app:layout_constraintStart_toStartOf="@+id/viewfinderview"
+        app:layout_constraintTop_toTopOf="@+id/viewfinderview"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/input_bindNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_red_background_two"
+        android:foreground="@drawable/foreground_shadow"
+        android:onClick="onDebouncedClick"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingEnd="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_5"
+        android:text="@string/input_bind_number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/foreground_shadow"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_sch_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="47dp">
+
+        <ImageView
+            android:id="@+id/iv_sch_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10"
+     />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/iv_sch_list"
+            android:layout_toStartOf="@+id/end_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fence_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_two"
+                android:textSize="@dimen/dimen_13sp"
+                tools:text="曾家中心幼儿园" />
+
+            <TextView
+                android:id="@+id/tv_fence_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_indicator_point_selected"
+                android:textSize="@dimen/dimen_10sp"
+                tools:text="白市驿镇白龙路106号" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/end_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/sh_dw" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_sch_item"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/line_color" />
+</RelativeLayout>

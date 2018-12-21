@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="-3.5dp"
+        android:background="@android:color/transparent">
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/map_amap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_google"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/cannot_locate_tip_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D92D2D2D"
+            android:minHeight="36dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/cannot_locate_tip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/no_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/cannot_locate_tip_icon"
+                android:gravity="center_vertical"
+                android:text="@string/map_load_local_fail_type"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/google_inaccessible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/google_inaccessible_on_map_page"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cannot_locate_tip_view" />
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foreground="@drawable/foreground_shadow_oval"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cannot_locate_tip_view">
+
+            <ImageButton
+                android:id="@+id/location_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:src="@drawable/history_location_button" />
+
+            <ToggleButton
+                android:id="@+id/locate_self"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/mobile_location_button"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/locate_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:src="@drawable/renovate_location_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cannot_locate_tip_view">
+
+            <ImageButton
+                android:id="@+id/map_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:src="@drawable/change_button" />
+
+            <ImageButton
+                android:id="@+id/map_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:src="@drawable/enlarge_button" />
+
+            <ImageButton
+                android:id="@+id/map_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:foreground="@drawable/foreground_shadow_oval"
+                android:src="@drawable/narrow_button" />
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/map_address_card_view"
+            layout="@layout/map_address_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/status_bar_height"
+            android:layout_marginBottom="3dp">
+
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/baby_head_icon_cl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/baby_head_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/mod_baby_male" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:background="@drawable/more_babies_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/baby_head_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/baby_head_icon"
+                    app:layout_constraintVertical_bias="1.0" />
+            </android.support.constraint.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_baby_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/baby_head_icon_cl"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/baby_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:maxEms="4"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="16sp"
+                    tools:text="阿阮" />
+
+                <com.cqkct.FunKidII.Ui.view.BatteryView
+                    android:id="@+id/baby_battery"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/baby_step_count_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/guideline_title_text_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_title_text_start">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/main_steps_of_today"
+                    android:textColor="@color/text_color_three"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/baby_step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@color/text_blue_bg_color"
+                    android:textSize="14sp"
+                    tools:text="22309" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/baby_online_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:text="@string/is_online"
+                tools:text="在线"
+                android:paddingTop="1.5dp"
+                android:paddingBottom="1.5dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/online_status_online_background_on_main_map_title_bar"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/guideline_title_text_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_title_text_start" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/envelope_view"
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/envelope_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button_message"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/envelope_badge"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bot_message"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.85"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+            </android.support.constraint.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

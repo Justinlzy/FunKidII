@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_top_bg">
+
+    <com.cqkct.FunKidII.Ui.view.CornerImageView
+        android:id="@+id/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:contentDescription="背景"
+        android:scaleType="centerCrop"
+        android:src="@drawable/texture_material_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:topLeftRadius="24dp"
+        app:topRightRadius="24dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_background"
+        android:background="@drawable/background_arch"
+        android:contentDescription="拱形效果覆盖"
+        app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/hard_contacts"
+        app:layout_constraintEnd_toEndOf="@id/title_background"
+        app:layout_constraintStart_toStartOf="@id/title_background"
+        app:layout_constraintTop_toTopOf="@id/title_background" />
+
+</RelativeLayout>

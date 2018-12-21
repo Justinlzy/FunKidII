@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/timing_shutdown_tip_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bar_total_height_sub_shadow"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/title_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="背景"
+            android:scaleType="fitXY"
+            android:src="@drawable/timing_shutdown_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_arch"
+            android:contentDescription="拱形效果覆盖"
+            app:layout_constraintBottom_toBottomOf="@id/title_background" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/hourglass" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="@string/timing_tips"
+                    android:textColor="@color/timing_shutdown_tips_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/switch_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/main_background_color"
+        android:foreground="@drawable/foreground_shadow"
+        android:minHeight="47dp"
+        app:layout_constraintTop_toBottomOf="@+id/timing_shutdown_tip_bg">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/open_timing_shutdown"
+            android:textColor="@color/title_bar_text"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/ib_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:thumb="@drawable/thumb"
+            app:showText="false"
+            app:track="@drawable/track" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/switch_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_blue_background"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_3"
+                android:text="@string/timing_open_device_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <include
+                android:id="@+id/boot_time_picker"
+                layout="@layout/layout_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_red_background"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_3"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_3"
+                android:text="@string/timing_shutdown_device_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <include
+                android:id="@+id/shutdown_time_picker"
+                layout="@layout/layout_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+</android.support.constraint.ConstraintLayout>
